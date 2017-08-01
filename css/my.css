@@ -2,13 +2,6 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('../assets/fonts/Gotham-Bold.otf');
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Gotham';
   src: url('../assets/fonts/Gotham-Book.otf');
   font-style: normal;
   font-weight: normal;
@@ -16,9 +9,23 @@
 
 @font-face {
   font-family: 'Gotham';
+  src: url('../assets/fonts/Gotham-Bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Gotham';
   src: url('../assets/fonts/Gotham-Medium.otf');
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/fonts/GothamRnd-MedIta.otf');
+  font-style: italic;
+  font-weight: 500;
 }
 
 
@@ -41,7 +48,7 @@ h1 {
 .my-logo span {
   font-family: 'Gotham';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .my-navbar {
@@ -53,6 +60,28 @@ h1 {
   font-family: 'Gotham';
   font-weight: normal;
   color: #000;
+}
+
+
+/* About */
+
+.about .my-cover {
+  height: 460px;
+}
+
+.about p {
+  font-family: 'Gotham';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: normal;
+  color: #000;
+}
+
+@media screen and (max-width: 960px) {
+  .about p {
+    font-size: 32px;
+  }
 }
 
 
