@@ -6,6 +6,8 @@
   <title>welcome to yes</title>
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/css/uikit.min.css" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/my.css" />
   <!-- jQuery is required -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- UIkit JS -->
@@ -13,6 +15,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/js/uikit-icons.min.js"></script>
   <!-- Canvasjs JS -->
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <!-- My JS -->
+  <script src="js/my.js"></script>
   <script type="text/javascript">
     window.onload = function() {
       var chart = new CanvasJS.Chart("chartContainer", {
@@ -81,52 +85,49 @@
     }
   </script>
 </head>
+
 <body>
+  <!-- NAV SECTION-->
+  <nav class="uk-navbar my-navbar" uk-sticky="offset: -400; animation: uk-animation-slide-top">
+    <a class="uk-navbar-right uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+    <div class="uk-navbar-center uk-text-uppercase">
+      <div class="uk-navbar-left uk-visible@l">
+        <ul class="uk-navbar-nav">
+          <li class="uk-ac">
+            <a href="#section-1" uk-scroll>Service</a>
+          </li>
+          <li>
+            <a href="#section-2" uk-scroll>Impact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="uk-navbar-item uk-margin-left uk-margin-right uk-flex uk-flex-column my-logo">
+        <div class="logo-dark">
+          <a href="#" uk-scroll><img src="assets/img/logo-dark.png" alt="YES logo"></a>
+        </div>
+        <div>
+          <span class="uk-margin-small-top">YES CPH CO.</span>
+        </div>
+      </div>
+      <div class="uk-navbar-right uk-visible@l">
+        <ul class="uk-navbar-nav">
+          <li>
+            <a href="#section-3" uk-scroll>FAQ</a>
+          </li>
+          <li>
+            <a href="#section-4" uk-scroll>About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <!-- Hero SECTION-->
-  <div class="uk-position-relative">
-    <div class="uk-cover-container uk-height-viewport">
-      <video uk-cover autoplay loop muted>
-          <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
-          <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
-      </video>
-      <h1 class="uk-heading-primary uk-text-bold uk-text-uppercase uk-position-small uk-position-center uk-text-center">Services you need, causes you need to care</h1>
-    </div>
-    <div class="uk-position-top">
-      <nav class="uk-navbar uk-navbar-container uk-margin-top" uk-sticky="cls-active: uk-background-secondary; cls-active: uk-margin-remove-top; offset: -400; animation: uk-animation-slide-top">
-        <div class="uk-navbar-left">
-          <a class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
-          <a class="uk-navbar-item uk-logo uk-text-bold" href="#" uk-scroll>YES</a>
-        </div>
-        <div class="uk-navbar-right uk-visible@l">
-          <ul class="uk-navbar-nav uk-subnav-divider">
-            <li>
-              <a href="#section-1" uk-scroll>SECTION #1</a>
-            </li>
-            <li>
-              <a href="#section-2" uk-scroll>SECTION #2</a>
-            </li>
-            <li>
-              <a href="#section-3" uk-scroll>SECTION #3</a>
-            </li>
-            <li>
-              <a href="#section-4" uk-scroll>SECTION #4</a>
-            </li>
-            <li>
-              <a href="#section-5" uk-scroll>SECTION #5</a>
-            </li>
-            <li>
-              <a href="#section-6" uk-scroll>SECTION #6</a>
-            </li>
-            <li>
-              <a href="#section-7" uk-scroll>SECTION #7</a>
-            </li>
-            <li>
-              <a href="#section-8" uk-scroll>SECTION #8</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+  <div class="uk-cover-container uk-height-viewport">
+    <video uk-cover autoplay loop muted>
+      <source src="assets/video/Coffee-Shot.mp4" type="video/mp4">
+      <source src="assets/video/Coffee-Shot.ogv" type="video/ogg">
+    </video>
+    <h1 class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-heading-primary">Services you need,</br>causes you care</h1>
   </div>
   <!-- Offcanvas NAV -->
   <div id="offcanvas-nav" uk-offcanvas="overlay: true">
@@ -286,58 +287,58 @@
       </div>
       <div class="uk-child-width-1-6 uk-text-center" uk-grid>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
         <div>
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-dark.png" alt="">
         </div>
       </div>
     </div>
@@ -407,4 +408,5 @@
   </div>
 
 </body>
+
 </html>
