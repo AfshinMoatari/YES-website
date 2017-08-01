@@ -1,40 +1,110 @@
 /* Fonts */
 
 @font-face {
-  font-family: 'Gotham';
+  font-family: 'Gotham-Book';
   src: url('../assets/fonts/Gotham-Book.otf');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
+  font-family: 'Gotham-Light';
+  src: url('../assets/fonts/Gotham-Light.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
   src: url('../assets/fonts/Gotham-Bold.otf');
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Gotham';
+  font-family: 'Gotham-BoldIta';
+  src: url('../assets/fonts/Gotham-BoldIta.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Gotham-Medium';
   src: url('../assets/fonts/Gotham-Medium.otf');
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Gotham';
+  font-family: 'GothamRnd-MedIta';
   src: url('../assets/fonts/GothamRnd-MedIta.otf');
   font-style: italic;
   font-weight: 500;
 }
 
+@font-face {
+  font-family: 'GothamRnd-Book';
+  src: url('../assets/fonts/GothamRnd-Book.otf');
+  font-style: normal;
+}
+
 
 /* Base */
 
+body {
+  font-family: 'GothamRnd-Book';
+  color: #000;
+  font-size: 1.2em;
+}
+
 h1 {
-  font-family: 'Gotham';
-  font-weight: bold;
+  font-family: 'Gotham-Bold';
   color: #fff;
+}
+
+h2 {
+  font-family: 'Gotham-Bold';
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Gotham-BoldIta';
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+span {
+  font-family: 'Gotham-Medium';
+  color: #fff;
+}
+
+
+/* Utility */
+
+.my-light {
+  color: #fff;
+}
+
+.my-dark {
+  color: #000;
+}
+
+.break {
+  display: inline;
+  float: left;
+  margin-left: -43px;
+}
+
+.break::before {
+  content: "──";
+}
+
+.my-button-text {
+  font-family: 'Gotham-Bold';
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  padding-top: 110px;
 }
 
 
@@ -46,9 +116,11 @@ h1 {
 }
 
 .my-logo span {
-  font-family: 'Gotham';
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'Gotham-Medium';
+}
+
+.my-logo span {
+  color: #000;
 }
 
 .my-navbar {
@@ -57,8 +129,7 @@ h1 {
 }
 
 .my-navbar li a {
-  font-family: 'Gotham';
-  font-weight: normal;
+  font-family: 'Gotham-Book';
   color: #000;
 }
 
@@ -70,26 +141,21 @@ h1 {
 }
 
 .about p {
-  font-family: 'Gotham';
-  font-style: italic;
-  font-weight: 500;
+  font-family: 'GothamRnd-MedIta';
   font-size: 42px;
   line-height: normal;
   color: #000;
 }
 
-@media screen and (max-width: 960px) {
-  .about p {
-    font-size: 32px;
-  }
+
+/* Service */
+
+.my-media-service {
+  background-image: url(../assets/img/how.jpg);
 }
 
 
 /* Event */
-
-.uk-sticky-fixed .my-logo span {
-  color: #fff;
-}
 
 .uk-sticky-fixed.my-navbar {
   height: 130px;
