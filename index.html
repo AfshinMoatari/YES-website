@@ -19,73 +19,6 @@
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <!-- My JS -->
   <script src="js/my.js"></script>
-  <script type="text/javascript">
-    window.onload = function() {
-      var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        data: [{
-          color: "#4A4E55",
-          type: "stackedColumn",
-          toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}%",
-          name: "cost",
-          showInLegend: "true",
-          dataPoints: [{
-              y: 0,
-              label: "April"
-            },
-            {
-              y: 0,
-              label: "May"
-            },
-            {
-              y: 30,
-              label: "June"
-            },
-            {
-              y: 30,
-              label: "july"
-            }
-          ]
-        }, {
-          color: "#6E747E",
-          type: "stackedColumn",
-          toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}%",
-          name: "profit",
-          showInLegend: "true",
-          dataPoints: [{
-              y: 0,
-              label: "April"
-            },
-            {
-              y: 0,
-              label: "May"
-            },
-            {
-              y: 20,
-              label: "June"
-            },
-            {
-              y: 48,
-              label: "july"
-            }
-          ]
-        }],
-        legend: {
-          cursor: "pointer",
-          itemclick: function(e) {
-            if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-              e.dataSeries.visible = false;
-            } else {
-              e.dataSeries.visible = true;
-            }
-            chart.render();
-          }
-        }
-      });
-
-      chart.render();
-    }
-  </script>
 </head>
 
 <body>
@@ -243,7 +176,7 @@
       </div>
     </div>
     <!-- CHART SECTION -->
-    <div class="chart">
+    <div class="chart" id="chart">
       <div class="uk-section uk-section-default uk-section-medium">
         <div class="uk-grid-collapse" uk-grid>
           <div class="uk-width-2-3@m">
@@ -255,7 +188,6 @@
             </div>
           </div>
           <div class="uk-width-1-3@m">
-            <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
             <div class="chart">
               <ul class="bars">
                 <li>
@@ -272,22 +204,34 @@
         </div>
       </div>
     </div>
-    <!-- SECTION #4 -->
-    <div class="uk-section uk-section-default uk-section-large" id="section-4">
-      <div class="uk-grid-collapse" uk-grid>
-        <div class="uk-width-1-2@m">
-          <img class="uk-background-cover uk-responsive-height uk-panel uk-flex uk-flex-center uk-flex-middle" src="assets/img/child.png" alt="">
-        </div>
-        <div class="uk-width-1-2@m uk-flex uk-flex-middle uk-text-center">
-          <div class="uk-width-medium-1-2">
-            <h3 class="uk-text-bold">Child Education</h3>
-            <p>Every 60 hours of service fee pays a month of education for a marginalized child.</p>
+    <!-- STEPS SECTION -->
+    <div class="steps" id="steps">
+      <div class="uk-section uk-section-default uk-section-medium">
+        <h2>TWO WAYS YOU CAN</br>GIVE BACK TO SOCIETY</h2>
+        <div class="uk-grid-collapse" uk-grid>
+          <div class="uk-width-1-2@m">
+            <div class="uk-section uk-section-media uk-light uk-background-cover uk-padding-remove-vertical">
+              <img src="assets/img/step1.png" alt="">
+            </div>
+          </div>
+          <div class="uk-width-1-2@m uk-flex uk-flex-center uk-flex-middle">
+            <div class="uk-width-large uk-text-left">
+              <h3>Child Education</h3>
+              <p>Every 60 hours of contractual service fee pays a month of education for a marginalized child.</p>
+            </div>
+          </div>
+          <div class="uk-width-1-2@m uk-flex uk-flex-center uk-flex-bottom">
+            <div class="uk-width-large uk-text-right">
+              <h3>CAUSES THAT YOUR BUSINESS</br>CAN IDENTIFY WITH</h3>
+              <p>Every six months we find social development projects that fits with your business’ values. <strong>YOU</strong> decide where a 100% of the profit we made from our collaboration goes!</p>
+            </div>
+          </div>
+          <div class="uk-width-1-2@m">
+            <div class="uk-section uk-section-media uk-light uk-background-cover uk-padding-remove-vertical">
+              <img src="assets/img/step2.png" alt="">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="uk-text-left uk-margin-large uk-width-1-2">
-        <h3>support great causes that your business can identify with</h3>
-        <p>Every six months we find development projects that fits with your business values. YOU decide where a 100% of the profit we made from you goes!</p>
       </div>
     </div>
     <!-- SECTION #5 -->
