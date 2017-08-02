@@ -1,7 +1,11 @@
-// 'use strict';
-//
-// $(function() {
-//   $("nav").on('uk.sticky', function() {
-//     $(".logo-dark").attr("src", "assets/img/logo-light.png");
-//   });
-// });
+'use strict';
+
+$(function() {
+  $(".bars li .bar").each(function(key, bar) {
+    var percentage = $(this).data('percentage');
+
+    $(this).animate({
+      'height': percentage + '%'
+    }, 1000);
+  });
+});
