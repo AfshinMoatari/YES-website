@@ -36,10 +36,21 @@
 }
 
 @font-face {
+<<<<<<< HEAD
   font-family: 'GothamRnd-BoldIta';
   src: url('../assets/fonts/GothamRnd-BoldIta.otf');
+=======
+  font-family: 'GothamRnd-MedIta';
+  src: url('../assets/fonts/GothamRnd-MedIta.otf');
+>>>>>>> 3dc5c28c1b5c84a9d55c229e02e56f0b172ab656
   font-style: italic;
   font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GothamRnd-Book';
+  src: url('../assets/fonts/GothamRnd-Book.otf');
+  font-style: normal;
 }
 
 @font-face {
@@ -141,8 +152,13 @@ span {
 }
 
 .about p {
+<<<<<<< HEAD
   font-family: 'GothamRnd-BoldIta';
   font-size: 2em;
+=======
+  font-family: 'GothamRnd-MedIta';
+  font-size: 42px;
+>>>>>>> 3dc5c28c1b5c84a9d55c229e02e56f0b172ab656
   line-height: normal;
   color: #000;
 }
