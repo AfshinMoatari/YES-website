@@ -220,10 +220,10 @@ blockquote p::after {
 
 @media (min-width: 960px) {
   .slick-next {
-    right: -0;
+    right: -25px;
   }
   .slick-prev {
-    left: -0;
+    left: -30px;
   }
 }
 
