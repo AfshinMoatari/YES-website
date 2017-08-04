@@ -1,212 +1,396 @@
-      /* Fonts */
+/* Fonts */
 
-      @font-face {
-        font-family: 'Gotham-Book';
-        src: url('../assets/fonts/Gotham-Book.otf');
-        font-style: normal;
-        font-weight: normal;
-      }
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../assets/fonts/Gotham-Book.otf');
+  font-style: normal;
+  font-weight: normal;
+}
 
-      @font-face {
-        font-family: 'Gotham-Light';
-        src: url('../assets/fonts/Gotham-Light.otf');
-        font-style: normal;
-        font-weight: 300;
-      }
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('../assets/fonts/Gotham-Light.otf');
+  font-style: normal;
+  font-weight: 300;
+}
 
-      @font-face {
-        font-family: 'Gotham-Bold';
-        src: url('../assets/fonts/Gotham-Bold.otf');
-        font-style: normal;
-        font-weight: bold;
-      }
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('../assets/fonts/Gotham-Bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
 
-      @font-face {
-        font-family: 'Gotham-BoldIta';
-        src: url('../assets/fonts/Gotham-BoldIta.otf');
-        font-style: normal;
-        font-weight: bold;
-      }
+@font-face {
+  font-family: 'Gotham-BoldIta';
+  src: url('../assets/fonts/Gotham-BoldIta.otf');
+  font-style: normal;
+  font-weight: bold;
+}
 
-      @font-face {
-        font-family: 'Gotham-Medium';
-        src: url('../assets/fonts/Gotham-Medium.otf');
-        font-style: normal;
-        font-weight: 500;
-      }
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../assets/fonts/Gotham-Medium.otf');
+  font-style: normal;
+  font-weight: 500;
+}
 
-      @font-face {
-        font-family: 'GothamRnd-BoldIta';
-        src: url('../assets/fonts/GothamRnd-BoldIta.otf');
-        font-style: italic;
-        font-weight: bold;
-      }
+@font-face {
+  font-family: 'GothamRnd-BoldIta';
+  src: url('../assets/fonts/GothamRnd-BoldIta.otf');
+  font-style: italic;
+  font-weight: bold;
+}
 
-      @font-face {
-        font-family: 'GothamRnd-Book';
-        src: url('../assets/fonts/GothamRnd-Book.otf');
-        font-style: normal;
-      }
+@font-face {
+  font-family: 'GothamRnd-Book';
+  src: url('../assets/fonts/GothamRnd-Book.otf');
+  font-style: normal;
+}
 
-      @font-face {
-        font-family: 'GothamRnd-Book';
-        src: url('../assets/fonts/GothamRnd-Book.otf');
-        font-style: normal;
-      }
-      /* Base */
+@font-face {
+  font-family: 'GothamRnd-Book';
+  src: url('../assets/fonts/GothamRnd-Book.otf');
+  font-style: normal;
+}
 
-      body {
-        font-family: 'GothamRnd-Book';
-        color: #000;
-        font-size: 1.2em;
-      }
 
-      h1 {
-        font-family: 'Gotham-Bold';
-        color: #fff;
-      }
+/* Base */
 
-      h2 {
-        font-family: 'Gotham-Bold';
-        text-transform: uppercase;
-      }
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 
-      h3 {
-        font-family: 'Gotham-BoldIta';
-        font-size: 1.3em;
-        text-transform: uppercase;
-      }
+body {
+  margin: 0;
+  font-family: 'GothamRnd-Book';
+  color: #000;
+  font-size: 1em;
+}
 
-      span {
-        font-family: 'Gotham-Medium';
-        color: #fff;
-      }
+div {
+  display: block;
+}
 
-      hr {
-        border-top: 3px solid #000;
-      }
-      /* Utility */
+h1 {
+  font-family: 'Gotham-Bold';
+  color: #fff;
+}
 
-      .break-small {
-        float: left;
-        margin-top: 10px;
-        margin-left: -60px;
-        width: 55px;
-      }
+h2 {
+  font-family: 'Gotham-Bold';
+  text-transform: uppercase;
+}
 
-      .break-large {
-        float: left;
-        margin-top: 25px;
-        margin-left: -60px;
-        width: 55px;
-        border-color: #fff;
-      }
+h3 {
+  font-family: 'Gotham-BoldIta';
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
 
-      .my-button-text {
-        font-family: 'Gotham-Bold';
-        transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        padding-top: 110px;
-      }
-      /* Navbar */
+span {
+  font-family: 'Gotham-Medium';
+  color: #fff;
+}
 
-      .my-logo {
-        -webkit-justify-content: flex-start;
-        justify-content: flex-start;
-      }
+hr {
+  border-top: 3px solid #000;
+}
 
-      .my-logo span {
-        font-family: 'Gotham-Medium';
-      }
+blockquote p::before {
+  content: open-quote;
+}
 
-      .my-logo span {
-        color: #000;
-      }
+blockquote p::after {
+  content: close-quote;
+}
 
-      .my-navbar {
-        height: 175px;
-        background-color: #fff;
-      }
 
-      .my-navbar li a {
-        font-family: 'Gotham-Book';
-        color: #000;
-      }
-      /* About */
+/* Container */
 
-      .about .my-cover {
-        height: 510px;
-      }
+.global {
+  position: relative;
+  z-index: 11;
+  background: #fff;
+}
 
-      .about p {
-        font-family: 'GothamRnd-BoldIta';
-        font-style: italic;
-        font-weight: bold;
-        line-height: normal;
-        font-size: 2em;
-        color: #000;
-      }
-      /* Service */
+.main {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+}
 
-      .my-media-service {
-        background-image: url(../assets/img/how.jpg);
-      }
-      /* Event */
+.container-all {
+  width: 100%;
+  overflow: hidden;
+}
 
-      .uk-sticky-fixed.my-navbar {
-        height: 110px;
-        background-color: #000;
-      }
+.my-container {
+  max-width: 76em;
+  padding: 0 1.5em;
+  margin: 0 auto;
+}
 
-      .uk-sticky-fixed.my-navbar li a {
-        color: #fff;
-      }
-      /* Chart */
+.my-container.large {
+  padding: 0;
+  max-width: 84.375em
+}
 
-      .chart li {
-        list-style: none;
-        border-bottom: 4px solid #000;
-        position: relative;
-        bottom: 30px;
-      }
+.my-container.medium {
+  max-width: 65.5em
+}
 
-      .bars li {
-        display: table-cell;
-        width: 130px;
-        height: 300px;
-        text-align: center;
-        position: relative;
-      }
+@media (min-width: 640px) {
+  .my-container {
+    padding: 0 1.2em;
+  }
+}
 
-      .bars li .bar {
-        display: block;
-        width: 65px;
-        margin-left: 30px;
-        background: none;
-        border: 4px solid #000;
-        border-bottom: 0;
-        position: absolute;
-        bottom: 0;
-      }
+@media (min-width: 960px) {
+  .my-container {
+    padding: 0 1.5em;
+  }
+}
 
-      .bars span {
-        color: #000;
-        width: 100%;
-        position: absolute;
-        bottom: -2em;
-        left: 0;
-        text-align: center;
-      }
+@media (min-width: 1350px) {
+  .my-container.heading {
+    padding: 0;
+    margin: 0;
+  }
+}
 
-      .bars li .bar:hover {
-        background: #e5e5e5;
-        cursor: pointer;
-      }
 
-      .bars li .bar:hover:before {
-        color: #000;
-        content: attr(data-percentage) '%';
-        position: relative;
-        bottom: 30px;
-      }
+/* Utility */
+
+.break-small {
+  float: left;
+  margin-top: 10px;
+  margin-left: -60px;
+  width: 55px;
+}
+
+.break-large {
+  float: left;
+  margin-top: 25px;
+  margin-left: -60px;
+  width: 55px;
+  border-color: #fff;
+}
+
+.my-button-text {
+  font-family: 'Gotham-Bold';
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  padding-top: 110px;
+}
+
+
+/* Navbar */
+
+.my-logo {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.my-logo span {
+  font-family: 'Gotham-Medium';
+}
+
+.my-logo span {
+  color: #000;
+}
+
+.my-navbar {
+  height: 175px;
+}
+
+.my-navbar li a {
+  font-family: 'Gotham-Book';
+  color: #000;
+}
+
+
+/* Hero */
+
+.my-video-cover {
+  height: 510px;
+}
+
+.hero-text p {
+  padding: .4em 0;
+  font-family: 'GothamRnd-BoldIta';
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.3;
+  font-size: 2.8em;
+  color: #000;
+}
+
+
+/* Service */
+
+.my-media-service {
+  background-image: url(../assets/img/how.jpg);
+}
+
+
+/* Chart */
+
+.chart li {
+  list-style: none;
+  border-bottom: 4px solid #000;
+  position: relative;
+  bottom: 30px;
+}
+
+.bars li {
+  display: table-cell;
+  width: 130px;
+  height: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.bars li .bar {
+  display: block;
+  width: 65px;
+  margin-left: 30px;
+  background: none;
+  border: 4px solid #000;
+  border-bottom: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.bars span {
+  color: #000;
+  width: 100%;
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  text-align: center;
+}
+
+.bars li .bar:hover {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+.bars li .bar:hover:before {
+  color: #000;
+  content: attr(data-percentage) '%';
+  position: relative;
+  bottom: 2em;
+}
+
+
+/* Footer */
+
+.footer {
+  position: fixed;
+  z-index: 0;
+  height: 30em;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 1em;
+  padding-top: 0;
+  border: 0 solid #fff;
+  border-top: 0;
+  transition: border .4s ease, padding .4s ease;
+}
+
+.footer-spacer {
+  position: relative;
+  z-index: -11;
+  height: 30em;
+  pointer-events: none;
+}
+
+@media (min-width: 960px) {
+  .footer {
+    height: 40em;
+  }
+  .footer-spacer {
+    height: 40em;
+  }
+}
+
+.footer:hover {
+  padding: 0;
+  padding-top: 0;
+  border: 1em solid #000;
+  border-top: 0;
+  cursor: pointer;
+}
+
+.footer .footer-content {
+  position: fixed;
+  z-index: 1;
+  bottom: 13em;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  transition: bottom .4s ease;
+}
+
+@media (min-width: 1350px) {
+  .footer .footer-content {
+    bottom: 17.5em;
+  }
+}
+
+@media (min-width: 960px) {
+  .footer .footer-content {
+    bottom: 14.5em;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer .footer-content {
+    bottom: 13.5em;
+  }
+}
+
+.footer .footer-secondary {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  bottom: 1.5em;
+  width: 100%;
+}
+
+.footer .footer-secondary ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.75em;
+  text-align: center;
+  font-size: .9em;
+}
+
+@media (min-width: 960px) {
+  .footer .footer-secondary {
+    bottom: 2.5em;
+  }
+  .footer-info {
+    padding-left: 2em;
+    float: left;
+  }
+  .footer-social {
+    position: relative;
+    float: right;
+    right: 4em;
+    bottom: 7.5em;
+    height: 0;
+  }
+}
+
+.uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
+  content: "|";
+  display: inline-block;
+  margin: 0 1.2em;
+  color: #000;
+}
