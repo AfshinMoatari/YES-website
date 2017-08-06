@@ -106,7 +106,8 @@
         <div class="my-container large">
           <div class="uk-section uk-section-media uk-padding-remove-vertical">
             <div class="uk-cover-container hero-cover">
-              <img src="assets/img/hero.jpg" alt="" uk-cover>
+              <img class="blend" src="assets/img/hero.jpg" alt="" uk-cover>
+              <div class="uk-position-cover blend"></div>
               <h1 class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-heading-primary uk-text-center">Services you need,</br>causes you care</h1>
             </div>
           </div>
@@ -123,7 +124,7 @@
           </div>
         </div>
       </div>
-      <!-- HOW SECTION -->
+      <!-- SERVICE SECTION -->
       <div class="service" id="service">
         <div class="my-container large">
           <div class="uk-section uk-section-default uk-section-medium">
@@ -134,8 +135,8 @@
               </div>
             </div>
             <div class="uk-grid-collapse uk-text-center uk-margin-large-bottom" uk-grid>
-              <div class="uk-width-expand@m uk-section uk-section-media uk-background-cover how-cover">
-                <h3 class="uk-text-right uk-light uk-margin-small-right">We care</h3>
+              <div class="uk-width-3-5@m uk-section uk-section-media uk-background-cover how-cover blend">
+                <h3 class="uk-text-right uk-margin-small-right">We care</h3>
                 <div class="uk-child-width-1-3 uk-margin-medium-top" uk-grid>
                   <div class="uk-flex uk-flex-bottom uk-text-center uk-height-xsmall">
                     <div class="uk-width-medium-1-2">
@@ -176,15 +177,15 @@
                 </div>
               </div>
               <div class="uk-grid-item-match uk-width-2-5@m uk-section uk-section-default">
-                <div class="uk-text-left uk-inline">
+                <div class="uk-text-left">
                   <h3 class="uk-margin-small-left">How the job gets done!</h3>
-                  <div class="uk-margin-medium-top uk-margin-large-left uk-margin-small-right">
+                  <div class="uk-margin-medium-top uk-margin-large-left uk-margin-large-right">
                     <hr class="break-small">
                     <p>We employ well trained migrants to to ensure quality while providing sustainable integration opportunities through the employment.</p>
                     <p>Furthermore...</p>
                     <p>We only use environmentally-friendly materials to reduce the chemical footprint from your company.</p>
+                    <a class="uk-button uk-button-text my-button-text uk-float-right my-button vertical">LEAN MORE</a>
                   </div>
-                  <a class="uk-button uk-button-text my-button-text uk-position-bottom-right">LEAN MORE</a>
                 </div>
               </div>
             </div>
@@ -202,7 +203,7 @@
             </div>
             <div class="uk-grid-collapse" uk-grid>
               <div class="uk-width-1-2@m">
-                <div class="uk-section uk-section-media uk-background-cover steps-media" style="background-image: url(assets/img/step-1.jpg)">
+                <div class="uk-section uk-section-media uk-background-cover steps-media blend" style="background-image: url(assets/img/step-1.jpg)">
                 </div>
               </div>
               <div class="uk-width-1-2@m uk-flex uk-flex-center uk-flex-middle">
@@ -228,19 +229,19 @@
                 </div>
               </div>
               <div class="uk-width-1-2@m">
-                <div class="uk-section uk-section-media uk-background-cover steps-media" style="background-image: url(assets/img/step-2.jpg)">
+                <div class="uk-section uk-section-media uk-background-cover steps-media blend" style="background-image: url(assets/img/step-2.jpg)">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- CHART SECTION -->
-      <div class="chart" id="chart">
+      <!-- DATA SECTION -->
+      <div class="data" id="data">
         <div class="my-container">
           <div class="uk-section uk-section-default uk-section-medium">
-            <div class="uk-grid-collapse" uk-grid>
-              <div class="uk-width-2-3@m">
+            <div class="uk-grid-small" uk-grid>
+              <div class="uk-width-1-2@m">
                 <h2>IT WOULD BE SMART</br>TO PAY LESS AND GIVE MORE</br>TO SOCIETY, RIGHT?</h2>
                 <h3 class="uk-margin-remove-top">Consciously priced</h3>
                 <div class="uk-margin-large-left">
@@ -248,20 +249,30 @@
                   <p class="uk-width-4-5">Our service is consciously priced so that all parties involved benefit greatly by working together and surplus goes back to society.</p>
                 </div>
               </div>
-              <div class="uk-width-1-3@m">
-                <div class="chart">
-                  <ul class="bars uk-flex uk-flex-center">
-                    <li>
-                      <div class="bar" data-percentage="50"></div>
-                      <div class="bar uk-position-z-index" data-percentage="68" style="background-image: url(assets/img/icon/gift-box.png);background-repeat:no-repeat;background-position: 50% 0%;"></div>
-                      <span><strong>YES CPH</strong></span>
-                    </li>
-                    <li style="">
-                      <div class="bar uk-position-z-index" data-percentage="70" style="background: #fff;"></div>
-                      <div class="bar" data-percentage="100" style="background: #000;"></div>
-                      <span>The rest</span>
-                    </li>
-                  </ul>
+              <div class="uk-width-1-2@m">
+                <div class="uk-flex uk-flex-center">
+                  <div class="chart">
+                    <ul class="uk-padding-remove uk-inline bars">
+                      <p class="uk-position-bottom-left uk-margin-remove">Total cost for you</p>
+                      <li>
+                        <div class="bar" data-percentage="50"></div>
+                        <div class="bar uk-position-z-index" data-percentage="68" style="background-image: url(assets/img/icon/gift-box.png);background-repeat:no-repeat;background-position: 50% 0%;"></div>
+                        <span><strong>YES CPH</strong></span>
+                      </li>
+                      <li>
+                        <div class="bar uk-position-z-index" data-percentage="70" style="background: #fff;"></div>
+                        <div class="bar" data-percentage="100" style="background: #000;"></div>
+                        <span>The rest</span>
+                      </li>
+                    </ul>
+                    <div class="legend">
+                      <ul class="uk-list">
+                        <li><img src="assets/img/icon/legend-profit.png">Profit</li>
+                        <li><img src="assets/img/icon/legend-giving-back-to-society.png">Giving back to society</li>
+                        <li><img src="assets/img/icon/Legend-operation-cost.png">Operation cost</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -334,26 +345,25 @@
           </div>
         </div>
       </div>
-      <!-- ENTREPRENEUR SECTION -->
-      <div class="entrepreneur" id="entrepreneur">
+      <!-- sticker SECTION -->
+      <div class="sticker" id="sticker">
         <div class="my-container large">
-          <div class="uk-section uk-section-default uk-padding-remove-vertical">
-            <div class="uk-section uk-section-media uk-section-small uk-background-cover" style="background-image: url(assets/img/presentation-media.jpg)">
-              <div class="my-container">
-                <div class="uk-section uk-padding-remove-vertical">
-                  <div class="uk-grid-collapse" uk-grid>
-                    <div class="uk-width-1-2@m uk-width-1-2@m uk-flex uk-flex-middle">
-                      <div>
-                        <h2>We recognize your</br>contribution and we will</br>make sure others can too</h2>
-                        <div class="uk-margin-large-left">
-                          <hr class="break-small">
-                          <p class="uk-width-4-5">Our YES-sticker will make it easily identifiable to others that you are a socially responsible business</p>
-                        </div>
+          <div class="uk-section uk-section-media uk-section-small uk-background-cover blend" style="background-image: url(assets/img/presentation-media.jpg)">
+            <div class="my-container">
+              <div class="uk-section uk-padding-remove-vertical">
+                <div class="uk-grid-small" uk-grid>
+                  <div class="uk-width-1-2@m uk-flex uk-flex-middle">
+                    <div>
+                      <h2>We recognize your</br>contribution and we will</br>make sure others can too</h2>
+                      <div class="uk-margin-large-left uk-light">
+                        <hr class="break-small">
+                        <p class="uk-width-4-5">Our YES-sticker will make it easily identifiable to others that you are a socially responsible business</p>
+                        <a class="uk-button uk-button-text my-button-text uk-float-right my-button vertical">LEAN MORE</a>
                       </div>
                     </div>
-                    <div class="uk-width-1-2@m uk-flex uk-flex-middle">
-                      <img class="uk-background-cover uk-responsive-height uk-panel uk-flex uk-flex-center uk-flex-middle uk-align-center" src="assets/img/icon/sticker.png" alt="">
-                    </div>
+                  </div>
+                  <div class="uk-width-1-2@m uk-flex uk-flex-middle">
+                    <img class="uk-background-cover uk-responsive-height uk-panel uk-flex uk-flex-center uk-flex-middle uk-align-center" src="assets/img/icon/sticker.png" alt="">
                   </div>
                 </div>
               </div>
@@ -379,9 +389,12 @@
           </ul>
           <ul class="footer-social uk-list" style="height: 0;">
             <li><a href="#"><img src="assets/img/icon/facebook.png" alt=""></a></li>
-            <li><a href="#"></a><img src="assets/img/icon/instagram.png" alt=""></a></li>
-            <li><a href="#"></a><img src="assets/img/icon/linkedin.png" alt=""></a></li>
-            <li><a href="#"></a><img src="assets/img/icon/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/img/icon/instagram.png" alt=""></a>
+            </li>
+            <li><a href="#"><img src="assets/img/icon/linkedin.png" alt=""></a>
+            </li>
+            <li><a href="#"><img src="assets/img/icon/twitter.png" alt=""></a>
+            </li>
           </ul>
         </div>
       </div>
