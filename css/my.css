@@ -1,57 +1,38 @@
 /* Fonts */
 
 @font-face {
-  font-family: 'Gotham-Book';
-  src: url('../assets/fonts/Gotham-Book.otf');
+  font-family: 'Gotham';
+  src: url('../assets/fonts/Gotham Book.otf');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Gotham-Light';
-  src: url('../assets/fonts/Gotham-Light.otf');
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Gotham-Bold';
-  src: url('../assets/fonts/Gotham-Bold.otf');
+  font-family: 'Gotham';
+  src: url('../assets/fonts/GOTHAM-BOLD.TTF');
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Gotham-BoldIta';
-  src: url('../assets/fonts/Gotham-BoldIta.otf');
-  font-style: normal;
+  font-family: 'Gotham';
+  src: url('../assets/fonts/GothamBold Italic.otf');
+  font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Gotham-Medium';
+  font-family: 'Gotham';
   src: url('../assets/fonts/Gotham-Medium.otf');
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'GothamRnd-BoldIta';
-  src: url('../assets/fonts/GothamRnd-BoldIta.otf');
+  font-family: 'Gotham';
+  src: url('../assets/fonts/Gotham Medium Italic.ttf');
   font-style: italic;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'GothamRnd-Book';
-  src: url('../assets/fonts/GothamRnd-Book.otf');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GothamRnd-Book';
-  src: url('../assets/fonts/GothamRnd-Book.otf');
-  font-style: normal;
+  font-weight: 500;
 }
 
 
@@ -62,39 +43,80 @@
 }
 
 body {
-  margin: 0;
-  font-family: 'GothamRnd-Book';
-  color: #000;
   font-size: 1em;
+  margin: 0;
+  font-family: "Gotham", Georgia, serif;
+  color: #1D1D1B;
+}
+
+h1, h2, h3 {
+  font-family: 'Gotham';
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.563em;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.188em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.688em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.188em;
+  font-weight: normal;
+}
+
+a {
+  font-family: 'Gotham' !important;
+  font-size: 1.063em;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  color: #1D1D1B;
+}
+
+strong {
+  font-size: 1.188em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+span {
+  font-size: 0.969em;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
 }
 
 div {
   display: block;
 }
 
-h1 {
-  font-family: 'Gotham-Bold';
-  color: #fff;
-}
-
-h2 {
-  font-family: 'Gotham-Bold';
-  text-transform: uppercase;
-}
-
-h3 {
-  font-family: 'Gotham-BoldIta';
-  font-size: 1.3em;
-  text-transform: uppercase;
-}
-
-span {
-  font-family: 'Gotham-Medium';
-  color: #fff;
-}
-
 hr {
-  border-top: 3px solid #000;
+  border-top: 2px solid #1D1D1B;
+}
+
+blockquote p, blockquote footer {
+  font-size: 1.188rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #000100;
+}
+
+blockquote footer {
+  font-style: normal;
+  font-weight: normal;
 }
 
 blockquote p::before {
@@ -108,16 +130,17 @@ blockquote p::after {
 
 /* Container */
 
-.global {
+.global, .main {
   position: relative;
-  z-index: 11;
   background: #fff;
 }
 
+.global {
+  z-index: 11;
+}
+
 .main {
-  position: relative;
   z-index: 10;
-  background: #fff;
 }
 
 .container-all {
@@ -164,74 +187,9 @@ blockquote p::after {
 
 .break-small {
   float: left;
-  margin-top: 10px;
-  margin-left: -60px;
-  width: 55px;
-}
-
-.break-large {
-  float: left;
-  margin-top: 25px;
-  margin-left: -60px;
-  width: 55px;
-  border-color: #fff;
-}
-
-.my-slider div {
-  padding: 0 .8em;
-}
-
-.slick-prev, .slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 1.25em;
-  height: 1.25em;
-  padding: 0;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-@media (min-width: 640px) {
-  .slick-next {
-    right: 0;
-  }
-  .slick-prev {
-    left: 0;
-    z-index: 1;
-  }
-}
-
-@media (min-width: 960px) {
-  .slick-next {
-    right: -25px;
-  }
-  .slick-prev {
-    left: -30px;
-  }
-}
-
-.slick-next:before {
-  content: url(../assets/img/icon/next.png);
-}
-
-.slick-prev:before {
-  content: url(../assets/img/icon/previous.png);
-}
-
-.slick-prev:before, .slick-next:before {
-  font-size: 2rem;
-  color: #000;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin-top: 0.625em;
+  margin-left: -3.750em;
+  width: 3.438em;
 }
 
 .my-button {
@@ -249,7 +207,7 @@ blockquote p::after {
 }
 
 .blend {
-  background-color: red;
+  background-color: #bbbbbb;
   background-blend-mode: multiply;
   mix-blend-mode: multiply;
 }
@@ -257,43 +215,29 @@ blockquote p::after {
 
 /* Navbar */
 
-.my-logo {
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.my-logo span {
-  font-family: 'Gotham-Medium';
-}
-
-.my-logo span {
-  color: #000;
-}
-
 .my-navbar {
-  height: 175px;
+  height: 11.500em;
 }
 
-.my-navbar li a {
-  font-family: 'Gotham-Book';
-  color: #000;
+.my-navbar-nav>li>a {
+  font-size: 1.063em;
+  text-decoration: underline;
+  color: #000100;
 }
 
 
 /* Hero */
 
 .hero-cover {
-  height: 510px;
+  height: 34.688em;
 }
 
 .hero-text p {
-  padding: .4em 0;
-  font-family: 'GothamRnd-BoldIta';
   font-style: italic;
   font-weight: bold;
-  line-height: 1.3;
-  font-size: 2.8em;
-  color: #000;
+  line-height: 1.2;
+  font-size: 3em;
+  padding: .5em 0;
 }
 
 
@@ -301,6 +245,14 @@ blockquote p::after {
 
 .how-cover {
   background-image: url(../assets/img/how.jpg);
+}
+
+.service h3, .how-cover h3 {
+  padding: 0 .2em;
+}
+
+.how-cover h3 {
+  color: #fff;
 }
 
 .service .my-button {
@@ -360,17 +312,82 @@ blockquote p::after {
 }
 
 
-/* Footer */
+/* Slider */
 
-.sticker .my-button {
-  bottom: 9em;
+.my-slider div {
+  padding: 0 .8em;
+}
+
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 1.25em;
+  height: 1.25em;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+@media (min-width: 640px) {
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 960px) {
+  .slick-next {
+    right: -25px;
+  }
+  .slick-prev {
+    left: -30px;
+  }
+}
+
+.slick-next:before {
+  content: url(../assets/img/icon/next.png);
+}
+
+.slick-prev:before {
+  content: url(../assets/img/icon/previous.png);
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 2rem;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
-/* Footer */
+/* Sticker */
+
+.sticker p, .sticker h2, .sticker .my-button, .sticker hr {
+  color: #fff;
+  border-color: #fff;
+}
+
+.sticker .my-button {
+  bottom: 8em;
+}
+
+
+/* Steps */
 
 .steps-media {
-  height: 290px;
+  height: 22.313em;
 }
 
 .steps-info {
@@ -378,9 +395,16 @@ blockquote p::after {
 }
 
 
+/* Quotation */
+
+
 /* Footer */
 
 .footer {
+  font-size: 1.063em;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
   position: fixed;
   z-index: 0;
   height: 30em;
@@ -424,7 +448,6 @@ blockquote p::after {
   bottom: 13em;
   left: 50%;
   width: 100%;
-  text-align: center;
   transform: translateX(-50%);
   transition: bottom .4s ease;
 }
@@ -457,26 +480,26 @@ blockquote p::after {
 
 .footer .footer-secondary ul {
   margin: 0;
-  padding: 0;
-  line-height: 1.75em;
-  text-align: center;
-  font-size: .9em;
 }
 
 @media (min-width: 960px) {
   .footer .footer-secondary {
-    bottom: 2.5em;
+    bottom: 2em;
   }
   .footer-info {
-    padding-left: 2em;
+    padding-left: 1.5em;
     float: left;
   }
   .footer-social {
     position: relative;
     float: right;
-    right: 4em;
-    bottom: 7.5em;
+    padding-right: 1.5em;
+    right: 0;
+    bottom: 8.8em;
     height: 0;
+  }
+  .footer-social li {
+    padding-top: .5em;
   }
 }
 
@@ -487,6 +510,6 @@ blockquote p::after {
 .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
   content: "|";
   display: inline-block;
-  margin: 0 1.2em;
-  color: #000;
+  margin: 0 .8em;
+  color: #1D1D1B;
 }

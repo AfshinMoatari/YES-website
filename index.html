@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>welcome to yes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
@@ -38,30 +39,29 @@
     <!-- NAV SECTION-->
     <nav class="uk-navbar my-navbar global">
       <a class="uk-navbar-right uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
-      <div class="uk-navbar-center uk-text-uppercase">
+      <div class="uk-navbar-center">
         <div class="uk-navbar-left uk-visible@l">
-          <ul class="uk-navbar-nav">
-            <li class="uk-ac">
-              <a href="#service" uk-scroll>Service</a>
+          <ul class="uk-navbar-nav my-navbar-nav">
+            <li>
+              <a href="#">Service</a>
             </li>
             <li>
-              <a href="#section-2" uk-scroll>Impact</a>
+              <a href="#">Impact</a>
             </li>
           </ul>
         </div>
-        <div class="uk-navbar-item uk-margin-left uk-margin-right uk-flex uk-flex-column my-logo">
-          <a href="#" uk-scroll><img src="assets/img/logo.png" alt="YES logo"></a>
-          <div>
-            <span class="uk-margin-small-top">YES CPH CO.</span>
-          </div>
+        <div class="uk-navbar-item uk-margin-left uk-margin-right uk-flex uk-flex-center uk-flex-middle my-logo">
+          <a href="#" uk-scroll>
+            <img src="assets/img/logo.png" alt="YES logo">
+          </a>
         </div>
         <div class="uk-navbar-right uk-visible@l">
-          <ul class="uk-navbar-nav">
+          <ul class="uk-navbar-nav my-navbar-nav">
             <li>
-              <a href="#section-3" uk-scroll>FAQ</a>
+              <a href="#">FAQ</a>
             </li>
             <li>
-              <a href="#about" uk-scroll>About</a>
+              <a href="#">About</a>
             </li>
           </ul>
         </div>
@@ -70,7 +70,7 @@
     <!-- MAIN CONTENT-->
     <div class="main">
       <!-- Offcanvas NAV -->
-      <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar uk-flex uk-flex-column">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
           <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
@@ -102,19 +102,19 @@
         </div>
       </div>
       <!-- ABOUT SECTION -->
-      <div class="hero" id="hero">
+      <div class="hero">
         <div class="my-container large">
           <div class="uk-section uk-section-media uk-padding-remove-vertical">
             <div class="uk-cover-container hero-cover">
               <img class="blend" src="assets/img/hero.jpg" alt="" uk-cover>
               <div class="uk-position-cover blend"></div>
-              <h1 class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-heading-primary uk-text-center">Services you need,</br>causes you care</h1>
+              <h1 class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-center">Services you need,</br>causes you care</h1>
             </div>
           </div>
         </div>
       </div>
       <!-- HERO TEXT SECTION -->
-      <div class="hero-text" id="hero-text">
+      <div class="hero-text">
         <div class="my-container large">
           <div class="my-container heading">
             <div class="uk-section uk-section-default uk-section-medium">
@@ -136,49 +136,49 @@
             </div>
             <div class="uk-grid-collapse uk-text-center uk-margin-large-bottom" uk-grid>
               <div class="uk-width-3-5@m uk-section uk-section-media uk-background-cover how-cover blend">
-                <h3 class="uk-text-right uk-margin-small-right">We care</h3>
+                <h3 class="uk-text-right">We care</h3>
                 <div class="uk-child-width-1-3 uk-margin-medium-top" uk-grid>
                   <div class="uk-flex uk-flex-bottom uk-text-center uk-height-xsmall">
                     <div class="uk-width-medium-1-2">
                       <img src="assets/img/icon/office-assistance.png" alt="">
-                      <span class="uk-margin-small-top uk-display-block uk-text-small">Office assistant</span>
+                      <span class="uk-margin-small-top uk-display-block">Office assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-bottom uk-text-center uk-height-xsmall">
                     <div class="uk-width-medium-1-2">
                       <img src="assets/img/icon/event-assistance.png" alt="">
-                      <span class="uk-margin-small-top uk-display-block uk-text-small">Event assistant</span>
+                      <span class="uk-margin-small-top uk-display-block">Event assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-bottom uk-text-center uk-height-xsmall">
                     <div class="uk-width-medium-1-2">
                       <img src="assets/img/icon/warehouse-assistance.png">
-                      <span class="uk-margin-small-top uk-display-block uk-text-small">Warehouse assistant</span>
+                      <span class="uk-margin-small-top uk-display-block">Warehouse assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-bottom uk-text-center uk-height-xsmall">
                     <div class="uk-width-medium-1-2">
                       <img src="assets/img/icon/kitchen-assistance.png" alt="">
-                      <span class="uk-margin-small-top uk-display-block uk-text-small">Kitchen assistant</span>
+                      <span class="uk-margin-small-top uk-display-block">Kitchen assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-bottom uk-text-center uk-height-xsmall">
                     <div class="uk-width-medium-1-2">
                       <img src="assets/img/icon/dishwashing-assistance.png">
-                      <span class="uk-margin-small-top uk-display-block uk-text-small">Dishwashing assistant</span>
+                      <span class="uk-margin-small-top uk-display-block">Dishwashing assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-bottom uk-text-center uk-height-xsmall">
                     <div class="uk-width-medium-1-2">
                       <img src="assets/img/icon/cleaning-assistance.png" alt="">
-                      <span class="uk-margin-small-top uk-display-block uk-text-small">Cleaning assistant</span>
+                      <span class="uk-margin-small-top uk-display-block">Cleaning assistant</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="uk-grid-item-match uk-width-2-5@m uk-section uk-section-default">
                 <div class="uk-text-left">
-                  <h3 class="uk-margin-small-left">How the job gets done!</h3>
+                  <h3>How the job gets done!</h3>
                   <div class="uk-margin-medium-top uk-margin-large-left uk-margin-large-right">
                     <hr class="break-small">
                     <p>We employ well trained migrants to to ensure quality while providing sustainable integration opportunities through the employment.</p>
@@ -240,7 +240,7 @@
       <div class="data" id="data">
         <div class="my-container">
           <div class="uk-section uk-section-default uk-section-medium">
-            <div class="uk-grid-small" uk-grid>
+            <div class="uk-grid-collapse" uk-grid>
               <div class="uk-width-1-2@m">
                 <h2>IT WOULD BE SMART</br>TO PAY LESS AND GIVE MORE</br>TO SOCIETY, RIGHT?</h2>
                 <h3 class="uk-margin-remove-top">Consciously priced</h3>
@@ -288,39 +288,39 @@
               <div class="my-slider">
                 <div>
                   <blockquote>
-                    <p class="uk-align-center">The blockquote element represents content that is quoted from another source.</p>
-                    <footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
+                    <p>The blockquote element represents content that is quoted from another source.</p>
+                    <footer>Someone famous</footer>
                   </blockquote>
                 </div>
                 <div>
                   <blockquote>
-                    <p class="uk-align-center">The blockquote element represents content that is quoted from another source.</p>
-                    <footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
+                    <p>The blockquote element represents content that is quoted from another source.</p>
+                    <footer>Someone famous</footer>
                   </blockquote>
                 </div>
                 <div>
                   <blockquote>
-                    <p class="uk-align-center">The blockquote element represents content that is quoted from another source,</p>
-                    <footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
+                    <p>The blockquote element represents content that is quoted from another source.</p>
+                    <footer>Someone famous</footer>
                   </blockquote>
                 </div>
                 <div>
                   <blockquote>
-                    <p class="uk-align-center">The blockquote element represents content that is quoted from another source,</p>
-                    <footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
+                    <p>The blockquote element represents content that is quoted from another source.</p>
+                    <footer>Someone famous</footer>
                   </blockquote>
                 </div>
                 <div>
                   <blockquote>
-                    <p class="uk-align-center">The blockquote element represents content that is quoted from another source,</p>
-                    <footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
+                    <p>The blockquote element represents content that is quoted from another source.</p>
+                    <footer>Someone famous</footer>
                   </blockquote>
                 </div>
               </div>
             </div>
             <hr class="uk-panel-divider">
-            <div class="uk-section uk-section-default uk-section-xsmall uk-align-center">
-              <ul class="uk-grid-medium uk-child-width-1-4@m uk-link-text uk-link-reset uk-text-center" uk-grid>
+            <div class="uk-section uk-section-default uk-section-xsmall">
+              <ul class="uk-grid-large uk-child-width-1-4@m uk-link-text uk-link-reset uk-text-center" uk-grid>
                 <li><a href="#">Aalborg University Denmark</a></li>
                 <li><a href="#">Connect Denmark</a></li>
                 <li><a href="#">Copenhagen School of Entrepreneurship</a></li>
@@ -345,7 +345,7 @@
           </div>
         </div>
       </div>
-      <!-- sticker SECTION -->
+      <!-- STICKER SECTION -->
       <div class="sticker" id="sticker">
         <div class="my-container large">
           <div class="uk-section uk-section-media uk-section-small uk-background-cover blend" style="background-image: url(assets/img/presentation-media.jpg)">
@@ -355,7 +355,7 @@
                   <div class="uk-width-1-2@m uk-flex uk-flex-middle">
                     <div>
                       <h2>We recognize your</br>contribution and we will</br>make sure others can too</h2>
-                      <div class="uk-margin-large-left uk-light">
+                      <div class="uk-margin-large-left">
                         <hr class="break-small">
                         <p class="uk-width-4-5">Our YES-sticker will make it easily identifiable to others that you are a socially responsible business</p>
                         <a class="uk-button uk-button-text my-button-text uk-float-right my-button vertical">LEAN MORE</a>
@@ -387,13 +387,26 @@
             <li>CVR: 37901121</li>
             <li>©2016 YES</li>
           </ul>
-          <ul class="footer-social uk-list" style="height: 0;">
-            <li><a href="#"><img src="assets/img/icon/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/icon/instagram.png" alt=""></a>
+          <ul class="footer-social uk-list">
+            <li class="first">
+              <a href="#">
+                <img src="assets/img/icon/facebook.png" alt="">
+              </a>
             </li>
-            <li><a href="#"><img src="assets/img/icon/linkedin.png" alt=""></a>
+            <li>
+              <a href="#">
+                <img src="assets/img/icon/instagram.png" alt="">
+              </a>
             </li>
-            <li><a href="#"><img src="assets/img/icon/twitter.png" alt=""></a>
+            <li>
+              <a href="#">
+                <img src="assets/img/icon/linkedin.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/img/icon/twitter.png" alt="">
+              </a>
             </li>
           </ul>
         </div>
