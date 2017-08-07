@@ -9,6 +9,13 @@
 
 @font-face {
   font-family: 'Gotham';
+  src: url('../assets/fonts/Gotham Rounded Light Italic.otf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gotham';
   src: url('../assets/fonts/GOTHAM-BOLD.TTF');
   font-style: normal;
   font-weight: bold;
@@ -86,17 +93,23 @@ a {
   color: #1D1D1B;
 }
 
-em {
+b {
   font-size: 1.250rem;
   font-style: italic;
   font-weight: bold;
   color: inherit;
 }
 
-strong {
-  font-size: 1.250rem;
+em {
+  font-size: 1.188em;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
+  color: inherit;
+}
+
+strong {
+  font-style: normal;
+  font-weight: 500;
 }
 
 span {
@@ -195,6 +208,13 @@ blockquote p::after {
 .break-small {
   float: left;
   margin-top: 0.625em;
+  margin-left: -3.750em;
+  width: 3.438em;
+}
+
+.break-large {
+  float: left;
+  margin-top: 2em;
   margin-left: -3.750em;
   width: 3.438em;
 }
@@ -386,11 +406,21 @@ blockquote p::after {
 }
 
 
-/* Sticker */
+/* Sticker, Entrepreneurs*/
 
-.sticker p, .sticker h2, .sticker .my-button, .sticker hr {
+.sticker p, .sticker h2, .sticker .my-button, .sticker hr, .entrepreneurs hr, .entrepreneurs h2, .entrepreneurs p, .entrepreneurs a.my-button {
   color: #fff;
   border-color: #fff;
+}
+
+.entrepreneurs p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.625em;
+}
+
+.entrepreneurs a.my-button {
+  top: 5em;
 }
 
 .sticker .my-button {
@@ -407,9 +437,6 @@ blockquote p::after {
 .steps-info {
   padding: 0 2em;
 }
-
-
-/* Quotation */
 
 
 /* Footer */
@@ -526,4 +553,24 @@ blockquote p::after {
   display: inline-block;
   margin: 0 .8em;
   color: #1D1D1B;
+}
+
+
+/* Story */
+
+.story p {
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* Members */
+
+.members h3 {
+  font-size: 1.563em;
+}
+
+.member-portrait img:last-child {
+  top: -2.2em;
+  left: 16em;
 }
