@@ -1,4 +1,4 @@
 ## Synopsis
 
 
-[Website homepage](https://afshinmoatari.github.io/YES-website/)
+[Theme Demo](https://afshinmoatari.github.io/YES-website/)
