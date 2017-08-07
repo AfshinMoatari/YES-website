@@ -82,13 +82,14 @@ h3 {
 p {
   font-size: 1.188em;
   font-weight: normal;
+  line-height: 1.2;
 }
 
 a {
   font-family: 'Gotham' !important;
   font-size: 1.063em;
-  font-style: normal !important;
-  font-weight: 500 !important;
+  font-style: normal;
+  font-weight: 500;
   color: #1D1D1B;
 }
 
@@ -214,20 +215,6 @@ blockquote p::after {
   border-color: #1d1d1b;
 }
 
-.line-through {
-  position: relative;
-  display: inline-block;
-}
-
-.line-through::before {
-  content: '';
-  border-bottom: .07em solid;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 40%;
-}
-
 .break-small {
   float: left;
   margin-top: 0.625em;
@@ -270,6 +257,8 @@ blockquote p::after {
 }
 
 .my-navbar-nav>li>a {
+  font-style: normal;
+  font-weight: 500;
   font-size: 1.063em;
   text-decoration: underline;
   color: #000100;
@@ -291,21 +280,21 @@ blockquote p::after {
 }
 
 
-/* Service */
+/* Operations */
 
-.how-cover {
+.operations-cover {
   background-image: url(../assets/img/how.jpg);
 }
 
-.service h3, .how-cover h3 {
+.operations h3, .operations-cover h3 {
   padding: 0 .2em;
 }
 
-.how-cover h3 {
+.operations-cover h3 {
   color: #fff;
 }
 
-.service .my-button {
+.operations .my-button {
   bottom: 9em;
   right: -2em;
 }
@@ -599,6 +588,44 @@ blockquote p::after {
 }
 
 
+/* Service */
+
+.service-nav {
+  padding: 0;
+}
+
+.service-nav li {
+  list-style: none;
+}
+
+.service-nav li a {
+  font-size: 3.563em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  display: inline-block;
+}
+
+.service-nav li a::before {
+  content: '';
+  border-bottom: .3rem solid;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transition: bottom 0.4s ease-in-out;
+  -webkit-transition: bottom 0.4s ease-in-out;
+}
+
+.service-nav li.uk-active a::before, .service-nav li .uk-active a:hover, .service-nav li a:hover, .service-nav li a:hover::before {
+  color: inherit;
+  opacity: 0.8;
+  bottom: 0;
+  border-bottom: 0;
+}
+
+
 /* Fee */
 
 .fee ol {
@@ -669,4 +696,7 @@ blockquote p::after {
 
 .wage table td {
   border: 0.125em solid #1D1D1B;
+}
+
+
 }
