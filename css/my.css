@@ -150,6 +150,14 @@ blockquote p::after {
 
 /* Container */
 
+.important {
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 3em;
+  padding: .5em 0;
+}
+
 .global, .main {
   position: relative;
   background: #fff;
@@ -269,14 +277,6 @@ blockquote p::after {
 
 .hero-cover {
   height: 34.688em;
-}
-
-.hero-text p {
-  font-style: italic;
-  font-weight: bold;
-  line-height: 1.2;
-  font-size: 3em;
-  padding: .5em 0;
 }
 
 
@@ -698,5 +698,81 @@ blockquote p::after {
   border: 0.125em solid #1D1D1B;
 }
 
+
+/* Pie Charts */
+
+.pie-vertical p {
+  width: 30%;
+  position: relative;
+  float: left;
+  top: -10px;
+  left: 285px;
+}
+
+.pie-vertical h3 {
+  position: relative;
+  float: left;
+  top: 0;
+  left: 270px;
+}
+
+.contain-pie {
+  height: 290px;
+  position: relative;
+  margin: 20px
+}
+
+.contain-pie:before {
+  content: "";
+  display: block;
+  background-image: url(../assets/img/patterns/line-vertical.png);
+  background-color: #fff;
+  border: 1px solid #fff;
+  position: absolute;
+  border-radius: 50%;
+  width: 290px;
+  height: 290px;
+  top: 0;
+  left: 0;
+}
+
+.contain-piece:before {
+  content: " ";
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  border-radius: 145px;
+  clip: rect(0px, 145px, 290px, 0px);
+  background-color: #fff;
+  transform: rotate(0deg);
+}
+
+.contain-piece {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  clip: rect(0px, 290px, 290px, 145px);
+}
+
+.piece.contain-piece {
+  transform: rotate(315deg);
+}
+
+.piece:before {
+  transform: rotate(0deg);
+  animation: 2s spin2 linear 1s forwards;
+}
+
+@keyframes spin2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+
+}
 
 }
