@@ -701,31 +701,31 @@ blockquote p::after {
 
 /* Pie Charts */
 
-.pie-vertical p {
-  width: 30%;
+.pies p, .pies h3 {
   position: relative;
   float: left;
+}
+
+.pies p {
+  width: 38%;
   top: -10px;
   left: 285px;
 }
 
-.pie-vertical h3 {
-  position: relative;
-  float: left;
+.pies h3 {
   top: 0;
   left: 270px;
 }
 
-.contain-pie {
+.pies .contain-pie {
   height: 290px;
   position: relative;
   margin: 20px
 }
 
-.contain-pie:before {
+.pies .contain-pie:before {
   content: "";
   display: block;
-  background-image: url(../assets/img/patterns/line-vertical.png);
   background-color: #fff;
   border: 1px solid #fff;
   position: absolute;
@@ -736,7 +736,15 @@ blockquote p::after {
   left: 0;
 }
 
-.contain-piece:before {
+.pies .pie-vertical .contain-pie:before {
+  background-image: url(../assets/img/patterns/line-vertical.png);
+}
+
+.pies .pie-horizontal .contain-pie:before {
+  background-image: url(../assets/img/patterns/line-horizontal.png);
+}
+
+.pies .contain-piece:before {
   content: " ";
   position: absolute;
   width: 290px;
@@ -747,23 +755,23 @@ blockquote p::after {
   transform: rotate(0deg);
 }
 
-.contain-piece {
+.pies .contain-piece {
   position: absolute;
   width: 290px;
   height: 290px;
   clip: rect(0px, 290px, 290px, 145px);
 }
 
-.piece.contain-piece {
+.pies .pie-vertical .piece.contain-piece {
   transform: rotate(315deg);
 }
 
-.piece:before {
+.pies .pie-vertical .piece:before {
   transform: rotate(0deg);
-  animation: 2s spin2 linear 1s forwards;
+  animation: 2s pie-vertical linear 1s forwards;
 }
 
-@keyframes spin2 {
+@keyframes pie-vertical {
   from {
     transform: rotate(0deg);
   }
@@ -772,7 +780,34 @@ blockquote p::after {
   }
 }
 
-
+.pies .pie-horizontal .piece.contain-piece {
+  transform: rotate(180deg);
 }
 
+.pies .pie-horizontal .piece:before {
+  transform: rotate(0deg);
+  animation: 2s pie-horizontal-1 linear 1s forwards;
+}
+
+.pies .pie-horizontal .piece2:before {
+  transform: rotate(0deg);
+  animation: 3s pie-horizontal-2 linear 1s forwards;
+}
+
+@keyframes pie-horizontal-1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes pie-horizontal-2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
 }
