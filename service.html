@@ -37,70 +37,60 @@
   <!-- MAIN CONTAINER -->
   <div class="container-all">
     <!-- NAV SECTION-->
-    <nav class="uk-navbar my-navbar global">
-      <a class="uk-navbar-right uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
-      <div class="uk-navbar-center">
-        <div class="uk-navbar-left uk-visible@l">
-          <ul class="uk-navbar-nav my-navbar-nav">
-            <li>
-              <a href="service.html">Service</a>
-            </li>
-            <li>
-              <a href="impact.html">Impact</a>
-            </li>
+    <div class="global">
+      <nav class="uk-navbar my-navbar">
+        <div class="uk-navbar-center">
+          <div class="uk-navbar-left uk-hidden">
+            <ul class="uk-navbar-nav my-navbar-nav">
+              <li>
+                <a href="service.html">Service</a>
+              </li>
+              <li>
+                <a href="impact.html">Impact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-navbar-item uk-margin-left uk-margin-right uk-flex uk-flex-center uk-flex-middle logo">
+            <a href="index.html">
+              <img class="large uk-hidden" src="assets/img/logo-dark.png" alt="YES logo">
+              <img class="small uk-hidden@s" src="assets/img/logo-dark-small.png" alt="YES logo">
+            </a>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav my-navbar-nav uk-hidden">
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+            </ul>
+            <div class="open-menu uk-hidden@s uk-margin-right">
+                <img src="assets/img/icon/open.svg" alt=""/>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- OVERLAY NAV-->
+      <div class="uk-hidden@s overlay">
+        <div class="logo"><a href="index.html">
+          <img src="assets/img/logo-light.png" alt="YES logo"></a>
+        </div>
+        <div class="close-menu">
+          <img src="assets/img/icon/close.svg" alt="" />
+        </div>
+        <nav class="overlay-menu">
+          <ul>
+            <li class="active"><a href="service.html">Service</a></li>
+            <li><a href="impact.html">Impact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
           </ul>
-        </div>
-        <div class="uk-navbar-item uk-margin-left uk-margin-right uk-flex uk-flex-center uk-flex-middle my-logo">
-          <a href="index.html">
-            <img src="assets/img/logo.png" alt="YES logo">
-          </a>
-        </div>
-        <div class="uk-navbar-right uk-visible@l">
-          <ul class="uk-navbar-nav my-navbar-nav">
-            <li>
-              <a href="faq.html">FAQ</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-          </ul>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </div>
     <!-- MAIN CONTENT-->
     <div class="main">
-      <!-- Offcanvas NAV -->
-      <div uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-          <button class="uk-offcanvas-close" type="button" uk-close></button>
-          <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li>
-              <a href="#section-1" uk-scroll>SECTION #1</a>
-            </li>
-            <li>
-              <a href="#section-2" uk-scroll>SECTION #2</a>
-            </li>
-            <li>
-              <a href="#section-3" uk-scroll>SECTION #3</a>
-            </li>
-            <li>
-              <a href="#section-4" uk-scroll>SECTION #4</a>
-            </li>
-            <li>
-              <a href="#section-5" uk-scroll>SECTION #5</a>
-            </li>
-            <li>
-              <a href="#section-6" uk-scroll>SECTION #6</a>
-            </li>
-            <li>
-              <a href="#section-7" uk-scroll>SECTION #7</a>
-            </li>
-            <li>
-              <a href="#section-8" uk-scroll>SECTION #8</a>
-            </li>
-          </ul>
-        </div>
-      </div>
       <!-- COST SECTION -->
       <div class="my-container">
         <ul class="service-nav" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
@@ -121,7 +111,7 @@
               <div class="uk-section uk-section-small need-to-know">
                 <h2>NEED TO KNOW</h2>
                 <p>We conducted a survey amongst 18-45 year olds living in Copenhagen. Of all the respondents:</p>
-                <div class="uk-grid-small pies" uk-grid>
+                <div class="uk-grid-small uk-margin-medium-bottom pies" uk-grid>
                   <div class="uk-width-1-2">
                     <div class="pie-vertical">
                       <h3>78%</h3>

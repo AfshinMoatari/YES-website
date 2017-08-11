@@ -1,6 +1,7 @@
 'use strict';
 
 $(function() {
+
   $('.my-slider').slick({
     infinite: true,
     arrows: true,
@@ -26,10 +27,19 @@ $(function() {
       }
     ]
   });
+
   $(".bars li .bar").each(function(key, bar) {
     let percentage = $(this).data('percentage');
     $(this).animate({
       'height': percentage + '%'
     }, 1000);
+  });
+
+  $('.open-menu').on('click', function() {
+    $('.overlay').addClass('open');
+  });
+
+  $('.close-menu').on('click', function() {
+    $('.overlay').removeClass('open');
   });
 });

@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('../assets/fonts/GOTHAM-BOLD.TTF');
+  src: url('../assets/fonts/Gotham bold.otf');
   font-style: normal;
   font-weight: bold;
 }
@@ -62,9 +62,10 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.563em;
   font-style: normal;
   font-weight: bold;
+  font-size: 3.563em;
+  line-height: 1.2;
 }
 
 h2 {
@@ -94,7 +95,7 @@ a {
 }
 
 b {
-  font-size: 1.250rem;
+  font-size: 1.250em;
   font-style: italic;
   font-weight: bold;
   color: inherit;
@@ -147,14 +148,17 @@ blockquote p::after {
   content: close-quote;
 }
 
+body .heading {
+  font-size: .9em;
+}
 
 /* Container */
 
-.important {
+body .important {
   font-style: italic;
   font-weight: bold;
   line-height: 1.2;
-  font-size: 3em;
+  font-size: 2.9em;
   padding: .5em 0;
 }
 
@@ -242,17 +246,20 @@ blockquote p::after {
 }
 
 .my-button.vertical {
-  position: relative;
-  transform-origin: right;
-  transform: rotate(-90deg);
-  -ms-transform-origin: right;
-  -webkit-transform-origin: right;
-  -ms-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
+  float: left;
+  bottom: 0;
+  right: 0;
+  padding: 10px 0;
+  transform-origin: unset;
+  transform: unset;
+  -ms-transform-origin: unser;
+  -webkit-transform-origin: unset;
+  -ms-transform: unset;
+  -webkit-transform: unset;
 }
 
 .blend {
-  background-color: #bbbbbb;
+  background-color: #778899;
   background-blend-mode: multiply;
   mix-blend-mode: multiply;
 }
@@ -261,7 +268,11 @@ blockquote p::after {
 /* Navbar */
 
 .my-navbar {
-  height: 11.500em;
+  height: 80px;
+}
+
+.my-navbar.uk-active {
+  position: relative !important;
 }
 
 .my-navbar-nav>li>a {
@@ -272,13 +283,151 @@ blockquote p::after {
   color: #000100;
 }
 
+.my-navbar .uk-navbar-center:only-child {
+  margin-left: 0;
+  position: initial;
+}
+
+.my-navbar .uk-navbar-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+
+/* Overlay */
+
+  .overlay {
+    position: fixed;
+    background: #1d1d1b;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+  }
+ 
+  .overlay.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+
+  .overlay .logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 2%;
+    margin-left: 7%;
+  }
+  .overlay .close-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 5%;
+    margin-right: 6%;
+  }
+  .overlay nav {
+    position: relative;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+  }
+  .overlay ul li {
+    display: block;
+    position: relative;
+    opacity: 0;
+    margin-bottom: 50px;
+  }
+  .overlay ul li a {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .overlay ul li a:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: .5s;
+  }  
+  
+  .overlay ul li a:hover:after,
+  .overlay ul li a:focus:after,
+  .overlay ul li.active a:after {
+    width: 100%;
+    background: #fff;
+  }
+  .overlay.open li {
+    animation: fadeInLeft .5s ease forwards;
+    animation-delay: .35s;
+  }
+  .overlay.open li:nth-of-type(2) {
+    animation-delay: .4s;
+  }
+  .overlay.open li:nth-of-type(3) {
+    animation-delay: .45s;
+  }
+  .overlay.open li:nth-of-type(4) {
+    animation-delay: .50s;
+  }
+ 
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      right: 20%;
+    }
+    100% {
+      opacity: 1;
+      right: 0;
+    }
+  }
+.open-menu,
+.close-menu {
+  cursor: pointer;
+}
 
 /* Hero */
 
-.hero-cover {
-  height: 34.688em;
+body .hero {
+  font-size: .8em;
+}
+.hero .cover {
+  height: calc(100vh - 80px);
 }
 
+.hero .cover h1 {
+  line-height: 1.6;
+  color: #fff;
+}
+
+.hero .text {
+  height: calc(100vh);
+}
 
 /* Operations */
 
@@ -294,18 +443,13 @@ blockquote p::after {
   color: #fff;
 }
 
-.operations .my-button {
-  bottom: 9em;
-  right: -2em;
-}
-
-
 /* Chart */
 
 .chart p {
   font-weight: normal;
   font-size: 1.063em;
-  left: -1em;
+  left: -15px;
+  bottom: 0;
   transform-origin: left;
   transform: rotate(-90deg);
   -ms-transform-origin: left;
@@ -317,7 +461,6 @@ blockquote p::after {
 .chart .legend {
   font-weight: normal;
   font-size: 1.063em;
-  display: inline-block;
   vertical-align: middle;
 }
 
@@ -443,11 +586,11 @@ blockquote p::after {
 /* Steps */
 
 .steps-media {
-  height: 22.313em;
+  height: 355px;
 }
 
 .steps-info {
-  padding: 0 2em;
+  padding: 20px;
 }
 
 
@@ -564,7 +707,7 @@ blockquote p::after {
   content: "|";
   display: inline-block;
   margin: 0 .8em;
-  color: #1D1D1B;
+  color: #1d1d1b;
 }
 
 
@@ -607,7 +750,7 @@ blockquote p::after {
   display: inline-block;
 }
 
-.service-nav li a::before {
+.service-nav li a:after {
   content: '';
   border-bottom: .3rem solid;
   width: 100%;
@@ -618,7 +761,9 @@ blockquote p::after {
   -webkit-transition: bottom 0.4s ease-in-out;
 }
 
-.service-nav li.uk-active a::before, .service-nav li .uk-active a:hover, .service-nav li a:hover, .service-nav li a:hover::before {
+.service-nav li.uk-active a:after, 
+.service-nav li a:hover, 
+.service-nav li a:hover:after {
   color: inherit;
   opacity: 0.8;
   bottom: 0;

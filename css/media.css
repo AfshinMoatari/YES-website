@@ -1,5 +1,97 @@
-@media screen and (max-width: 960px) {
-  .hero-text p {
-    font-size: 32px;
+@media (max-width: 360px) {
+  body .important {
+    font-size: 2.6em;
   }
+}
+
+@media (min-width: 640px) {
+
+  .my-button.vertical {
+    position: relative;
+    transform-origin: right;
+    transform: rotate(-90deg);
+    -ms-transform-origin: right;
+    -webkit-transform-origin: right;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    padding: 0;
+    float: right;
+  }
+
+  .uk-hidden {
+    display: inherit !important;
+  }
+
+  body .heading {
+    font-size: 1em;
+  }
+
+  body .important {
+    font-size: 3em;
+  }
+
+  .blend {
+    background-color: #FFEBCD;
+  }
+
+  /* Nav */
+
+  .my-navbar .uk-navbar-center:only-child {
+    position: relative;
+    margin-left: auto;
+  }
+
+  .my-navbar .uk-navbar-right {
+    position: unset;
+    top: 0;
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .my-navbar {
+    height: 184px;
+  }
+
+  .my-navbar.uk-active {
+    position: fixed !important;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 3px solid #1d1d1b;
+  }
+
+  .my-navbar.uk-active .logo .large{
+    display: none !important;
+
+  }
+
+  .my-navbar.uk-active .logo .small{
+    display: block !important;
+  }
+
+  /* Hero */
+
+  body .hero {
+    font-size: 1em;
+  }
+
+  .hero .cover {
+    height: 555px;
+  } 
+
+  .hero .cover h1{
+    line-height: 1.2;
+  }
+  .hero .text{
+    height: auto;
+  }
+/* Operations */
+
+  .operations .my-button {
+    bottom: 9em;
+    right: -2em;
+  }
+
 }
