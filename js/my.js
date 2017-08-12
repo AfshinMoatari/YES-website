@@ -28,7 +28,7 @@ $(function() {
     ]
   });
 
-  $(".bars li .bar").each(function(key, bar) {
+  $(".blocks li .block").each(function(key, block) {
     let percentage = $(this).data('percentage');
     $(this).animate({
       'height': percentage + '%'
