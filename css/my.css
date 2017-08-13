@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('../assets/fonts/Gotham bold.otf');
+  src: url('../assets/fonts/GothamBold.otf');
   font-style: normal;
   font-weight: bold;
 }
@@ -202,7 +202,7 @@ body .hero {
 }
 
 .my-container.left {
-  padding-left: 190px;
+  padding-left: 0;
 }
 
 
@@ -778,6 +778,8 @@ a:hover, a:focus {
 
 .footer ul.social li a:hover::after, .footer ul.social li a:hover::before {
   -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
@@ -818,15 +820,15 @@ a:hover, a:focus {
 
 /* Service */
 
-.service-nav {
+.nav-secondary {
   padding: 0;
 }
 
-.service-nav li {
+.nav-secondary li {
   list-style: none;
 }
 
-.service-nav li a {
+.nav-secondary li a {
   font-size: 3.563em;
   font-style: normal;
   font-weight: bold;
@@ -835,11 +837,11 @@ a:hover, a:focus {
   display: inline-block;
 }
 
-.service-nav li a:hover, .service-nav li a:focus {
+.nav-secondary li a:hover, .nav-secondary li a:focus, .nav-secondary li a:active {
   text-decoration: underline;
 }
 
-.service-nav li a::after {
+.nav-secondary li a::after {
   content: '';
   border-bottom: 5px solid;
   width: 100%;
@@ -850,7 +852,7 @@ a:hover, a:focus {
   -webkit-transition: bottom 0.4s ease-in-out;
 }
 
-.service-nav li.uk-active a::after, .service-nav li a:hover, .service-nav li a:hover::after {
+.nav-secondary li.uk-active a::after, .nav-secondary li a:hover, .nav-secondary li a:hover::after {
   color: inherit;
   opacity: 0.8;
   bottom: 0;
@@ -862,7 +864,6 @@ a:hover, a:focus {
 
 .fee ol {
   counter-reset: item;
-  padding: 0;
   margin-top: 5px;
 }
 
@@ -930,29 +931,37 @@ a:hover, a:focus {
   border: 2px solid #1D1D1B;
 }
 
+.wage .bubble {
+  position: relative;
+  top: 5%;
+  left: 0;
+}
+
+.wage .info {
+  width: 80%;
+}
+
 
 /* Pie Charts */
 
-.pies p, .pies h3 {
+.pies h3 {
   position: relative;
-  float: left;
+  float: right;
+  margin: 0;
+  right: 5%;
 }
 
 .pies p {
-  width: 38%;
-  top: -10px;
-  left: 285px;
-}
-
-.pies h3 {
-  top: 0;
-  left: 270px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .pies .contain-pie {
-  height: 290px;
   position: relative;
-  margin: 20px
+  transform: scale(1);
+  height: 290px;
+  width: 290px;
+  margin: 20px;
 }
 
 .pies .contain-pie::before {

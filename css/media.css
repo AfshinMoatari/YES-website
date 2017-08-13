@@ -90,6 +90,13 @@
   .members .team .member {
     padding: 45px 0;
   }
+  .pies .contain-pie {
+    transform: scale(.8);
+    margin: 20px;
+  }
+  .fee ol {
+    padding: 0;
+  }
 }
 
 @media (min-width: 960px) {
@@ -152,15 +159,28 @@
   .members .team .member {
     padding: 35px 0;
   }
+  .pies .contain-pie {
+    transform: scale(.85);
+  }
+  .pies p {
+    font-weight: normal;
+    text-align: left;
+  }
 }
 
 @media (min-width: 1200px) {
+  .my-container.left {
+    padding-left: 190px;
+  }
   /* footer */
   .footer {
     font-size: 1.063em;
   }
   .footer .footer-secondary {
     padding: 0 30px;
+  }
+  .pies .contain-pie {
+    transform: scale(1);
   }
 }
 

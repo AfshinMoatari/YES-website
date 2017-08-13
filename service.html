@@ -86,7 +86,7 @@
         </div>
         <nav class="overlay-menu">
           <ul>
-            <li><a href="service.html">Service</a></li>
+            <li class="active"><a href="service.html">Service</a></li>
             <li><a href="impact.html">Impact</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="about.html">About</a></li>
@@ -98,7 +98,7 @@
     <div class="main">
       <!-- COST SECTION -->
       <div class="my-container">
-        <ul class="service-nav" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+        <ul class="nav-secondary" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
           <li class="uk-active">
             <a href="#">WHY US</a>
           </li>
@@ -116,24 +116,32 @@
               <div class="uk-section uk-section-small need-to-know">
                 <h2>NEED TO KNOW</h2>
                 <p>We conducted a survey amongst 18-45 year olds living in Copenhagen. Of all the respondents:</p>
-                <div class="uk-grid-small uk-margin-medium-bottom pies" uk-grid>
-                  <div class="uk-width-1-2">
-                    <div class="pie-vertical">
-                      <h3>78%</h3>
-                      <p>Believe that businesses should engage in social responsibilities</p>
-                      <div class="contain-pie">
-                        <div class="contain-piece piece"></div>
+                <div class="uk-grid-collapse uk-child-width-1-2@s uk-margin-medium-top uk-margin-large-bottom pies" uk-grid>
+                  <div class="uk-grid uk-grid-collapse">
+                    <div class="uk-width-2-3@m uk-width-auto@s pie-vertical">
+                      <div class="uk-flex uk-flex-center uk-flex-top">
+                        <div class="contain-pie">
+                          <div class="contain-piece piece"></div>
+                        </div>
+                        <h3 class="value">78</h3>
                       </div>
                     </div>
+                    <div class="uk-width-1-3@m uk-width-auto@s info">
+                      <p>Believe that businesses should engage in social responsibilities</p>
+                    </div>
                   </div>
-                  <div class="uk-width-1-2">
-                    <div class="pie-horizontal">
-                      <h3>46%</h3>
-                      <p>Would even be willing to pay higher prices to the business who is socially responsible</p>
-                      <div class="contain-pie">
-                        <div class="contain-piece piece"></div>
-                        <div class="contain-piece piece2"></div>
+                  <div class="uk-grid uk-grid-collapse">
+                    <div class="uk-width-2-3@m uk-width-auto@s pie-horizontal">
+                      <div class="uk-flex uk-flex-center uk-flex-top">
+                        <div class="contain-pie">
+                          <div class="contain-piece piece"></div>
+                          <div class="contain-piece piece2"></div>
+                        </div>
+                        <h3 class="value">46</h3>
                       </div>
+                    </div>
+                    <div class="uk-width-1-3@m uk-width-auto@s info">
+                      <p>Would even be willing to pay higher prices to the business who is socially responsible</p>
                     </div>
                   </div>
                 </div>
@@ -141,33 +149,33 @@
               </div>
               <div class="uk-section uk-section-small good-to-know">
                 <h2>GOOD TO KNOW</h2>
-                <div class="uk-grid-medium" uk-grid>
-                  <div class="uk-width-1-2">
-                    <div class="uk-margin-large-left">
-                      <hr class="break-small">
+                <div class="uk-grid-medium uk-child-width-1-2@s" uk-grid>
+                  <div>
+                    <div class="box">
+                      <hr class="uk-hidden break-small">
                       <em>Affordable</em>
                       <p>The hourly employee wage is between 125 and 150DKK (ex. holiday money) and the hourly service fee is between 30-50DKK. We have also proven time and again, that our ability to process optimize has decreased the required work hours
                         in companies by as much as 40%, meaning that we are also saving time for your business.</p>
                     </div>
                   </div>
-                  <div class="uk-width-1-2">
-                    <div class="uk-margin-large-left">
-                      <hr class="break-small">
+                  <div>
+                    <div class="box">
+                      <hr class="uk-hidden break-small">
                       <em>Quality</em>
                       <p>We individually select experienced and motivated candidates for your company. With our mandatory training, your future employees are informed about their obligations and are instructed in their future tasks ensuring the quality.</p>
                     </div>
                   </div>
-                  <div class="uk-width-1-2">
-                    <div class="uk-margin-large-left">
-                      <hr class="break-small">
+                  <div>
+                    <div class="box">
+                      <hr class="uk-hidden break-small">
                       <em>Dependable</em>
                       <p>Through continuous assessment of the tasks performed, we ensure a high quality of service. We are flexible and will always go out of our way to cater to your needs. Furthermore, we always have on-call sta ready in case you need an
                         extra hand.</p>
                     </div>
                   </div>
-                  <div class="uk-width-1-2">
-                    <div class="uk-margin-large-left">
-                      <hr class="break-small">
+                  <div>
+                    <div class="box">
+                      <hr class="uk-hidden break-small">
                       <em>Work environment</em>
                       <p>We work to ensure a mutually beneficial relationship between employer and employee. An integrated teammate is a happier, more productive teammate.</p>
                     </div>
@@ -182,7 +190,7 @@
                 <p>The cost of working with us falls into two di erent categories. Employee wage and service fee. The wages are derived from various factors that all take into account the cost for living in Denmark. Furthermore, the wages are on par with
                   danish labor unionized wages for the type of work the we focus on, to make sure that our teammates receive fair wages.</p>
                 <h2>EMPLOYEE WAGE</h2>
-                <div class="uk-width-4-5@l">
+                <div class="uk-width-4-5@l uk-overflow-auto">
                   <table class="uk-table uk-table-divider">
                     <thead>
                       <tr>
@@ -255,8 +263,8 @@
                 <p>The service fee represents your contribution to society; therefore, we believe the bigger the company the more responsibility.</p>
                 <a href="#">100% of the profit from service fees goes towards social development!</a>
                 <h3>STANDARD</h3>
-                <div class="uk-margin-large-left">
-                  <hr class="break-small">
+                <div class="box">
+                  <hr class="uk-hidden break-small">
                   <em>30 DKK per hour includes</em>
                   <ol>
                     <li>A guaranty that you will always have a teammate to get your job done</li>
@@ -269,8 +277,8 @@
                   </ol>
                 </div>
                 <h3>STANDARD +</h3>
-                <div class="uk-margin-large-left">
-                  <hr class="break-small">
+                <div class="box">
+                  <hr class="uk-hidden break-small">
                   <em>40 DKK per hour includes</em>
                   <ol>
                     <li>All the service benefits included in the standard and standard plus package</li>
@@ -279,8 +287,8 @@
                   </ol>
                 </div>
                 <h3>PREMIUM</h3>
-                <div class="uk-margin-large-left">
-                  <hr class="break-small">
+                <div class="box">
+                  <hr class="uk-hidden break-small">
                   <em>50 DKK per hour includes</em>
                   <ol>
                     <li>All the service benefits included in the standard and standard plus package</li>
@@ -293,36 +301,36 @@
           </li>
           <li class="practicality" id="practicality">
             <div class="my-container left">
-              <div class="uk-section uk-section-small wage payment-process">
+              <div class="uk-section uk-section-small wage">
                 <h2>PAYMENT PROCESS</h2>
                 <p>Because our wish is to secure transparency there are 2 options for payment.</p>
-                <div class="uk-grid-collapse" uk-grid>
-                  <div class="uk-width-1-2">
-                    <img style="position:relative; top: 1.5em; left:0;" src="assets/img/icon/bubble-1.png" alt="">
-                    <p class="uk-float-right" style="width: 80%;">You pay your Teammates’ salary directly to that person and our service fee separately to us. In this way, you always know exactly what the employee is being paid.</p>
+                <div class="uk-grid uk-grid-collapse">
+                  <div class="uk-width-1-2@s">
+                    <img class="bubble" src="assets/img/icon/bubble-1.png" alt="step first">
+                    <p class="uk-float-right info">You pay your Teammates’ salary directly to that person and our service fee separately to us. In this way, you always know exactly what the employee is being paid.</p>
                   </div>
-                  <div class="uk-width-1-2">
-                    <img style="position:relative; top: 1.5em; left:0;" src="assets/img/icon/bubble-2.png" alt="">
-                    <p class="uk-float-right" style="width: 80%;">You pay the salary and the service fee to us and we handle the salaries. We can provide you with a copy of the pay slip every month on request.</p>
+                  <div class="uk-width-1-2@s">
+                    <img class="bubble" src="assets/img/icon/bubble-2.png" alt="step second">
+                    <p class="uk-float-right info">You pay the salary and the service fee to us and we handle the salaries. We can provide you with a copy of the pay slip every month on request.</p>
                   </div>
                 </div>
-                <p>We calculate working months from the first day of every month to the last. This means that you will receive an invoice the 1st of every month. You will have 14 days to pay the invoice, meaning that we should receive your payment on the
+                <p class="uk-margin-large-top uk-margin-large-bottom">We calculate working months from the first day of every month to the last. This means that you will receive an invoice the 1st of every month. You will have 14 days to pay the invoice, meaning that we should receive your payment on the
                   15th at the latest. This enables us to pay salaries on the 20th of every month, and should you choose to pay with option 1, you will be required topay the salaries on the same day.</p>
               </div>
               <div class="uk-section uk-section-small wage payment-process">
                 <h2>INSURANCE</h2>
                 <p>While YES always do our utmost to make sure that everything is done in a safe way, so that both the employees and the areas they work in are safe, things can go wrong. Therefore, there are two types of insurances that we work with.</p>
                 <h3>STANDARD</h3>
-                <div class="uk-margin-large-left">
-                  <hr class="break-small">
+                <div class="box">
+                  <hr class="uk-hidden break-small">
                   <em>Work injury insurance (Arbejdsskade forsikring)</em>
                   <p>This insurance covers injuries to the employee in the workplace. This is the part of the insurance that we ask companies we work with to handle. The nature of the work we do involves sustainable integration. As such, we encourage companies
                     to interact with their teammates, which involves taking responsibility for their wellbeing and making sure that the areas where they work are safe. Furthermore, according to the Danish Business Authority the recipient company is responsible
                     for providing the work injury insurance for the teammate working with them.</p>
                 </div>
                 <h3>Liability Insurance</h3>
-                <div class="uk-margin-large-left">
-                  <hr class="break-small">
+                <div class="box">
+                  <hr class="uk-hidden break-small">
                   <em>Work injury insurance (Arbejdsskade forsikring)</em>
                   <p>This insurance covers damage done by the teammate at the recipient company. It covers damages up to 10 million DKK. While we have not been forced to utilize this insurance, and hope that we never will, we understand that mistakes can
                     be made. Therefore, this is our way of easing the minds of companies we work with in terms of potential mistakes made by teammates in their process of learning their way around the new place of work.</p>
@@ -338,36 +346,36 @@
     <div class="footer-spacer"></div>
     <div class="footer" id="footer">
       <div class="footer-content">
-        <h2>HAVE A QUESTION <span><img src="assets/img/icon/lets-talk.png" alt=""></span></h2>
+        <h2>WE ARE READY! <span><img src="assets/img/icon/ask-here.png" alt="Ask Here"></span></h2>
       </div>
       <div class="footer-secondary">
-        <div class="my-container">
-          <ul class="uk-breadcrumb footer-info">
+        <div class="uk-grid uk-grid-collapse uk-child-width-1-1@s uk-child-width-auto@m my-container">
+          <ul class="uk-flex-auto uk-flex-center uk-flex-bottom uk-flex-left@m uk-flex-last uk-flex-first@m uk-breadcrumb footer-info">
             <li>jhdg@yescph.co</li>
             <li>+45 42 44 45 40</li>
             <li>Porcelænshaven 26, 2nd floor, 2000 Frederiksberg</li>
             <li>CVR: 37901121</li>
             <li>©2016 YES</li>
           </ul>
-          <ul class="footer-social uk-list">
+          <ul class="uk-flex uk-flex-center uk-flex-bottom uk-list social">
             <li class="first">
               <a href="#">
-                <img src="assets/img/icon/facebook.png" alt="">
+                <img src="assets/img/icon/facebook.png" alt="facebook icon">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/icon/instagram.png" alt="">
+                <img src="assets/img/icon/instagram.png" alt="instagram icon">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/icon/linkedin.png" alt="">
+                <img src="assets/img/icon/linkedin.png" alt="linkedin icon">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/icon/twitter.png" alt="">
+                <img src="assets/img/icon/twitter.png" alt="twitter icon">
               </a>
             </li>
           </ul>

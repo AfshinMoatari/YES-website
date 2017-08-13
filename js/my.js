@@ -28,11 +28,23 @@ $(function() {
     ]
   });
 
-  $(".blocks li .block").each(function(key, block) {
+  $('.blocks li .block').each(function(key, block) {
     let percentage = $(this).data('percentage');
     $(this).animate({
       'height': percentage + '%'
     }, 1000);
+  });
+
+  $('.value').each(function() {
+    $(this).prop('Counter', 0).animate({
+      Counter: $(this).text()
+    }, {
+      duration: 3000,
+      easing: 'swing',
+      step: function(now) {
+        $(this).text(Math.ceil(now) + '%');
+      }
+    });
   });
 
   $('.open-menu').on('click', function() {
