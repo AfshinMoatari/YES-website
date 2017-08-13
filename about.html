@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>welcome to yes</title>
+  <title>About</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Favicon -->
@@ -15,20 +15,19 @@
   <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <!-- UIkit CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/uikit.min.css" />
   <!-- SLICK SLIDER CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <link rel="stylesheet" href="css/slick.css" />
   <!-- My CSS -->
   <link rel="stylesheet" href="css/my.css" />
   <!-- MEDIA CSS -->
   <link rel="stylesheet" href="css/media.css" />
   <!-- jQuery is required -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
   <!-- UIkit JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/js/uikit-icons.min.js"></script>
+  <script src="js/uikit.min.js"></script>
   <!-- SLICK SLIDER JS -->
-  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- My JS -->
   <script src="js/my.js"></script>
 </head>
@@ -51,22 +50,28 @@
             </ul>
           </div>
           <div class="uk-navbar-item uk-margin-left uk-margin-right uk-flex uk-flex-center uk-flex-middle logo">
-            <a href="index.html">
-              <img class="large uk-hidden" src="assets/img/logo-dark.png" alt="YES logo">
-              <img class="small uk-hidden@s" src="assets/img/logo-dark-small.png" alt="YES logo">
-            </a>
+            <div class="large uk-hidden">
+              <a href="index.html">
+                <img src="assets/img/logo-dark.png" alt="YES logo">
+              </a>
+            </div>
+            <div class="small uk-hidden@s">
+              <a href="index.html">
+                <img src="assets/img/logo-dark-small.png" alt="YES logo">
+              </a>
+            </div>
           </div>
           <div class="uk-navbar-right">
             <ul class="uk-navbar-nav my-navbar-nav uk-hidden">
               <li>
                 <a href="faq.html">FAQ</a>
               </li>
-              <li>
+              <li class="active">
                 <a href="about.html">About</a>
               </li>
             </ul>
             <div class="open-menu uk-hidden@s uk-margin-right">
-                <img src="assets/img/icon/open.svg" alt=""/>
+              <img src="assets/img/icon/open.svg" alt="open menu" />
             </div>
           </div>
         </div>
@@ -74,10 +79,10 @@
       <!-- OVERLAY NAV-->
       <div class="uk-hidden@s overlay">
         <div class="logo"><a href="index.html">
-          <img src="assets/img/logo-light.png" alt="YES logo"></a>
+           src="assets/img/logo-light.png" alt="YES logo"></a>
         </div>
         <div class="close-menu">
-          <img src="assets/img/icon/close.svg" alt="" />
+          <img src="assets/img/icon/close.svg" alt="close menu" />
         </div>
         <nav class="overlay-menu">
           <ul>
@@ -96,8 +101,8 @@
         <div class="my-container">
           <div class="uk-section uk-section-small">
             <h2>OUR STORY</h2>
-            <div class="uk-margin-large-left">
-              <hr class="break-small">
+            <div class="box">
+              <hr class="break-small uk-hidden">
               <p>“When I moved from Bangladesh to Denmark, life was tough. I found myself in an unfamiliar country with a different culture. I was excited about going to a new university, but even making friends was not so straightforward as I had assumed.
                 To keep afloat, I was working late nights as a dishwasher and cleaning personnel. I was paid far below the minimum and my pay check was, on all occasions, late. I worked in substandard working environments, without a work contract to grant
                 me stability. Most of the money used to hire me went to the service company that I worked through. It was neither helpful for the workers nor the business hiring them: it was clear that the service company was reaping all the benefits.
@@ -117,14 +122,14 @@
       <!-- ENTREPRENEURS SECTION -->
       <div class="entrepreneurs" id="entrepreneurs">
         <div class="my-container large">
-          <div class="uk-section uk-section-media uk-background-cover blend" style="background-image: url(assets/img/entrepreneurs.jpg)">
-            <div class="my-container" style="height:21em;">
+          <div class="uk-section uk-section-media uk-background-cover cover blend">
+            <div class="my-container">
               <h2>BTW YES means</h2>
-              <div class="uk-margin-large-left">
-                <hr class="break-large">
+              <div class="box">
+                <hr class="break-large uk-hidden">
                 <p>Young Entrepreneurs for Society</p>
               </div>
-              <a href="#" class="uk-button uk-button-text uk-float-right my-button vertical">LEAN MORE</a>
+              <a href="#" class="my-button my-button-text light vertical">LEAN MORE</a>
             </div>
           </div>
         </div>
@@ -132,76 +137,76 @@
       <!-- MEMBERS SECTION -->
       <div class="members" id="members">
         <div class="my-container">
-          <div class="uk-section uk-section-medium uk-padding-remove-bottom team-members">
-            <h2 class="uk-margin-medium-bottom">THE TEAM</h2>
-            <div class="uk-grid-medium uk-margin-large-bottom member" uk-grid>
-              <div class="uk-inline uk-width-auto member-portrait">
-                <img src="assets/img/members/riad-pic.jpg">
-                <img class="uk-position-top-right member-bubble" src="assets/img/members/bubble-riad.png">
+          <div class="uk-section uk-section-medium uk-padding-remove-bottom team">
+            <h2>THE TEAM</h2>
+            <div class="uk-grid-medium uk-wid uk-child-width-auto member" uk-grid>
+              <div class="uk-inline portrait">
+                <img src="assets/img/members/riad-pic.jpg" alt="Riad Arefin">
+                <img class="uk-position-top-right bubble" src="assets/img/members/bubble-riad.png" alt="Riad Arefin Tag">
               </div>
-              <div class="uk-width-1-2 member-info uk-flex uk-flex-bottom">
+              <div class="uk-width-1-2@s uk-flex uk-flex-bottom info">
                 <div>
                   <h3>Riad Arefin</h3>
                   <em>Founder And CEO</em>
                   <p>Supporting the team to achieve its goal while organizing the daily operation, and future, of YES.</p>
-                  <a href="#">riad@yescph.com</a>
+                  <a class=" my-button-text" href="#">riad@yescph.com</a>
                 </div>
               </div>
             </div>
-            <div class="uk-grid-medium uk-margin-large-bottom member" uk-grid>
-              <div class="uk-inline uk-width-auto member-portrait">
-                <img src="assets/img/members/martin-pic.jpg">
-                <img class="uk-position-top-right member-bubble" src="assets/img/members/bubble-martin.png">
+            <div class="uk-grid-medium uk-child-width-auto member" uk-grid>
+              <div class="uk-inline uk-width-auto portrait">
+                <img src="assets/img/members/martin-pic.jpg" alt="Martin Gry Pedersen">
+                <img class="uk-position-top-right bubble" src="assets/img/members/bubble-martin.png" alt="Martin Gry Pedersen Tag">
               </div>
-              <div class="uk-width-1-2 member-info uk-flex uk-flex-bottom">
+              <div class="uk-width-1-2@s uk-flex uk-flex-bottom info">
                 <div>
                   <h3>Martin Gry Pedersen</h3>
                   <em>Integration Coordinator</em>
                   <p>Streamlines the organizational part of YES and strengthens our e orts in employees integration process.</p>
-                  <a href="#">martin@yescph.com</a>
+                  <a class=" my-button-text" href="#">martin@yescph.com</a>
                 </div>
               </div>
             </div>
-            <div class="uk-grid-medium uk-margin-large-bottom member" uk-grid>
-              <div class="uk-inline uk-width-auto member-portrait">
-                <img src="assets/img/members/stig-pic.jpg">
-                <img class="uk-position-top-right member-bubble" src="assets/img/members/bubble-stig.png">
+            <div class="uk-grid uk-grid-medium uk-child-width-auto member" uk-grid>
+              <div class="uk-inline uk-width-auto portrait">
+                <img src="assets/img/members/stig-pic.jpg" alt="Stig Østergaard Nielsen">
+                <img class="uk-position-top-right bubble" src="assets/img/members/bubble-stig.png" alt="Stig Østergaard Nielsen Tag">
               </div>
-              <div class="uk-width-1-2 member-info uk-flex uk-flex-bottom">
+              <div class="uk-width-1-2@s uk-flex uk-flex-bottom info">
                 <div>
                   <h3>Stig Østergaard Nielsen</h3>
                   <em>Creative Content Developer</em>
                   <p>Expressing the visions and methods of YES in an e ort to create understanding and awareness.</p>
-                  <a href="#">stig@yescph.com</a>
+                  <a class=" my-button-text" href="#">stig@yescph.com</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="uk-section uk-section-medium uk-padding-remove-bottom board-members">
-            <h2 class="uk-margin-medium-bottom">BOARD MEMBERS</h2>
-            <div class="uk-grid-medium uk-margin-large-bottom member" uk-grid>
-              <div class="uk-width-auto member-portrait">
-                <img src="assets/img/members/martin-pic.jpg">
+          <div class="uk-section uk-section-medium uk-padding-remove-bottom board">
+            <h2>BOARD MEMBERS</h2>
+            <div class="uk-grid-medium uk-child-width-auto member" uk-grid>
+              <div class="uk-width-auto portrait">
+                <img src="assets/img/members/martin-pic.jpg" alt="Martin Gry Pedersen">
               </div>
-              <div class="uk-width-1-2 member-info uk-flex uk-flex-bottom">
+              <div class="uk-width-1-2@s uk-flex uk-flex-bottom info">
                 <div>
                   <h3>Martin Gry Pedersen</h3>
                   <em>Integration Coordinator</em>
                   <p>Streamlines the organizational part of YES and strengthens our e orts in employees integration process.</p>
-                  <a href="#">martin@yescph.com</a>
+                  <a class=" my-button-text" href="#">martin@yescph.com</a>
                 </div>
               </div>
             </div>
-            <div class="uk-grid-medium uk-margin-large-bottom member" uk-grid>
-              <div class="uk-width-auto member-portrait">
-                <img src="assets/img/members/stig-pic.jpg">
+            <div class="uk-grid-medium uk-child-width-auto member" uk-grid>
+              <div class="uk-width-auto portrait">
+                <img src="assets/img/members/stig-pic.jpg" alt="Stig Østergaard Nielsen">
               </div>
-              <div class="uk-width-1-2 member-info uk-flex uk-flex-bottom">
+              <div class="uk-width-1-2@s uk-flex uk-flex-bottom info">
                 <div>
                   <h3>Stig Østergaard Nielsen</h3>
                   <em>Creative Content Developer</em>
                   <p>Expressing the visions and methods of YES in an e ort to create understanding and awareness.</p>
-                  <a href="#">stig@yescph.com</a>
+                  <a class=" my-button-text" href="#">stig@yescph.com</a>
                 </div>
               </div>
             </div>
@@ -214,36 +219,36 @@
     <div class="footer-spacer"></div>
     <div class="footer" id="footer">
       <div class="footer-content">
-        <h2>LEARN ABOUT OUR <span><img src="assets/img/icon/lets-talk.png" alt=""></span></h2>
+        <h2>LEARN ABOUT OUR <span><img src="assets/img/icon/service.png" alt="service"></span></h2>
       </div>
       <div class="footer-secondary">
-        <div class="my-container">
-          <ul class="uk-breadcrumb footer-info">
+        <div class="uk-grid uk-grid-collapse uk-child-width-1-1@s uk-child-width-auto@m my-container">
+          <ul class="uk-flex-auto uk-flex-center uk-flex-bottom uk-flex-left@m uk-flex-last uk-flex-first@m uk-breadcrumb footer-info">
             <li>jhdg@yescph.co</li>
             <li>+45 42 44 45 40</li>
             <li>Porcelænshaven 26, 2nd floor, 2000 Frederiksberg</li>
             <li>CVR: 37901121</li>
             <li>©2016 YES</li>
           </ul>
-          <ul class="footer-social uk-list">
+          <ul class="uk-flex uk-flex-center uk-flex-bottom uk-list social">
             <li class="first">
               <a href="#">
-                <img src="assets/img/icon/facebook.png" alt="">
+                <img src="assets/img/icon/facebook.png" alt="facebook icon">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/icon/instagram.png" alt="">
+                <img src="assets/img/icon/instagram.png" alt="instagram icon">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/icon/linkedin.png" alt="">
+                <img src="assets/img/icon/linkedin.png" alt="linkedin icon">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/icon/twitter.png" alt="">
+                <img src="assets/img/icon/twitter.png" alt="twitter icon">
               </a>
             </li>
           </ul>

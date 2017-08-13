@@ -226,7 +226,7 @@ body .hero {
   font-weight: bold;
 }
 
-.my-button:hover, .my-button:focus {
+a:hover, a:focus {
   text-decoration: none
 }
 
@@ -308,7 +308,7 @@ body .hero {
 }
 
 .my-navbar-nav>li>a:hover {
-  text-decoration: none
+  text-decoration: none;
 }
 
 .my-navbar-nav>li>a::before {
@@ -319,15 +319,17 @@ body .hero {
   right: 100%;
   border-bottom: 2px solid #333;
   -webkit-transition: right .5s ease-out;
-  transition: right .5s ease-out
-}
-
-.my-navbar-nav>li>a:focus, .my-navbar-nav>li>a:hover {
-  color: #333
+  transition: right .5s ease-out;
 }
 
 .my-navbar-nav>li>a:focus::before, .my-navbar-nav>li>a:hover::before {
-  right: 0
+  right: 0;
+}
+
+.my-navbar-nav>li.active>a::before {
+  width: 80%;
+  left: 10%;
+  border: 1px solid #000100;
 }
 
 .my-navbar .uk-navbar-center:only-child {
@@ -502,6 +504,11 @@ body .hero {
   color: #fff;
 }
 
+.operations .my-button {
+  bottom: 0;
+  float: none;
+}
+
 
 /* Chart */
 
@@ -626,18 +633,29 @@ body .hero {
   background-image: url(../assets/img/presentation-media.jpg);
 }
 
+.entrepreneurs .cover {
+  background-image: url(../assets/img/entrepreneurs.jpg);
+}
+
+.entrepreneurs .cover .my-container {
+  height: 360px;
+}
+
 .entrepreneurs p {
   font-style: italic;
   font-weight: bold;
   font-size: 2.625em;
 }
 
-.entrepreneurs a.my-button {
-  top: 80px;
-}
-
 .sticker .my-button {
   bottom: 0;
+  float: none;
+}
+
+.entrepreneurs .my-button {
+  top: 0;
+  bottom: 0;
+  float: none;
 }
 
 
@@ -784,9 +802,17 @@ body .hero {
   font-size: 1.563em;
 }
 
-.member-portrait img:last-child {
-  top: -35px;
-  left: 256px;
+.portrait img.bubble {
+  top: -35%;
+  left: 10%;
+}
+
+.members .team .member {
+  padding: 90px 0;
+}
+
+.members .board .member {
+  padding: 35px 0;
 }
 
 
@@ -809,9 +835,13 @@ body .hero {
   display: inline-block;
 }
 
+.service-nav li a:hover, .service-nav li a:focus {
+  text-decoration: underline;
+}
+
 .service-nav li a::after {
   content: '';
-  border-bottom: 3px solid;
+  border-bottom: 5px solid;
   width: 100%;
   position: absolute;
   right: 0;

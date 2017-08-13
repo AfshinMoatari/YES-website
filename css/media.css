@@ -8,7 +8,7 @@
   .uk-hidden {
     display: inherit !important;
   }
-  ß body .heading {
+  body .heading {
     font-size: 1em;
   }
   body .important {
@@ -82,6 +82,14 @@
   .footer .footer-content {
     bottom: 210px;
   }
+  /* portrait */
+  .portrait img.bubble {
+    top: -30%;
+    left: 90%;
+  }
+  .members .team .member {
+    padding: 45px 0;
+  }
 }
 
 @media (min-width: 960px) {
@@ -132,6 +140,17 @@
   .sticker .my-button {
     bottom: 128px;
     right: -20px;
+  }
+  .entrepreneurs .my-button {
+    top: 80px;
+  }
+  /* portrait */
+  .portrait img.bubble {
+    top: -35px;
+    left: 256px;
+  }
+  .members .team .member {
+    padding: 35px 0;
   }
 }
 

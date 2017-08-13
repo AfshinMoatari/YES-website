@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>welcome to yes</title>
+  <title>Service</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Favicon -->
@@ -15,20 +15,19 @@
   <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <!-- UIkit CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/uikit.min.css" />
   <!-- SLICK SLIDER CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <link rel="stylesheet" href="css/slick.css" />
   <!-- My CSS -->
   <link rel="stylesheet" href="css/my.css" />
   <!-- MEDIA CSS -->
   <link rel="stylesheet" href="css/media.css" />
   <!-- jQuery is required -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
   <!-- UIkit JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/js/uikit-icons.min.js"></script>
+  <script src="js/uikit.min.js"></script>
   <!-- SLICK SLIDER JS -->
-  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- My JS -->
   <script src="js/my.js"></script>
 </head>
@@ -42,7 +41,7 @@
         <div class="uk-navbar-center">
           <div class="uk-navbar-left uk-hidden">
             <ul class="uk-navbar-nav my-navbar-nav">
-              <li>
+              <li class="active">
                 <a href="service.html">Service</a>
               </li>
               <li>
@@ -51,10 +50,16 @@
             </ul>
           </div>
           <div class="uk-navbar-item uk-margin-left uk-margin-right uk-flex uk-flex-center uk-flex-middle logo">
-            <a href="index.html">
-              <img class="large uk-hidden" src="assets/img/logo-dark.png" alt="YES logo">
-              <img class="small uk-hidden@s" src="assets/img/logo-dark-small.png" alt="YES logo">
-            </a>
+            <div class="large uk-hidden">
+              <a href="index.html">
+                <img src="assets/img/logo-dark.png" alt="YES logo">
+              </a>
+            </div>
+            <div class="small uk-hidden@s">
+              <a href="index.html">
+                <img src="assets/img/logo-dark-small.png" alt="YES logo">
+              </a>
+            </div>
           </div>
           <div class="uk-navbar-right">
             <ul class="uk-navbar-nav my-navbar-nav uk-hidden">
@@ -66,7 +71,7 @@
               </li>
             </ul>
             <div class="open-menu uk-hidden@s uk-margin-right">
-                <img src="assets/img/icon/open.svg" alt=""/>
+              <img src="assets/img/icon/open.svg" alt="open menu" />
             </div>
           </div>
         </div>
@@ -74,14 +79,14 @@
       <!-- OVERLAY NAV-->
       <div class="uk-hidden@s overlay">
         <div class="logo"><a href="index.html">
-          <img src="assets/img/logo-light.png" alt="YES logo"></a>
+           src="assets/img/logo-light.png" alt="YES logo"></a>
         </div>
         <div class="close-menu">
-          <img src="assets/img/icon/close.svg" alt="" />
+          <img src="assets/img/icon/close.svg" alt="close menu" />
         </div>
         <nav class="overlay-menu">
           <ul>
-            <li class="active"><a href="service.html">Service</a></li>
+            <li><a href="service.html">Service</a></li>
             <li><a href="impact.html">Impact</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="about.html">About</a></li>
