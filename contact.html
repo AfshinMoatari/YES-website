@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Service</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicon/manifest.json">
+  <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+  <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <!-- SLICK SLIDER CSS -->
+  <link rel="stylesheet" href="css/slick.css" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/my.css" />
+  <!-- MEDIA CSS -->
+  <link rel="stylesheet" href="css/media.css" />
+  <!-- jQuery is required -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- UIkit JS -->
+  <script src="js/uikit.min.js"></script>
+  <!-- SLICK SLIDER JS -->
+  <script src="js/slick.min.js"></script>
+  <!-- My JS -->
+  <script src="js/my.js"></script>
+</head>
+
+<body id="contact">
+  <!-- MAIN CONTAINER -->
+  <div class="container-all">
+    <!-- NAV SECTION-->
+    <div class="global">
+      <nav class="uk-navbar my-navbar">
+        <div class="uk-navbar-center">
+          <div class="uk-navbar-left uk-hidden">
+            <ul class="uk-navbar-nav my-navbar-nav">
+              <li>
+                <a href="service.html">Service</a>
+              </li>
+              <li>
+                <a href="impact.html">Impact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-navbar-item uk-margin-left uk-margin-right uk-flex uk-flex-center uk-flex-middle logo">
+            <div class="large uk-hidden">
+              <a href="index.html">
+                <img src="assets/img/logo-dark.png" alt="YES logo">
+              </a>
+            </div>
+            <div class="small uk-hidden@s">
+              <a href="index.html">
+                <img src="assets/img/logo-dark-small.png" alt="YES logo">
+              </a>
+            </div>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav my-navbar-nav uk-hidden">
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+            </ul>
+            <div class="open-menu uk-hidden@s uk-margin-right">
+              <img src="assets/img/icon/open.svg" alt="open menu" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- OVERLAY NAV-->
+      <div class="uk-hidden@s overlay">
+        <div class="logo"><a href="index.html">
+           src="assets/img/logo-light.png" alt="YES logo"></a>
+        </div>
+        <div class="close-menu">
+          <img src="assets/img/icon/close.svg" alt="close menu" />
+        </div>
+        <nav class="overlay-menu">
+          <ul>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="impact.html">Impact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- MAIN CONTENT-->
+    <div class="main">
+      <!-- Contact SECTION -->
+      <div class="my-container">
+        <ul class="nav-secondary" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+          <li class="uk-active">
+            <a href="#">COMPANY</a>
+          </li>
+          <li>
+            <a href="#">EMPLOYYE</a>
+          </li>
+          <hr class="uk-panel-divider">
+        </ul>
+        <ul class="uk-switcher">
+          <li class="company" id="company">
+            <div class="my-container left">
+              <div class="uk-section uk-section-small contact">
+                <form class="uk-form-horizontal uk-margin-medium">
+                  <div class="uk-flex uk-flex-wrap uk-flex-wrap-bottom uk-flex-middle box" uk-margin>
+                    <div>
+                      <hr class="break-small uk-hidden">
+                    </div>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="name">My name is</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="name" type="text">
+                    </div>
+                    <span class="dot"></span>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="someone">I am writing on behalf of</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="someone" type="text">
+                    </div>
+                    <span class="dot"></span>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="subject">I am contacting you to talk about</label>
+                    </div>
+                    <div class="uk-width-2-5 uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="subject" type="text">
+                    </div>
+                    <span class="dot"></span>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="name">My phone number is</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="phone" type="text">
+                    </div>
+                    <span class="comma"></span>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="someone">and my email is</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="email" type="text">
+                    </div>
+                    <span class="dot"></span>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="someone">Please contact me between</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="time" type="text">
+                    </div>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="someone">to get the sation started! </label>
+                    </div>
+                  </div>
+                  <input type="image" class="uk-float-right submit" id="submit" src="assets/img/icon/submit-light.png" name="submit">
+                </form>
+              </div>
+            </div>
+          </li>
+          <li class="employee" id="employee">
+            <div class="my-container left">
+              <div class="uk-section uk-section-small contact">
+                <form class="uk-form-horizontal uk-margin-medium">
+                  <div class="uk-flex uk-flex-wrap uk-flex-wrap-bottom uk-flex-middle box" uk-margin>
+                    <div>
+                      <hr class="break-small uk-hidden">
+                    </div>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="name">My name is</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="name" type="text">
+                    </div>
+                    <span class="comma"></span>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="age">and I am</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="age" type="text">
+                    </div>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="age">years old.</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="hours">I am interested in working</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="hours" type="text">
+                    </div>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="hours">hours per month, and I have previous</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="experience">experience with</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="experience" type="text">
+                    </div>
+                    <span class="dot"></span>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="contact-1">You can contact me on</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="contact-1" type="text">
+                    </div>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="contact-2">or</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" id="contact-2" type="text">
+                    </div>
+                    <span class="comma"></span>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label">so that we can talk about my desire to work at YESCPH. </label>
+                    </div>
+                  </div>
+                  <input type="image" class="uk-float-right submit" id="submit" src="assets/img/icon/submit-light.png" name="submit">
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- FOOTER SECTION -->
+    <div class="footer" id="footer">
+      <div class="footer-secondary">
+        <div class="uk-grid uk-grid-collapse uk-child-width-1-1@s uk-child-width-auto@m my-container">
+          <ul class="uk-flex-auto uk-flex-center uk-flex-bottom uk-flex-left@m uk-flex-last uk-flex-first@m uk-breadcrumb footer-info">
+            <li>jhdg@yescph.co</li>
+            <li>+45 42 44 45 40</li>
+            <li>Porcelænshaven 26, 2nd floor, 2000 Frederiksberg</li>
+            <li>CVR: 37901121</li>
+            <li>©2016 YES</li>
+          </ul>
+          <ul class="uk-flex uk-flex-center uk-flex-bottom uk-list social">
+            <li class="first">
+              <a href="#">
+                <img src="assets/img/icon/facebook.png" alt="facebook icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/img/icon/instagram.png" alt="instagram icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/img/icon/linkedin.png" alt="linkedin icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/img/icon/twitter.png" alt="twitter icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
