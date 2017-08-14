@@ -1118,3 +1118,20 @@ a:hover, a:focus {
   font-size: 1.188em;
   color: #1d1d1b;
 }
+
+
+/* impact */
+
+.child-sponsorship .category .item p {
+  font-size: 0.969em;
+  font-weight: bold;
+}
+
+.children .child .portrait, .adult .entity .portrait {
+  height: 335px;
+}
+
+.children .child .info, .adult .entity .info {
+  position: relative;
+  margin: -30px 2%;
+}
