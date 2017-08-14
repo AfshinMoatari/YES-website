@@ -1109,3 +1109,12 @@ a:hover, a:focus {
   color: #000;
   font-weight: normal;
 }
+
+
+/* faq */
+
+.questions .title {
+  font-weight: 500;
+  font-size: 1.188em;
+  color: #1d1d1b;
+}
