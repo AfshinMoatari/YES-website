@@ -135,7 +135,7 @@ div {
 }
 
 hr {
-  border-top: 2px solid #1d1d1b;
+  border-top: 3px solid #1d1d1b;
 }
 
 blockquote p, blockquote footer {
@@ -287,7 +287,7 @@ a:hover, a:focus {
 }
 
 .blend {
-  background-color: #c0c0c0;
+  background-color: #fff;
   background-blend-mode: multiply;
   mix-blend-mode: multiply;
 }
@@ -298,6 +298,10 @@ a:hover, a:focus {
 
 
 /* Navbar */
+
+.logo img {
+  width: 95px;
+}
 
 .my-navbar {
   height: 80px;
@@ -1134,4 +1138,43 @@ a:hover, a:focus {
 .children .child .info, .adult .entity .info {
   position: relative;
   margin: -30px 2%;
+}
+
+
+/* process-line */
+
+.process-line .item .item-container p, .process-line .item .item-container h2 {
+  margin: 0;
+}
+
+.process-line .item .item-container .content {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.process-line .item .item-container .content p {
+  padding: 20px 0;
+}
+
+.process-line .item .item-container {
+  border-left: 3px solid #1d1d1b;
+  text-align: left;
+  padding-left: 67px;
+}
+
+.process-line .item .item-container hr {
+  float: left;
+  margin-left: -67px;
+  width: 60px;
+}
+
+.process-line .item .item-container {
+  margin-top: 0;
+}
+
+
+/*last*/
+
+.process-line .item:nth-last-child(-n+2) {
+  display: none;
 }

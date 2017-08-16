@@ -34,16 +34,17 @@ $(function() {
       'height': percentage + '%'
     }, 1000);
   });
-
-  $('.value').each(function() {
-    $(this).prop('Counter', 0).animate({
-      Counter: $(this).text()
-    }, {
-      duration: 3000,
-      easing: 'swing',
-      step: function(now) {
-        $(this).text(Math.ceil(now) + '%');
-      }
+  $('.why-us').on('click', function() {
+    $('.value').each(function() {
+      $(this).prop('Counter', 0).animate({
+        Counter: $(this).text()
+      }, {
+        duration: 5000,
+        easing: 'swing',
+        step: function(now) {
+          $(this).text(Math.ceil(now) + '%');
+        }
+      });
     });
   });
 
