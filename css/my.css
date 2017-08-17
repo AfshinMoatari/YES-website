@@ -218,14 +218,14 @@ body .hero {
 
 .break-small {
   float: left;
-  margin-top: 10px;
-  margin-left: -60px;
-  width: 55px;
+  margin-top: 9px;
+  margin-left: -65px;
+  width: 60px;
 }
 
 .break-large {
   float: left;
-  margin-top: 32px;
+  margin-top: 30px;
   margin-left: -60px;
   width: 55px;
 }
@@ -311,12 +311,17 @@ a:hover, a:focus {
   position: relative !important;
 }
 
+.my-navbar-nav>li {
+  padding: 0 15px;
+}
+
 .my-navbar-nav>li>a {
   position: relative;
   font-style: normal;
   font-weight: 500;
   font-size: 1.063em;
   color: #000100;
+  padding: 0;
 }
 
 .my-navbar-nav>li>a:hover {
@@ -339,8 +344,8 @@ a:hover, a:focus {
 }
 
 .my-navbar-nav>li.active>a::before {
-  width: 80%;
-  left: 10%;
+  width: 100%;
+  left: 0;
   border: 1px solid #000100;
 }
 
@@ -501,7 +506,11 @@ a:hover, a:focus {
 /* Operations */
 
 .operations .cover {
-  background-image: url(../assets/img/how.jpg);
+  background-image: url(../assets/img/how.png);
+}
+
+.operations .blend {
+  background-color: #A9A9A9;
 }
 
 .operations .cover h3 {
@@ -521,13 +530,21 @@ a:hover, a:focus {
   float: none;
 }
 
+.operations .category {
+  padding: 0 10px;
+}
+
+.operations .category .item {
+  padding: 0 35px 35px 35px;
+}
+
 
 /* Chart */
 
 .chart.bar p {
   font-weight: normal;
   font-size: 1.063em;
-  left: -15px;
+  left: 0;
   bottom: 0;
   transform-origin: left;
   transform: rotate(-90deg);
@@ -642,7 +659,8 @@ a:hover, a:focus {
 }
 
 .sticker .cover {
-  background-image: url(../assets/img/presentation-media.jpg);
+  background-image: url(../assets/img/sticker.jpg);
+  height: 505px;
 }
 
 .entrepreneurs .cover {
@@ -685,15 +703,23 @@ a:hover, a:focus {
   background-image: url(../assets/img/step-2.png);
 }
 
-.steps .info {
+.steps .item-container {
   padding: 20px;
+}
+
+.steps .item .legend .full {
+  display: unset;
+}
+
+.steps .item .legend .half {
+  display: none;
 }
 
 
 /* Footer */
 
 .footer {
-  font-size: 1.063em;
+  font-size: .87em;
   font-style: normal;
   font-weight: normal;
   text-align: center;
@@ -1117,10 +1143,20 @@ a:hover, a:focus {
 
 /* faq */
 
-.questions .title {
+.questions .uk-accordion-title {
   font-weight: 500;
   font-size: 1.188em;
   color: #1d1d1b;
+}
+
+.questions .uk-accordion-title::after {
+  display: none;
+}
+
+.questions .uk-accordion-content {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding-right: 40px;
 }
 
 
