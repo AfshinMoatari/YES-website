@@ -52,7 +52,7 @@
 }
 
 body {
-  font-size: .8em;
+  font-size: .75em;
   margin: 0;
   font-family: "Gotham", Georgia, serif;
   color: #1D1D1B;
@@ -431,12 +431,7 @@ a:hover, a:focus {
   height: 100%;
 }
 
-.overlay .contact img {
-  width: 180px;
-  margin-top: 10px;
-}
-
-.overlay ul li, .overlay.open .contact {
+.overlay ul li {
   display: block;
   position: relative;
   opacity: 0;
