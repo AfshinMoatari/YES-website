@@ -28,12 +28,23 @@ $(function() {
     ]
   });
 
-  $('.blocks li .block').each(function(key, block) {
-    let percentage = $(this).data('percentage');
-    $(this).animate({
-      'height': percentage + '%'
-    }, 1000);
-  });
+  if ($('#data').length > 0) {
+    $(window).scroll(function() {
+      let hT = $('#data').offset().top,
+        hH = $('#data').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS > (hT + hH - wH)) {
+        $('.blocks li .block').each(function(key, block) {
+          let percentage = $(this).data('percentage');
+          $(this).animate({
+            'height': percentage + '%'
+          }, 1000);
+        });
+      }
+    });
+  }
+
   $('.why-us').on('click', function() {
     $('.value').each(function() {
       $(this).prop('Counter', 0).animate({

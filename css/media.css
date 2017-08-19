@@ -5,6 +5,9 @@
 }
 
 @media (min-width: 640px) {
+  body {
+    font-size: .9em;
+  }
   .uk-hidden {
     display: inherit !important;
   }
@@ -18,7 +21,17 @@
   .my-container {
     padding: 0 19px;
   }
-  /* Nav */
+  /*nav secondary*/
+  .nav-secondary li a {
+    font-size: 3.1em;
+  }
+  .nav-secondary li:not(.uk-active) a::after {
+    border-width: 4px;
+  }
+  /*nav main*/
+  .logo {
+    padding: inherit;
+  }
   .logo img {
     width: 115px;
   }
@@ -112,6 +125,17 @@
 }
 
 @media (min-width: 960px) {
+  body {
+    font-size: 1em;
+  }
+  /*nav secondary*/
+  .nav-secondary li a {
+    font-size: 3.563em;
+  }
+  .nav-secondary li:not(.uk-active) a::after {
+    border-width: 5px;
+  }
+  /*nav main*/
   .my-navbar .contact {
     position: absolute;
     top: 38%;

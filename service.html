@@ -36,7 +36,7 @@
   <!-- MAIN CONTAINER -->
   <div class="container-all">
     <!-- NAV SECTION-->
-    <div class="global">
+    <div class="global" uk-scrollspy="cls: uk-animation-slide-top-medium; target: .my-navbar .contact; delay: 300; hidden:true; repeat: true">
       <nav class="uk-navbar my-navbar">
         <div class="my-container uk-navbar-center">
           <div class="uk-navbar-left uk-hidden">
@@ -96,8 +96,8 @@
       </div>
     </div>
     <!-- MAIN CONTENT-->
-    <div class="main">
-      <!-- COST SECTION -->
+    <div class="main" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .nav-secondary>li, .questions>ul>li; delay: 300; hidden:true">
+      <!-- Secondary Nav -->
       <div class="my-container">
         <ul class="nav-secondary" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
           <li class="uk-active">
@@ -115,8 +115,8 @@
           <hr class="uk-panel-divider">
         </ul>
         <ul class="uk-switcher">
-          <li class="process" id="process">
-            <div class="my-container left">
+          <li class="process" id="process" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .process-line .item:nth-child(2n+1) .content ; delay: 300; hidden:true; repeat: true">
+            <div class="my-container left" uk-scrollspy="cls: uk-animation-slide-right-medium; target: .process-line .item:nth-child(2n+2) .content ; delay: 300; hidden:true; repeat: true">
               <div class="uk-section uk-margin-large-top process-line">
                 <div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse" uk-grid>
                   <div class="item">
@@ -199,7 +199,7 @@
               <h1 class="uk-text-center uk-margin-remove-top uk-margin-large-bottom important">This is how we solve your problem and you solve social problems</h1>
             </div>
           </li>
-          <li class="why-us" id="why-us">
+          <li class="why-us" id="why-us" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .need-to-know .box:nth-child(2n+1); delay: 300; hidden:true; repeat: true">
             <div class="my-container left">
               <div class="uk-section uk-section-small nice-to-know">
                 <h2>NICE TO KNOW</h2>
@@ -272,26 +272,29 @@
               </div>
             </div>
           </li>
-          <li class="cost" id="cost">
+          <li class="cost" id="cost" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .material-cost .items> div, .fee>.box>ol>li; delay: 300; hidden:true; repeat: true">
             <div class="my-container left">
-              <div class="uk-section uk-section-small wage">
+              <div class="uk-section uk-section-small">
                 <p>The cost of working with us falls into three di erent categories. Employee wage, service fee and material cost. We follow standardized processes to ensure full transparency that equally benefit all parties involved.</p>
                 <div class="uk-section uk-section-small material-cost">
                   <h2>MATERIAL COST</h2>
-                  <div class="uk-grid uk-grid-collapse">
+                  <div class="uk-grid uk-grid-small items">
                     <div class="uk-width-1-2@s">
                       <img class="bubble" src="assets/img/icon/step-1-service.svg" alt="step first">
-                      <p class="uk-float-right info">Through our experience with materials we will help your business set up the supplies needed to run the daily operations. We strive to always choose the most environmentally friendly products possible, thereby minimizing your company's ecological footprint. Businesses that prefer to handle the supply process themselves should bear in mind that we insist on working with green materials.</p>
+                      <p class="uk-float-right info">Through our experience with materials we will help your business set up the supplies needed to run the daily operations. We strive to always choose the most environmentally friendly products possible, thereby minimizing your company's
+                        ecological footprint. Businesses that prefer to handle the supply process themselves should bear in mind that we insist on working with green materials.</p>
                     </div>
                     <div class="uk-width-1-2@s">
                       <img class="bubble" src="assets/img/icon/step-2-service.svg" alt="step second">
-                      <p class="uk-float-right info">We use responsible suppliers and order only the materials needed. When this is done the invoices will be sent directly to you only pay for what you receive. The final step is to lean back and let us handle your supply process. After ordering supplies, we will invoice you directly and charge you only for the materials needed for a given time period.</p>
+                      <p class="uk-float-right info">We use responsible suppliers and order only the materials needed. When this is done the invoices will be sent directly to you only pay for what you receive. The final step is to lean back and let us handle your supply process. After
+                        ordering supplies, we will invoice you directly and charge you only for the materials needed for a given time period.</p>
                     </div>
                   </div>
-                  <p class="uk-margin-large-top uk-margin-large-bottom">The wages are derived from various factors that all take into account the cost of living in Denmark. Furthermore, the wages are on par with danish labor unionized wages for the type of work the we focus on, to further ensure that our teammates receive fair wages.</p>
+                  <p class="uk-margin-large-top uk-margin-large-bottom">The wages are derived from various factors that all take into account the cost of living in Denmark. Furthermore, the wages are on par with danish labor unionized wages for the type of work the we focus on, to further ensure that our
+                    teammates receive fair wages.</p>
                 </div>
                 <h2>EMPLOYEE WAGE</h2>
-                <div class="uk-width-4-5@l uk-overflow-auto">
+                <div class="uk-width-4-5@l uk-overflow-auto wage">
                   <table class="uk-table uk-table-divider">
                     <thead>
                       <tr>
@@ -355,7 +358,8 @@
                     </tbody>
                   </table>
                 </div>
-                <p>*Last Minute Service means that YES needs to know at least 24 hours before the start of the working hours. Service that is requested with less than 24 hours notice before the start of the working hours is considered last minute. If the extra hours needed is an extension of the scheduled hours, then the service is not subject to any wage increase.</p>
+                <p>*Last Minute Service means that YES needs to know at least 24 hours before the start of the working hours. Service that is requested with less than 24 hours notice before the start of the working hours is considered last minute. If the
+                  extra hours needed is an extension of the scheduled hours, then the service is not subject to any wage increase.</p>
                 <em>To ensure that our teammates are paid on time no matter what, we require a deposit equivalent of one month’s wages to be paid.</em>
               </div>
               <div class="uk-section uk-section-small fee">
@@ -399,12 +403,12 @@
               </div>
             </div>
           </li>
-          <li class="practicality" id="practicality">
+          <li class="practicality" id="practicality" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .payment-process .items> div; delay: 300; hidden:true; repeat: true">
             <div class="my-container left">
-              <div class="uk-section uk-section-small wage">
+              <div class="uk-section uk-section-small payment-process">
                 <h2>PAYMENT PROCESS</h2>
                 <p>Because our wish is to secure transparency there are two options for payment.</p>
-                <div class="uk-grid uk-grid-collapse">
+                <div class="uk-grid uk-grid-collapse items">
                   <div class="uk-width-1-2@s">
                     <img class="bubble" src="assets/img/icon/step-1-service.svg" alt="step first">
                     <p class="uk-float-right info">You pay your Teammates’ salary directly to that person and our service fee separately to us. In this way, you always know exactly what the employee is being paid.</p>
@@ -414,17 +418,19 @@
                     <p class="uk-float-right info">You pay the salary and the service fee to us and we handle the salaries. We can provide you with a copy of the pay slip every month on request.</p>
                   </div>
                 </div>
-                <p class="uk-margin-large-top uk-margin-large-bottom">We calculate working months from the first day of every month to the last. This means that you will receive an invoice the 1st of every month. You will have 14 days to pay the invoice, meaning that we should receive your payment on the 15th at the latest. This enables us to pay salaries on the 20th of every month. Should you choose to pay via option 1, you will be required to pay the salaries on the same day.</p>
+                <p class="uk-margin-large-top uk-margin-large-bottom">We calculate working months from the first day of every month to the last. This means that you will receive an invoice the 1st of every month. You will have 14 days to pay the invoice, meaning that we should receive your payment on the
+                  15th at the latest. This enables us to pay salaries on the 20th of every month. Should you choose to pay via option 1, you will be required to pay the salaries on the same day.</p>
               </div>
-              <div class="uk-section uk-section-small wage payment-process">
+              <div class="uk-section uk-section-small insurance">
                 <h2>INSURANCE</h2>
                 <p>While YES always does our utmost to make sure that everything is done in a safe way, so that both the employees and the areas they work in are safe, things can go wrong. Therefore, there are two types of insurance that we work with.</p>
                 <h3>STANDARD</h3>
                 <div class="box">
                   <hr class="uk-hidden break-small">
                   <em>Work injury insurance (Arbejdsskade forsikring)</em>
-                  <p>This insurance covers injuries to the employee in the workplace. This is the part of the insurance that we ask the companies that we work with to handle. The nature of the work we do involves sustainable integration. As such, we encourage companies to interact with their teammates, which involves taking responsibility for their wellbeing and making sure that the areas where they work are safe. Furthermore, according to the Danish Business Authority the recipient company is responsible
-                    for providing the work injury insurance for the teammate working with them.</p>
+                  <p>This insurance covers injuries to the employee in the workplace. This is the part of the insurance that we ask the companies that we work with to handle. The nature of the work we do involves sustainable integration. As such, we encourage
+                    companies to interact with their teammates, which involves taking responsibility for their wellbeing and making sure that the areas where they work are safe. Furthermore, according to the Danish Business Authority the recipient company
+                    is responsible for providing the work injury insurance for the teammate working with them.</p>
                 </div>
                 <h3>Liability Insurance</h3>
                 <div class="box">

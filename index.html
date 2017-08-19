@@ -36,7 +36,7 @@
   <!-- MAIN CONTAINER -->
   <div class="container-all">
     <!-- NAV SECTION-->
-    <div class="global">
+    <div class="global" uk-scrollspy="cls: uk-animation-slide-top-medium; target: .my-navbar .contact; delay: 300; hidden:true; repeat: true">
       <nav class="uk-navbar my-navbar" uk-sticky="animation: uk-animation-slide-left-medium;top: #hero; bottom:#partners;">
         <div class="my-container uk-navbar-center">
           <div class="uk-navbar-left uk-hidden">
@@ -96,7 +96,7 @@
       </div>
     </div>
     <!-- MAIN CONTENT-->
-    <div class="main">
+    <div class="main" uk-scrollspy="cls: uk-animation-slide-left-medium; target: #operations .category>.item, #data .chart .legend .items>li, #steps .legend, #partners .items>li; delay: 300; hidden:true">
       <!-- HERO SECTION -->
       <div class="hero" id="hero">
         <div class="my-container large">
@@ -106,7 +106,7 @@
                 <img src="assets/img/hero.jpg" alt="Service you need, cause you care">
               </div>
               <div class="uk-position-cover blend"></div>
-              <h1 class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-center">Services you need,</br>causes you care about</h1>
+              <h1 uk-parallax="target: #hero .cover; y: 200; easing: 0.5" class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-center">Services you need,</br>causes you care about</h1>
             </div>
             <div class="uk-flex uk-flex-middle text">
               <div class="my-container large">
@@ -248,7 +248,7 @@
               </div>
               <div class="uk-width-1-1@s uk-width-1-2@m uk-flex uk-flex-left uk-flex-center@s uk-flex-right@m">
                 <div class="uk-grid uk-grid-collapse chart bar">
-                  <div class="uk-flex uk-flex-left uk-margin-large">
+                  <div class="uk-flex uk-flex-left uk-flex-middle">
                     <ul class="uk-padding-remove-left uk-inline blocks">
                       <p class="uk-position-bottom-left uk-margin-remove">Total cost for you</p>
                       <li>
@@ -264,7 +264,7 @@
                     </ul>
                   </div>
                   <div class="uk-flex uk-flex-right uk-flex-middle legend">
-                    <ul class="uk-list">
+                    <ul class="uk-list items">
                       <li><img src="assets/img/icon/legend-profit.png" alt="Profit Symbol">Profit</li>
                       <li><img src="assets/img/icon/legend-giving-back-to-society.png" alt="Giving back to society Symbol">Giving back to society</li>
                       <li><img src="assets/img/icon/Legend-operation-cost.png" alt="Operation cost Symbol">Operation cost</li>
@@ -280,7 +280,7 @@
       <div class="quotation" id="quotation">
         <div class="my-container">
           <div class="uk-section uk-section-default uk-section-medium uk-padding-remove-bottom">
-            <h2>Here are the smart and</br>BUSINESSES AND ORGANIZATIONS</br>THAT ALREADY SAID YES</h2>
+            <h2 class="uk-margin-medium">Here are the smart and</br>BUSINESSES AND ORGANIZATIONS</br>THAT ALREADY SAID YES</h2>
             <div class="my-slider">
               <div class="item">
                 <blockquote>
@@ -321,7 +321,7 @@
       <div class="partners" id="partners">
         <div class="my-container">
           <div class="uk-section uk-section-default uk-section-medium">
-            <ul class="uk-grid-large uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l uk-link-text uk-link-reset uk-text-center" uk-grid>
+            <ul class="uk-grid-large uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l uk-link-text uk-link-reset uk-text-center items" uk-grid>
               <li><a href="#">Aalborg University Denmark</a></li>
               <li><a href="#">Connect Denmark</a></li>
               <li><a href="#">Copenhagen School of Entrepreneurship</a></li>

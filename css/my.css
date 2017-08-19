@@ -52,7 +52,7 @@
 }
 
 body {
-  font-size: 1em;
+  font-size: .8em;
   margin: 0;
   font-family: "Gotham", Georgia, serif;
   color: #1D1D1B;
@@ -231,7 +231,7 @@ body .hero {
 }
 
 .my-button {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 a:hover, a:focus {
@@ -298,6 +298,10 @@ a:hover, a:focus {
 
 
 /* Navbar */
+
+.logo {
+  padding: 0;
+}
 
 .logo img {
   width: 95px;
@@ -425,6 +429,11 @@ a:hover, a:focus {
   display: inline-block;
   position: relative;
   height: 100%;
+}
+
+.overlay .contact img {
+  width: 180px;
+  margin-top: 10px;
 }
 
 .overlay ul li, .overlay.open .contact {
@@ -561,7 +570,7 @@ a:hover, a:focus {
 .chart.bar .legend {
   font-weight: normal;
   font-size: 1.063em;
-  vertical-align: middle;
+  margin-top: 80px;
 }
 
 .chart.bar .legend li img {
@@ -872,7 +881,7 @@ a:hover, a:focus {
 }
 
 
-/* Service */
+/* Nav secondary */
 
 .nav-secondary {
   padding: 0;
@@ -883,7 +892,7 @@ a:hover, a:focus {
 }
 
 .nav-secondary li a {
-  font-size: 3.563em;
+  font-size: 2em;
   font-style: normal;
   font-weight: bold;
   line-height: 1.2;
@@ -891,13 +900,9 @@ a:hover, a:focus {
   display: inline-block;
 }
 
-.nav-secondary li a:hover, .nav-secondary li a:focus, .nav-secondary li a:active {
-  text-decoration: underline;
-}
-
-.nav-secondary li a::after {
+.nav-secondary li:not(.uk-active) a::after {
   content: '';
-  border-bottom: 5px solid;
+  border-bottom: 3px solid;
   width: 100%;
   position: absolute;
   right: 0;
@@ -906,11 +911,10 @@ a:hover, a:focus {
   -webkit-transition: bottom 0.4s ease-in-out;
 }
 
-.nav-secondary li.uk-active a::after, .nav-secondary li a:hover, .nav-secondary li a:hover::after {
+.nav-secondary li a:hover, .nav-secondary li a:hover::after {
   color: inherit;
   opacity: 0.8;
   bottom: 0;
-  border-bottom: 0;
 }
 
 
@@ -992,13 +996,16 @@ a:hover, a:focus {
   border: 2px solid #1D1D1B;
 }
 
-.wage .bubble {
+
+/*payment-process, material-cost*/
+
+.payment-process .bubble, .material-cost .bubble {
   position: relative;
   top: 5%;
   left: 0;
 }
 
-.wage .info {
+.payment-process .info, .material-cost .info {
   width: 80%;
 }
 
@@ -1153,13 +1160,10 @@ a:hover, a:focus {
 /* faq */
 
 .questions .uk-accordion-title {
+  text-transform: inherit;
   font-weight: 500;
   font-size: 1.188em;
   color: #1d1d1b;
-}
-
-.questions .uk-accordion-title::after {
-  display: none;
 }
 
 .questions .uk-accordion-content {
