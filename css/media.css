@@ -92,8 +92,8 @@
     bottom: 210px;
   }
   /* portrait */
-  .portrait img.bubble {
-    top: -30%;
+  .members img.tag {
+    top: -27%;
     left: 90%;
   }
   .members .team .member {
@@ -178,7 +178,7 @@
     top: 80px;
   }
   /* portrait */
-  .portrait img.bubble {
+  .members img.tag {
     top: -35px;
     left: 256px;
   }

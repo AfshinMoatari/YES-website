@@ -843,7 +843,6 @@ a:hover, a:focus {
 /* Story */
 
 .story p {
-  font-weight: 400;
   font-style: italic;
 }
 
@@ -854,9 +853,14 @@ a:hover, a:focus {
   font-size: 1.563em;
 }
 
-.portrait img.bubble {
+.members img.tag {
   top: -35%;
   left: 10%;
+}
+
+.members .portrait {
+  width: 300px;
+  height: 300px;
 }
 
 .members .team .member {
@@ -907,6 +911,13 @@ a:hover, a:focus {
   opacity: 0.8;
   bottom: 0;
   border-bottom: 0;
+}
+
+
+/* cost */
+
+.cost em {
+  text-decoration: underline;
 }
 
 
