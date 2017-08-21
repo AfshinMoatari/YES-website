@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="css/media.css" />
   <!-- jQuery is required -->
   <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- AJAX -->
+  <script src="js/ajax.js"></script>
   <!-- UIkit JS -->
   <script src="js/uikit.min.js"></script>
   <!-- SLICK SLIDER JS -->
@@ -107,7 +109,7 @@
           <li class="company" id="company">
             <div class="my-container left">
               <div class="uk-section uk-section-small contact">
-                <form class="uk-form-horizontal uk-margin-medium">
+                <form class="uk-form-horizontal uk-margin-medium" id="company-call" method="post" action="inc/mailer.php">
                   <div class="uk-flex uk-flex-wrap uk-flex-wrap-bottom uk-flex-middle box" uk-margin>
                     <div>
                       <hr class="break-small uk-hidden">
@@ -120,45 +122,46 @@
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="someone">I am writing on behalf of</label>
+                      <label class="uk-flex-auto my-form-label" for="behalf">I am writing on behalf of</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="someone" type="text">
+                      <input class="uk-flex-auto uk-input" id="behalf" type="text">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="subject">I am contacting you to talk about</label>
+                      <label class="uk-flex-auto my-form-label" for="message">I am contacting you to talk about</label>
                     </div>
                     <div class="uk-width-2-5 uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="subject" type="text">
+                      <input class="uk-flex-auto uk-input" id="message" type="text">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="name">My phone number is</label>
+                      <label class="uk-flex-auto my-form-label" for="phone">My phone number is</label>
                     </div>
                     <div class="uk-flex-none">
                       <input class="uk-flex-auto uk-input" id="phone" type="text">
                     </div>
                     <span class="comma"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="someone">and my email is</label>
+                      <label class="uk-flex-auto my-form-label" for="email">and my email is</label>
                     </div>
                     <div class="uk-flex-none">
                       <input class="uk-flex-auto uk-input" id="email" type="text">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="someone">Please contact me between</label>
+                      <label class="uk-flex-auto my-form-label" for="time">Please contact me between</label>
                     </div>
                     <div class="uk-flex-none">
                       <input class="uk-flex-auto uk-input" id="time" type="text">
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="someone">to get the sation started! </label>
+                      <label class="uk-flex-auto my-form-label">to get the sation started! </label>
                     </div>
                   </div>
                   <input type="image" class="uk-float-right submit" id="submit" src="assets/img/icon/submit-light.png" name="submit">
                 </form>
+                <div class="uk-padding uk-text-center form-messages" id="form-messages" style="color:red;"></div>
               </div>
             </div>
           </li>

@@ -499,6 +499,7 @@ a:hover, a:focus {
 
 .hero .cover {
   height: calc(100vh - 80px);
+  background-color: #202020;
 }
 
 .hero .cover h1 {
@@ -667,7 +668,7 @@ a:hover, a:focus {
 }
 
 .sticker .cover {
-  background-image: url(../assets/img/sticker.jpg);
+  background-color: #202020;
   height: 505px;
 }
 
@@ -677,11 +678,15 @@ a:hover, a:focus {
 }
 
 .entrepreneurs .cover {
-  background-image: url(../assets/img/entrepreneurs.jpg);
+  background-color: #202020;
+}
+
+.entrepreneurs .box {
+  margin-left: 70px;
 }
 
 .entrepreneurs .cover .my-container {
-  height: 360px;
+  height: 100%;
 }
 
 .entrepreneurs p {
