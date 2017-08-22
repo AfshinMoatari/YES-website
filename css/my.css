@@ -515,7 +515,7 @@ a:hover, a:focus {
 /* Operations */
 
 .operations .cover {
-  background-image: url(../assets/img/how.png);
+  background-image: url(../assets/img/how.jpg);
 }
 
 .operations .blend {
@@ -766,10 +766,6 @@ a:hover, a:focus {
   padding-top: 0;
   border: 15px solid #000;
   border-top: 0;
-}
-
-#contact .footer:hover {
-  border: none;
 }
 
 .footer .footer-content {
@@ -1128,11 +1124,35 @@ a:hover, a:focus {
   margin: 0 5px;
 }
 
-.contact input[type=text] {
-  border: 3px solid #1d1d1b;
+.contact input:not(#submit) {
+  border: 2px solid #1d1d1b;
 }
 
-.contact input[type=text]:focus {
+.contact input.my-danger {
+  border: 2px solid tomato;
+}
+
+.contact input.my-danger::-webkit-input-placeholder {
+  color: tomato;
+}
+
+.contact input.my-danger:-moz-placeholder {
+  color: tomato;
+}
+
+.contact input.my-danger::-moz-placeholder {
+  color: tomato;
+}
+
+.contact input.my-danger:-ms-input-placeholder {
+  color: tomato;
+}
+
+.contact input.my-danger::-ms-input-placeholder {
+  color: tomato;
+}
+
+.contact input:not(#submit):focus {
   background: #fff;
   border: none;
   border-bottom: 1px solid #333;
