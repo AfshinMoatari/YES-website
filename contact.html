@@ -108,7 +108,7 @@
             <a href="#">COMPANY</a>
           </li>
           <li>
-            <a href="#">EMPLOYYE</a>
+            <a href="#">EMPLOYEE</a>
           </li>
           <hr class="uk-panel-divider">
         </ul>
@@ -116,7 +116,7 @@
           <li class="company" id="company">
             <div class="my-container left">
               <div class="uk-section uk-section-small contact">
-                <form class="uk-form-horizontal uk-margin-medium" method="post" action="inc/mailer.php">
+                <form class="uk-form-horizontal uk-margin-medium" method="post">
                   <div class="uk-flex uk-flex-wrap uk-flex-wrap-bottom uk-flex-middle box" uk-margin>
                     <div>
                       <hr class="break-small uk-hidden">
@@ -172,16 +172,19 @@
                       <label class="uk-flex-auto my-form-label">to get the conversation started! </label>
                     </div>
                   </div>
-                  <input type="image" class="uk-float-right submit" id="submit" src="assets/img/icon/submit-light.png" name="submit">
+                  <input type="image" class="submit" id="submit" src="assets/img/icon/submit.svg" name="submit">
                 </form>
-                <div class="uk-padding uk-text-center form-messages" id="form-messages" style="color:red;"></div>
+                <div class="error-container" id="error-container">
+                   <p>Please correct the following errors and try again:</p>
+                   <ul></ul>
+                </div>
               </div>
             </div>
           </li>
           <li class="employee" id="employee">
             <div class="my-container left">
               <div class="uk-section uk-section-small contact">
-                <form class="uk-form-horizontal uk-margin-medium">
+                <form class="uk-form-horizontal uk-margin-medium" method="post">
                   <div class="uk-flex uk-flex-wrap uk-flex-wrap-bottom uk-flex-middle box" uk-margin>
                     <div>
                       <hr class="break-small uk-hidden">
@@ -190,14 +193,14 @@
                       <label class="uk-flex-auto my-form-label" for="name">My name is</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="name" type="text">
+                      <input class="uk-flex-auto uk-input" id="name" type="text" name="name">
                     </div>
                     <span class="comma"></span>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="age">and I am</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="age" type="text">
+                      <input class="uk-flex-auto uk-input" id="age" type="text" name="age">
                     </div>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="age">years old.</label>
@@ -206,7 +209,7 @@
                       <label class="uk-flex-auto my-form-label" for="hours">I am interested in working</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="hours" type="text">
+                      <input class="uk-flex-auto uk-input" id="hours" type="text" name="hours">
                     </div>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="hours">hours per month, and I have previous</label>
@@ -215,28 +218,25 @@
                       <label class="uk-flex-auto my-form-label" for="experience">experience with</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="experience" type="text">
+                      <input class="uk-flex-auto uk-input" id="experience" type="text" name="experience">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="contact-1">You can contact me on</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="contact-1" type="text">
+                      <input class="uk-flex-auto uk-input" id="email" type="email" name="email">
                     </div>
-                    <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="contact-2">or</label>
-                    </div>
-                    <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="contact-2" type="text">
-                    </div>
-                    <span class="comma"></span>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label">so that we can talk about my desire to work at YESCPH. </label>
                     </div>
                   </div>
-                  <input type="image" class="uk-float-right submit" id="submit" src="assets/img/icon/submit-light.png" name="submit">
+                  <input type="image" class="uk-float-right submit" id="submit" src="assets/img/icon/submit.svg" name="submit">
                 </form>
+                <div class="error-container" id="error-container">
+                   <p>Please correct the following errors and try again:</p>
+                   <ul></ul>
+                </div>
               </div>
             </div>
           </li>

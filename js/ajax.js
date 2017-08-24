@@ -1,133 +1,162 @@
 $(function() {
 
-  // let SelectedForm = $("#contact form");
-  // let AllInputs = SelectedForm.find("input");
-  // let AllTextInputs = SelectedForm.find("input[type=text]");
-  //
-  // $(AllTextInputs).keyup(function() {
-  //   $(this).each(function() {
-  //     $(this).addClass("my-danger");
-  //   })
-  // });
-  //
-  // $(SelectedForm).submit(function(event) {
-  //   event.preventDefault();
-  //   $(AllInputs).each(function() {
-  //     if (!$.trim($(this).val())) {
-  //       $(this).addClass("my-danger");
-  //       $(this).attr("placeholder", "Required");
-  //     } else {
-  //       $(this).removeClass("my-danger");
-  //       $(this).attr("placeholder", "");
-  //     }
-  //   })
-  // });
-
-  jQuery(function($) {
-
-    var validator = $('#contact form').validate({
-      // errorPlacement: function(error, element) {
-      //   element.attr("placeholder", error.text());
-      // }
-      onkeyup: true,
-      rules: {
-        name: {
-          required: true,
-          minlength: 2,
-          maxlength: 16
-        },
-        behalf: {
-          required: true,
-          minlength: 2,
-          maxlength: 16
-        },
-        message: {
-          required: true,
-          minlength: 2,
-          maxlength: 140
-        },
-        phone: {
-          required: true,
-        },
-        email: {
-          required: true,
-          email: true
-        },
-        timeFrom: {
-          required: true,
-        },
-        timeTo: {
-          required: true,
-        }
+  let validatorCompany = $("#company form").validate({
+    onkeyup: function(el, e) {
+      $(el).valid();
+    },
+    rules: {
+      name: {
+        required: true,
+        minlength: 2,
+        maxlength: 26
       },
-      messages: {
-        name: {
-          required: "Name Required.",
-          minlength: "Your Name must be between 2-16 character."
-        },
-        behalf: {
-          required: "Behalf Name Required.",
-          minlength: "Behalf Name must be between 2-16 character."
-        },
-        message: {
-          required: "Message Required.",
-          minlength: "Message must be between 2-140 character."
-        },
-        phone: {
-          required: "Phone Number Required.",
-        },
-        email: {
-          required: "Email Required.",
-          email: "Not a valid Email."
-        },
-        timeFrom: {
-          required: "Please Set From-Time"
-        },
-        timeTo: {
-          required: "Please Set To-Time"
-        }
+      behalf: {
+        required: true,
+        minlength: 2,
+        maxlength: 26
       },
-      submitHandler: function(form) {
-        form.submit();
+      message: {
+        required: true,
+        minlength: 2,
+        maxlength: 140
+      },
+      phone: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      timeFrom: {
+        required: true,
+      },
+      timeTo: {
+        required: true,
       }
-    });
+    },
+    messages: {
+      name: {
+        required: "Name Required.",
+        minlength: "Your Name must be between 2-26 character."
+      },
+      behalf: {
+        required: "Behalf Name Required.",
+        minlength: "Behalf Name must be between 2-26 character."
+      },
+      message: {
+        required: "Message Required.",
+        minlength: "Message must be between 2-140 character."
+      },
+      phone: {
+        required: "Phone Number Required.",
+      },
+      email: {
+        required: "Email Required.",
+        email: "Not a valid Email."
+      },
+      timeFrom: {
+        required: "Please Set From-Time"
+      },
+      timeTo: {
+        required: "Please Set To-Time"
+      }
+    },
+    errorContainer: $("#company #error-container"),
+    errorLabelContainer: $("#company #error-container ul"),
+    wrapper: "li",
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "inc/mailer-company.php",
+        data: $("#company form").serialize(),
+        success: function() {
+          $("#company form").html("<div class='message'></div>");
+          $('.message').html("<h2>Your contact request is on the way!</h2>")
+            .append("<p>meanwhile, if you have any questions feel free to check the " +
+              "<a class='my-button my-button-text' href=faq.html>" +
+              "FAQ" +
+              "</a>" +
+              " page.</p>")
+            .hide()
+            .fadeIn(1500)
+        }
+      });
+      return false;
+    }
+  });
+  let validatorEmployee = $("#employee form").validate({
+    onkeyup: function(el, e) {
+      $(el).valid();
+    },
+    rules: {
+      name: {
+        required: true,
+        minlength: 2,
+        maxlength: 26
+      },
+      age: {
+        required: true,
+        number: true,
+        min: 18,
+        max: 99
+      },
+      hours: {
+        required: true,
+        number: true,
+        min: 15,
+        max: 48
+      },
+      experience: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      },
+    },
+    messages: {
+      name: {
+        required: "Name Required.",
+        minlength: "Your Name must be between 2-26 character."
+      },
+      age: {
+        required: "Age Required.",
+        minlength: "Age must be between 18-99 character."
+      },
+      hours: {
+        required: "Hours Required.",
+        minlength: "Hours must be between 15-48 character."
+      },
+      experience: {
+        required: "Experience Required.",
+      },
+      email: {
+        required: "Email Required.",
+        email: "Not a valid Email."
+      }
+    },
+    errorContainer: $("#employee #error-container"),
+    errorLabelContainer: $("#employee #error-container ul"),
+    wrapper: "li",
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "inc/mailer-employee.php",
+        data: $("#employee form").serialize(),
+        success: function() {
+          $("#employee form").html("<div class='message'></div>");
+          $('.message').html("<h2>Your contact request is on the way!</h2>")
+            .append("<p>meanwhile, if you have any questions feel free to check the " +
+              "<a class='my-button my-button-text' href=faq.html>" +
+              "FAQ" +
+              "</a>" +
+              " page.</p>")
+            .hide()
+            .fadeIn(1500)
+        }
+      });
+      return false;
+    }
+  });
 
-
-  })
-
-
-
-
-
-  // let form = $('#company form');
-  // let formMessages = $('#form-messages');
-  // $(form).submit(function(event) {
-  //   event.preventDefault();
-  //   let formData = $(form).serialize();
-  //   $.ajax({
-  //       type: 'POST',
-  //       url: $(form).attr('action'),
-  //       data: formData
-  //     })
-  //     .done(function(response) {
-  //       $(formMessages).removeClass('error');
-  //       $(formMessages).addClass('success');
-  //       $(formMessages).text(response);
-  //       $('#name').val('');
-  //       $('#behalf').val('');
-  //       $('#message').val('');
-  //       $('#phone').val('');
-  //       $('#email').val('');
-  //       $('#time').val('');
-  //     })
-  //     .fail(function(data) {
-  //       $(formMessages).removeClass('success');
-  //       $(formMessages).addClass('error');
-  //       if (data.responseText !== '') {
-  //         $(formMessages).text(data.responseText);
-  //       } else {
-  //         $(formMessages).text('Oops! An error occured and your message could not be sent.');
-  //       }
-  //     });
-  // });
 });

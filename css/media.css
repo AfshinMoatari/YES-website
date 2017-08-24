@@ -139,6 +139,13 @@
   .entrepreneurs .cover .my-container {
     height: 360px;
   }
+  /*form*/
+  .contact .error-container {
+    padding: 30px;
+  }
+  .contact input#submit {
+    float: right;
+  }
 }
 
 @media (min-width: 960px) {
