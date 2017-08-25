@@ -794,14 +794,14 @@
   }
 
   .footer ul.social li a::before {
-    border-bottom: 3px solid #000;
-    border-left: 3px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
     -webkit-transform-origin: 0 100%;
   }
 
   .footer ul.social li a::after {
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
     -webkit-transform-origin: 100% 0%;
   }
 
@@ -1165,6 +1165,10 @@
     padding-right: 40px;
   }
   /* impact */
+
+  .child-sponsorship .category .item {
+    margin: 20px 0;
+  }
 
   .child-sponsorship .category .item p {
     font-size: 0.969em;

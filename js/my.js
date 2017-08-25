@@ -45,7 +45,9 @@ $(function() {
     });
   }
 
-  $('.why-us').on('click', function() {
+
+
+  $('.nav-secondary .why-us').on('click', function() {
     $('.value').each(function() {
       $(this).prop('Counter', 0).animate({
         Counter: $(this).text()
@@ -66,4 +68,17 @@ $(function() {
   $('.close-menu').on('click', function() {
     $('.overlay').removeClass('open');
   });
+
+  $("#sticker .my-button").on("click", function() {
+    localStorage.setItem('button', 'clicked');
+    window.location.href = "secondPage.html";
+  });
+  if (localStorage.getItem('button') === 'clicked') {
+    $('#service .nav-secondary').find('.uk-active').removeClass('uk-active');
+    $('#service .nav-secondary .why-us').addClass('uk-active');
+    $('#service .uk-switcher').find('.uk-active').removeClass('uk-active');
+    $('#service .uk-switcher .why-us').addClass('uk-active');
+    localStorage.removeItem('button');
+  }
+
 });

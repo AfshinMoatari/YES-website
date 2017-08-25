@@ -12,7 +12,7 @@
         $timeFrom = trim($_POST["timeFrom"]);
         $timeTo = trim($_POST["timeTo"]);
 
-        $recipient_company = "afshin_dev@yescph.co";
+        $recipient_company = "raid@yescph.co";
         $subject_company = "New Company Contact From $name";
         $email_headers_company = "From: " . $name . "\r\n";
         $email_headers_company .= "Reply-To: ". $email . "\r\n";

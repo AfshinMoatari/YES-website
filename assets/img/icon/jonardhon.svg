@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="173px" height="68px" viewBox="0 0 173 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>moni</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.3,27.9883116 L0.3,18.9 C0.3,16.2 3.89091712,13.9 8.46117527,13.9 L82.2381997,13.9 C86.8084579,13.9 93.5006216,12.6 97.2547622,11.1 L121.575065,1.1 C125.329205,-0.5 128.430452,0.5 128.430452,3.3 L128.430452,8.8 C128.430452,11.5 132.021369,13.8 136.591627,13.8 L161.075153,13.8 C165.482187,13.8 169.236328,16 169.236328,18.8 L169.236328,27.9883116" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="moni" transform="translate(2.000000, 2.000000)">
+            <path d="M161.075153,63.7 C165.645411,63.7 169.236328,61.4 169.236328,58.7 L169.236328,18.8 C169.236328,16 165.482187,13.8 161.075153,13.8 L136.591627,13.8 C132.021369,13.8 128.430452,11.5 128.430452,8.8 L128.430452,3.3 C128.430452,0.5 125.329205,-0.5 121.575065,1.1 L97.2547622,11.1 C93.5006216,12.6 86.8084579,13.9 82.2381997,13.9 L8.46117527,13.9 C3.89091712,13.9 0.3,16.2 0.3,18.9 L0.3,58.8 C0.3,61.4 4.05414062,63.7 8.62439878,63.7 L161.075153,63.7 Z" id="Shape" stroke="#000000" stroke-width="3"></path>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape-Copy" stroke="#FEFEFE" stroke-width="3" xlink:href="#path-1"></use>
+            <rect id="Rectangle-path" mask="url(#mask-2)" x="27" y="29" width="113.113889" height="20.4"></rect>
+            <text id="Jonardhon" fill="#000000" font-family="GothamBold-Italic, GothamBold" font-size="25.0634" font-style="italic" font-weight="bold">
+                <tspan x="15" y="48">Jonardhon</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

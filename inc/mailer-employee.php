@@ -8,7 +8,7 @@
         $hours = trim($_POST["hours"]);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
 
-        $recipient_company = "afshin_dev@yescph.co";
+        $recipient_company = "raid@yescph.co";
         $subject_company = "New Company Contact From $name";
         $email_headers_company = "From: " . $name . "\r\n";
         $email_headers_company .= "Reply-To: ". $email . "\r\n";
