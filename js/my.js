@@ -1,6 +1,10 @@
 'use strict';
 
-$(function() {
+$(window).on('beforeunload', function() {
+  $(window).scrollTop(0);
+});
+
+$(document).ready(function() {
 
   $('.my-slider').slick({
     infinite: true,
@@ -44,8 +48,6 @@ $(function() {
       }
     });
   }
-
-
 
   $('.nav-secondary .why-us').on('click', function() {
     $('.value').each(function() {

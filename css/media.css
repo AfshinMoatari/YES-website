@@ -219,8 +219,8 @@
     padding: 0 50px;
   }
   .sticker .my-button {
-    bottom: 128px;
-    right: -20px;
+    bottom: 140px;
+    right: -45px;
   }
   .entrepreneurs .my-button {
     top: 80px;
@@ -284,10 +284,7 @@
     top: 100%;
   }
   .steps .item:nth-child(1) {
-    margin-bottom: -30px;
-  }
-  .steps .item:nth-child(3) {
-    margin-top: -30px;
+    margin-bottom: -60px;
   }
   .steps .item:nth-child(2) {
     -webkit-align-items: flex-start;

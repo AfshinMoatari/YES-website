@@ -638,6 +638,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  /*partners*/
+
+  .partners img {
+    width: 120px;
+  }
   /* Sticker, Entrepreneurs*/
 
   .sticker p, .sticker h2, .sticker .my-button, .sticker hr, .entrepreneurs hr, .entrepreneurs h2, .entrepreneurs p, .entrepreneurs a.my-button {
@@ -1167,7 +1172,7 @@
   /* impact */
 
   .child-sponsorship .category .item {
-    margin: 20px 0;
+    margin: 30px 0;
   }
 
   .child-sponsorship .category .item p {
