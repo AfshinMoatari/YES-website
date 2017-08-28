@@ -241,6 +241,10 @@
     text-align: left;
   }
   /* process-line */
+  .process h1 {
+    padding: 0 30px;
+    text-align: center;
+  }
   .process-line .item .item-container {
     border-left: none;
     text-align: left;
@@ -278,6 +282,9 @@
   .process-line .item:nth-last-child(-n+2) .item-container, .process-line .item:nth-last-child(-n+2) .item-container hr {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .process-line .item:nth-last-child(2) .item-container {
+    height: 300px;
   }
   .process-line .item:nth-last-child(2) .item-container hr {
     position: relative;

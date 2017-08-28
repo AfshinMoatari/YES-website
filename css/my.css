@@ -1084,8 +1084,8 @@
   .contact .error-container {
     display: none;
     overflow: auto;
-    background-color: #FFDDDD;
-    border: 1px solid #FF2323;
+    background-color: #B0E0E6;
+    border: 1px solid #4682B4;
     padding: 15px;
     margin: 120px 0;
     font-size: .8em;
@@ -1100,11 +1100,7 @@
   }
 
   .contact input:not(#submit).error {
-    border: 1px solid #FF2323;
-  }
-
-  .contact input.my-danger {
-    border: 2px solid tomato;
+    border: 1px solid #4682B4;
   }
 
   .contact input#submit {
@@ -1112,30 +1108,30 @@
     margin: 20px 0;
   }
 
-  .contact input.my-danger::-webkit-input-placeholder {
-    color: tomato;
-  }
-
-  .contact input.my-danger:-moz-placeholder {
-    color: tomato;
-  }
-
-  .contact input.my-danger::-moz-placeholder {
-    color: tomato;
-  }
-
-  .contact input.my-danger:-ms-input-placeholder {
-    color: tomato;
-  }
-
-  .contact input.my-danger::-ms-input-placeholder {
-    color: tomato;
+  .contact input[type="datetime-local"] {
+    color: #A9A9A9;
   }
 
   .contact input:not(#submit):focus {
     background: #fff;
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #666;
+  }
+
+  .contact input:not(#submit):focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .contact input:not(#submit):focus:-moz-placeholder {
+    color: transparent;
+  }
+
+  .contact input:not(#submit):focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  .contact input:not(#submit):focus:-ms-input-placeholder {
+    color: transparent;
   }
 
   .dot::after {
@@ -1188,7 +1184,17 @@
     position: relative;
     margin: -30px 2%;
   }
+
+  .global .area .box p, .local .area .box p {
+    font-weight: 500;
+  }
   /* process-line */
+
+  .process h1 {
+    text-transform: inherit;
+    padding: 0;
+    text-align: left;
+  }
 
   .process-line .item .item-container p, .process-line .item .item-container h2 {
     margin: 0;

@@ -83,4 +83,10 @@ $(document).ready(function() {
     localStorage.removeItem('button');
   }
 
+  $("input[type='datetime']").datetimepicker({
+    timeInput: true,
+    timeFormat: 'hh:mm tt',
+    showAnim: 'slide'
+  });
+
 });

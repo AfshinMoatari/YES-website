@@ -1,5 +1,12 @@
 $(function() {
 
+  $.validator.addMethod("dateTime", function(value, element) {
+    var stamp = value.split(" ");
+    var validDate = !/Invalid|NaN/.test(new Date(stamp[0]).toString());
+    var validTime = /^(([0-1]?[0-9])|([2][0-3])):([0-5]?[0-9])(:([0-5]?[0-9]))?$/i.test(stamp[1]);
+    return this.optional(element) || (validDate && validTime);
+  });
+
   let validatorCompany = $("#company form").validate({
     onkeyup: function(el, e) {
       $(el).valid();
@@ -27,11 +34,13 @@ $(function() {
         required: true,
         email: true
       },
-      timeFrom: {
+      datetimeFrom: {
         required: true,
+        dateTime: true
       },
-      timeTo: {
+      datetimeTo: {
         required: true,
+        dateTime: true
       }
     },
     messages: {
@@ -54,11 +63,13 @@ $(function() {
         required: "Email Required.",
         email: "Not a valid Email."
       },
-      timeFrom: {
-        required: "Please Set From-Time"
+      datetimeFrom: {
+        required: "Please set 'From-date and time.'",
+        dateTime: "Please enter a valid date and time."
       },
-      timeTo: {
-        required: "Please Set To-Time"
+      datetimeTo: {
+        required: "Please set 'To-date and time.'",
+        dateTime: "Please enter a valid date and time."
       }
     },
     errorContainer: $("#company #error-container"),
@@ -73,7 +84,7 @@ $(function() {
           $("#company form").html("<div class='message'></div>");
           $('.message').html("<h2>Your contact request is on the way!</h2>")
             .append("<p>meanwhile, if you have any questions feel free to check the " +
-              "<a class='my-button my-button-text' href=faq.html>" +
+              "<a class='my-button my-button-text' href=faq>" +
               "FAQ" +
               "</a>" +
               " page.</p>")
@@ -97,7 +108,7 @@ $(function() {
       age: {
         required: true,
         number: true,
-        min: 18,
+        min: 20,
         max: 99
       },
       hours: {
@@ -107,7 +118,7 @@ $(function() {
         max: 48
       },
       experience: {
-        required: true,
+        required: false,
       },
       email: {
         required: true,
@@ -147,7 +158,7 @@ $(function() {
           $("#employee form").html("<div class='message'></div>");
           $('.message').html("<h2>Your contact request is on the way!</h2>")
             .append("<p>meanwhile, if you have any questions feel free to check the " +
-              "<a class='my-button my-button-text' href=faq.html>" +
+              "<a class='my-button my-button-text' href=faq>" +
               "FAQ" +
               "</a>" +
               " page.</p>")

@@ -9,26 +9,28 @@
         $message = str_replace(array("\r","\n"), array(" "," "), $message);
         $phone = trim($_POST["phone"]);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $timeFrom = trim($_POST["timeFrom"]);
-        $timeTo = trim($_POST["timeTo"]);
+        $datetimeFrom = trim($_POST["datetimeFrom"]);
+        $datetimeTo = trim($_POST["datetimeTo"]);
 
-        $recipient_company = "raid@yescph.co";
-        $subject_company = "New Company Contact From $name";
-        $email_headers_company = "From: " . $name . "\r\n";
+        $recipient_company = "yes@yescph.co";
+        $subject_company = "New Company Contact From . $name . ";
+        $email_headers_company = "From: " . $email . "\r\n";
         $email_headers_company .= "Reply-To: ". $email . "\r\n";
         $email_headers_company .= "MIME-Version: 1.0\r\n";
         $email_headers_company .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+        $email_headers_company .= "X-Mailer: PHP/" . phpversion();
         $email_content_company = "<html><body>";
         $email_content_company .= "<h3>Company Contact From " . $name . "</h3>";
-        $email_content_company .= "<p>My name is " . "<b>" . $name . "</b>" . "." . "I am writing on behalf of " . "<b>" .  $behalf . "</b>" . "." . " I am contacting you to talk about " . "<b>" . $message . "</b>" . "." . " My phone number is " . "<b>" . $phone . "</b>" . "," . " and my email is " . "<b>" . $email . "</b>" . " ." . " Please contact me between " . "<b>" . $timeFrom . "</b>" . " - " . "<b>" . $timeTo . "</b>" . " to get the conversation started!</p>";
+        $email_content_company .= "<p>My name is " . "<b>" . $name . "</b>" . "." . "I am writing on behalf of " . "<b>" .  $behalf . "</b>" . "." . " I am contacting you to talk about " . "<b>" . $message . "</b>" . "." . " My phone number is " . "<b>" . $phone . "</b>" . "," . " and my email is " . "<b>" . $email . "</b>" . " ." . " Please contact me between " . "<b>" . $datetimeFrom . "</b>" . " to " . "<b>" . $datetimeTo . "</b>" . " to get the conversation started!</p>";
         $email_content_company .= "</body></html>";
 
         $recipient_client = $email;
-        $subject_client = "YESCPH contact request";
-        $email_headers_client = "From: " . "Contact" . "\r\n";
+        $subject_client = "YES CPH contact request";
+        $email_headers_client = "From: " . $recipient_company . "\r\n";
         $email_headers_client .= "Reply-To: ". $recipient_company . "\r\n";
         $email_headers_client .= "MIME-Version: 1.0\r\n";
         $email_headers_client .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+        $email_headers_client .= "X-Mailer: PHP/" . phpversion();
         $email_content_client = "<html><body>";
         $email_content_client .= "<h3>Thank you for contacting us " . $name . "." . "</h3>";
         $email_content_client .= "<p>We will contact you soon " . "." . "</body></html>";

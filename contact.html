@@ -22,6 +22,10 @@
   <link rel="stylesheet" href="css/my.css" />
   <!-- MEDIA CSS -->
   <link rel="stylesheet" href="css/media.css" />
+  <!-- jQuery UI  -->
+  <link rel="stylesheet" href="css/jquery-ui.min.css" />
+  <!-- jQuery timepicker CSS -->
+  <link rel="stylesheet" href="css/jquery-ui-timepicker-addon.min.css" />
   <!-- jQuery is required -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <!-- jQuery Validator required -->
@@ -32,8 +36,12 @@
   <script src="js/uikit.min.js"></script>
   <!-- SLICK SLIDER JS -->
   <script src="js/slick.min.js"></script>
-  <!-- My JS -->
-  <script src="js/my.js"></script>
+  <!-- jQuery UI JS -->
+  <script src="js/jquery-ui.min.js"></script>
+  <!-- jQuery timepicker JS -->
+  <script src="js/jquery-ui-timepicker-addon.min.js"></script>
+   <!-- My JS -->
+   <script src="js/my.js"></script>
 </head>
 
 <body id="contact">
@@ -46,10 +54,10 @@
           <div class="uk-navbar-left uk-hidden">
             <ul class="uk-navbar-nav my-navbar-nav">
               <li>
-                <a href="service.html">Service</a>
+                <a href="service">Service</a>
               </li>
               <li>
-                <a href="impact.html">Impact</a>
+                <a href="impact">Impact</a>
               </li>
             </ul>
           </div>
@@ -61,10 +69,10 @@
           <div class="uk-navbar-right">
             <ul class="uk-navbar-nav my-navbar-nav uk-hidden">
               <li>
-                <a href="faq.html">FAQ</a>
+                <a href="faq">FAQ</a>
               </li>
               <li>
-                <a href="about.html">About</a>
+                <a href="about">About</a>
               </li>
             </ul>
             <div class="open-menu uk-hidden@s uk-margin-right">
@@ -85,11 +93,11 @@
         </div>
         <nav class="overlay-menu">
           <ul>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="impact.html">Impact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="active"><a href="contact.html">Contact</a></li>
+            <li><a href="service">Service</a></li>
+            <li><a href="impact">Impact</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="about">About</a></li>
+            <li class="active"><a href="contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -120,48 +128,48 @@
                       <label class="uk-flex-auto my-form-label" for="name">My name is</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="name" id="name" type="text">
+                      <input class="uk-flex-auto uk-input" name="name" id="name" type="text" placeholder="name">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="behalf">I am writing on behalf of</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="behalf" id="behalf" type="text">
+                      <input class="uk-flex-auto uk-input" name="behalf" id="behalf" type="text" placeholder="name">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="message">I am contacting you to talk about</label>
                     </div>
-                    <div class="uk-width-2-5 uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="message" id="message" type="text">
+                    <div class="uk-width-1-2 uk-flex-none">
+                      <input class="uk-flex-auto uk-input" name="message" id="message" type="text" placeholder="message...">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="phone">My phone number is</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="phone" id="phone" type="text">
+                      <input class="uk-flex-auto uk-input" name="phone" id="phone" type="text" placeholder="+45">
                     </div>
                     <span class="comma"></span>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="email">and my email is</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="email" id="email" type="email">
+                      <input class="uk-flex-auto uk-input" name="email" id="email" type="email" placeholder="name@domain">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="timeFrom">Please contact me between</label>
+                      <label class="uk-flex-auto my-form-label" for="datetimeFrom">Please contact me between</label>
+                    </div>
+                    <div class="uk-width-1-4 uk-flex-none">
+                      <input class="uk-flex-auto uk-input" name="datetimeFrom" id="datetimeFrom" type="datetime" placeholder="mm/dd/yyyy, --.--">
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="timeFrom" id="timeFrom" type="time">
+                      <label class="uk-flex-auto my-form-label" for="datetimeTo">to</label>
                     </div>
-                    <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="timeTo">-</label>
-                    </div>
-                    <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="timeTo" id="timeTo" type="time">
+                    <div class="uk-width-1-4 uk-flex-none">
+                      <input class="uk-flex-auto uk-input" name="datetimeTo" id="datetimeTo" type="datetime" placeholder="mm/dd/yyyy, --.--">
                     </div>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label">to get the conversation started! </label>
@@ -188,14 +196,14 @@
                       <label class="uk-flex-auto my-form-label" for="name">My name is</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="name" type="text" name="name">
+                      <input class="uk-flex-auto uk-input" id="name" type="text" name="name" placeholder="name">
                     </div>
                     <span class="comma"></span>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="age">and I am</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="age" type="text" name="age">
+                      <input class="uk-flex-auto uk-input" id="age" type="text" name="age" placeholder="age">
                     </div>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="age">years old.</label>
@@ -204,7 +212,7 @@
                       <label class="uk-flex-auto my-form-label" for="hours">I am interested in working</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="hours" type="text" name="hours">
+                      <input class="uk-flex-auto uk-input" id="hours" type="text" name="hours" placeholder="hours">
                     </div>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="hours">hours per month, and I have previous</label>
@@ -213,17 +221,17 @@
                       <label class="uk-flex-auto my-form-label" for="experience">experience with</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="experience" type="text" name="experience">
+                      <input class="uk-flex-auto uk-input" id="experience" type="text" name="experience" placeholder="experiences...">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
                       <label class="uk-flex-auto my-form-label" for="contact-1">You can contact me on</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="email" type="email" name="email">
+                      <input class="uk-flex-auto uk-input" id="email" type="email" name="email" placeholder="name@domain">
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label">so that we can talk about my desire to work at YESCPH. </label>
+                      <label class="uk-flex-auto my-form-label">so that we can talk about my desire to work at YES CPH. </label>
                     </div>
                   </div>
                   <input type="image" class="uk-float-right submit" id="submit" src="assets/img/icon/submit.svg" name="submit">
