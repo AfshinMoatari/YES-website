@@ -108,14 +108,14 @@ $(function() {
       age: {
         required: true,
         number: true,
-        min: 20,
+        min: 18,
         max: 99
       },
       hours: {
         required: true,
         number: true,
-        min: 15,
-        max: 48
+        min: 10,
+        max: 160
       },
       experience: {
         required: false,
