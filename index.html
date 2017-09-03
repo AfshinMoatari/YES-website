@@ -32,83 +32,82 @@
   <script src="js/my.js"></script>
 </head>
 
-<body>
+<body id="landing">
   <!-- MAIN CONTAINER -->
   <div class="container-all">
-    <!-- NAV SECTION-->
-    <div class="global" uk-scrollspy="cls: uk-animation-slide-top-medium; target: .my-navbar .contact; delay: 300; hidden:true; repeat: true">
-      <nav class="uk-navbar my-navbar" uk-sticky="animation: uk-animation-slide-left-medium;top: #hero; bottom:#sticky-stop;">
-        <div class="my-container uk-navbar-center">
-          <div class="uk-navbar-left uk-hidden">
-            <ul class="uk-navbar-nav my-navbar-nav">
-              <li>
-                <a href="service">Service</a>
-              </li>
-              <li>
-                <a href="impact">Impact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="uk-navbar-item uk-flex uk-flex-center uk-flex-middle logo">
-            <a href="index">
+    <div class="global">
+      <!-- NAV SECTION-->
+      <div class="uk-position-top uk-position-small uk-margin-remove-right uk-margin-remove-left" uk-scrollspy="cls: uk-animation-slide-top-medium; target: .my-navbar .contact; delay: 300; hidden:true; repeat: true">
+        <nav class="uk-navbar my-navbar" uk-sticky="animation: uk-animation-slide-left-medium;top: #hero; bottom:#sticky-stop;">
+          <div class="my-container uk-navbar-center">
+            <div class="uk-navbar-left uk-hidden">
+              <ul class="uk-navbar-nav my-navbar-nav">
+                <li>
+                  <a href="service">Service</a>
+                </li>
+                <li>
+                  <a href="impact">Impact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="uk-navbar-item uk-flex uk-flex-center uk-flex-middle logo">
+              <a href="index">
                 <img src="assets/img/logo.svg" alt="YES logo">
               </a>
-          </div>
-          <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav my-navbar-nav uk-hidden">
-              <li>
-                <a href="faq">FAQ</a>
-              </li>
-              <li>
-                <a href="about">About</a>
-              </li>
-            </ul>
-            <div class="open-menu uk-hidden@s uk-margin-right">
-              <img src="assets/img/icon/open.svg" alt="open menu" />
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav my-navbar-nav uk-hidden">
+                <li>
+                  <a href="faq">FAQ</a>
+                </li>
+                <li>
+                  <a href="about">About</a>
+                </li>
+              </ul>
+              <div class="open-menu uk-hidden@s uk-margin-right">
+                <img src="assets/img/icon/open-light.svg" alt="open menu" />
+              </div>
+            </div>
+            <div class="uk-hidden contact">
+              <a href="contact"><img src="assets/img/icon/lets-talk.svg" alt="Lets talk"></a>
             </div>
           </div>
-          <div class="uk-hidden contact">
-            <a href="contact"><img src="assets/img/icon/lets-talk.svg" alt="Lets talk"></a>
-          </div>
-        </div>
-      </nav>
-      <!-- OVERLAY NAV-->
-      <div class="uk-hidden@s overlay">
-        <div class="logo">
-          <a href="index">
-            <img src="assets/img/logo-overlay.svg" alt="YES logo">
-          </a>
-        </div>
-        <div class="close-menu">
-          <img src="assets/img/icon/close.svg" alt="close menu" />
-        </div>
-        <nav class="overlay-menu">
-          <ul>
-            <li><a href="service">Service</a></li>
-            <li><a href="impact">Impact</a></li>
-            <li><a href="faq">FAQ</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="contact">Contact</a></li>
-          </ul>
         </nav>
+        <!-- OVERLAY NAV-->
+        <div class="uk-hidden@s overlay">
+          <div class="logo">
+            <a href="index">
+              <img src="assets/img/logo-overlay.svg" alt="YES logo">
+            </a>
+          </div>
+          <div class="close-menu">
+            <img src="assets/img/icon/close.svg" alt="close menu" />
+          </div>
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="service">Service</a></li>
+              <li><a href="impact">Impact</a></li>
+              <li><a href="faq">FAQ</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-    <!-- MAIN CONTENT-->
-    <div class="main" uk-scrollspy="cls: uk-animation-slide-left-medium; target: #operations .category>.item, #data .chart .legend .items>li, #steps .legend, #partners .items>li; delay: 300; hidden:true">
       <!-- HERO SECTION -->
       <div class="hero" id="hero">
-        <div class="">
           <div class="uk-section uk-section-media uk-padding-remove-vertical">
             <div class="uk-cover-container cover">
-              <video class="uk-hidden autoplay loop muted blend" uk-cover autoplay loop muted>
+              <video class="uk-hidden autoplay loop muted" uk-cover autoplay loop muted>
                 <source src="assets/videos/yescph.mp4" type="video/mp4">
                 <source src="assets/videos/yescph.ogv" type="video/ogg">
               </video>
-              <!-- <div class="uk-hidden blend" uk-cover>
-                <img src="assets/img/hero.jpg" alt="Service you need, cause you care">
-              </div> -->
-              <div class="uk-position-cover blend"></div>
-              <h1 uk-parallax="target: #hero .cover; y: 200; easing: 0.5" class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-center">Services you need,</br>causes you care about</h1>
+              <div class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-text-center content">
+                <a href="index">
+                  <img src="assets/img/logo-overlay.svg" alt="YES logo" uk-parallax="opacity: .8; scale:1,.8; viewport: 0.5;">
+                </a>
+                <h1 uk-parallax="scale: 1,1.2; viewport: 0.5;">Services you need,</br>causes you care about</h1>
+              </div>
             </div>
             <div class="uk-flex uk-flex-middle text">
               <div class="my-container large">
@@ -122,7 +121,9 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
+    <!-- MAIN CONTENT-->
+    <div class="main" uk-scrollspy="cls: uk-animation-slide-left-medium; target: #operations .category>.item, #data .chart .legend .items>li, #steps .legend, #partners .items>li; delay: 300; hidden:true">
       <!-- OPERATIONS SECTION -->
       <div class="operations" id="operations">
         <div class="my-container large">
