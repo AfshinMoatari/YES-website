@@ -97,12 +97,16 @@
     <div class="main" uk-scrollspy="cls: uk-animation-slide-left-medium; target: #operations .category>.item, #data .chart .legend .items>li, #steps .legend, #partners .items>li; delay: 300; hidden:true">
       <!-- HERO SECTION -->
       <div class="hero" id="hero">
-        <div class="my-container large">
+        <div class="">
           <div class="uk-section uk-section-media uk-padding-remove-vertical">
             <div class="uk-cover-container cover">
-              <div class="uk-hidden blend" uk-cover>
+              <video class="uk-hidden autoplay loop muted blend" uk-cover autoplay loop muted>
+                <source src="assets/videos/yescph.mp4" type="video/mp4">
+                <source src="assets/videos/yescph.ogv" type="video/ogg">
+              </video>
+              <!-- <div class="uk-hidden blend" uk-cover>
                 <img src="assets/img/hero.jpg" alt="Service you need, cause you care">
-              </div>
+              </div> -->
               <div class="uk-position-cover blend"></div>
               <h1 uk-parallax="target: #hero .cover; y: 200; easing: 0.5" class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-center">Services you need,</br>causes you care about</h1>
             </div>

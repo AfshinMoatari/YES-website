@@ -18,7 +18,8 @@ body .important{font-size:3em;}
 .my-navbar.uk-active{position:fixed !important;height:80px;background-color:#fff;border-bottom:3px solid #1d1d1b;}
 .my-navbar.uk-active .logo img{width:95px;}
 body .hero{font-size:1em;}
-.hero .cover{height:555px;background-color:inherit;}
+/*.hero .cover{height:555px;background-color:inherit;}*/
+.hero .cover{height:calc(100vh - 180px);background-color:transparent;}
 .hero .cover h1{line-height:1.2;}
 .hero .text{height:auto;}
 .box{margin-left:70px;}
