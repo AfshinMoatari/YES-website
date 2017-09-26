@@ -11,8 +11,8 @@ body .important{font-size:3em;}
 .logo{padding:inherit;}
 .logo img{width:115px;}
 .my-navbar .contact{position:absolute;top:5%;right:-5%;}
-#landing .my-navbar .contact{display:none!important}
-#landing .hero .cover .contact{width:120px;}
+.home .my-navbar .contact{display:none!important}
+.home .hero .cover .contact{width:120px;}
 .my-navbar .contact img{width:80px;}
 .my-navbar .uk-navbar-center:only-child{position:relative;margin-left:auto;}
 .my-navbar .uk-navbar-right{position:unset;top:0;-ms-transform:translateY(0);-webkit-transform:translateY(0);-moz-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);}
@@ -45,9 +45,9 @@ body .hero{font-size:1em;}
 .nav-secondary li a{font-size:3.563em;}
 .nav-secondary li:not(.uk-active) a::after{border-width:5px;}
 .my-navbar .contact{position:absolute;top:38%;right:-25%;}
-#landing .hero .cover .contact{display:none!important}
-#landing .my-navbar .contact{display:inherit!important}
-#landing .my-navbar .contact{position:absolute;top:25%;right:-25%;}
+.home .hero .cover .contact{display:none!important}
+.home .my-navbar .contact{display:inherit!important}
+.home .my-navbar .contact{position:absolute;top:25%;right:-25%;}
 .my-navbar .contact img{width:120px;}
 .my-navbar-nav>li{padding:0 22px;}
 .my-container{padding:0 24px;}
@@ -89,7 +89,7 @@ body .hero{font-size:1em;}
 .steps .item .legend .half{display:unset;}
 }
 @media (min-width:1200px){.my-navbar .contact{position:absolute;top:35%;right:-40%;}
-#landing .my-navbar .contact{position:absolute;top:20%;right:-40%;}
+.home .my-navbar .contact{position:absolute;top:20%;right:-40%;}
 .my-navbar .contact img{width:150px;}
 .my-container.left{padding-left:190px;}
 .footer{font-size:1.063em;}
