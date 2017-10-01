@@ -53,9 +53,9 @@ a:hover, a:focus{text-decoration:none}
 .language ul{margin:10px 0;}
 .home .language ul li a{color:#fff!important}
 .home .my-navbar.uk-active .language ul li a{color:#000!important}
-.home .my-navbar .language ul li a.en[lang="en"],.home .hero .language ul li a.en[lang="en"],.home .my-navbar .language ul li a.da[lang="da"],.home .hero .language ul li a.da[lang="da"]{border-radius: 10%;width: 30px;height: 25px;padding:2px 4px;font-weight: bold;color: #000!important;background-color: #fff}
-.my-navbar .language ul li a.en[lang="en"],.my-navbar .language ul li a.da[lang="da"]{border-radius: 10%;width: 30px;height: 25px;padding:2px 4px;font-weight: bold;color: #fff!important;background-color: #000}
-.home .my-navbar.uk-active .language ul li a.en[lang="en"],.home .my-navbar.uk-active .language ul li a.da[lang="da"]{border-radius: 10%;width: 30px;height: 25px;padding:2px 4px;font-weight: bold;color: #fff!important;background-color: #000}
+.home .my-navbar .language ul li a.en[lang="en"],.home .hero .language ul li a.en[lang="en"],.home .my-navbar .language ul li a.da[lang="da"],.home .hero .language ul li a.da[lang="da"]{border-radius: 10%;width: 30px;height: 20px;padding:0px 4px;font-weight: bold;color: #000!important;background-color: #fff}
+.my-navbar .language ul li a.en[lang="en"],.my-navbar .language ul li a.da[lang="da"]{border-radius: 10%;width: 30px;height: 20px;padding:0px 4px;font-weight: bold;color: #fff!important;background-color: #000}
+.home .my-navbar.uk-active .language ul li a.en[lang="en"],.home .my-navbar.uk-active .language ul li a.da[lang="da"]{border-radius: 10%;width: 30px;height: 20px;padding:0px 4px;font-weight: bold;color: #fff!important;background-color: #000}
 .language ul li a{color:#000!important}
 .language .uk-breadcrumb>:nth-child(n+2)::before{content:"|";display:inline-block;margin:0 10px;color:#fff}
 .home .language .uk-breadcrumb>:nth-child(n+2)::before{color:#fff}
