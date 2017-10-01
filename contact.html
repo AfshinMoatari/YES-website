@@ -40,8 +40,14 @@
   <script src="js/jquery-ui.min.js"></script>
   <!-- jQuery timepicker JS -->
   <script src="js/jquery-ui-timepicker-addon.min.js"></script>
-   <!-- My JS -->
-   <script src="js/my.js"></script>
+  <!-- js-cookie plugin  -->
+  <script src="js/js.cookie.js"></script>
+  <!-- jquery-lang plugin  -->
+  <script src="js/jquery-lang.js"></script>
+  <!-- mylanguage -->
+  <script src="js/mylanguage.js"></script>
+  <!-- My JS -->
+  <script src="js/my.js"></script>
 </head>
 
 <body id="contact">
@@ -57,7 +63,7 @@
                 <a href="service">Service</a>
               </li>
               <li>
-                <a href="impact">Impact</a>
+                <a href="impact" lang="en" data-lang-token="impact_nav">Impact</a>
               </li>
             </ul>
           </div>
@@ -72,12 +78,22 @@
                 <a href="faq">FAQ</a>
               </li>
               <li>
-                <a href="about">About</a>
+                <a href="about" lang="en" data-lang-token="about_nav">About</a>
               </li>
             </ul>
             <div class="open-menu uk-hidden@s uk-margin-right">
               <img src="assets/img/icon/open.svg" alt="open menu" />
             </div>
+          </div>
+          <div class="uk-hidden language">
+            <ul class="uk-breadcrumb">
+              <li>
+                <a class="en" lang="en" href="#en" onclick="window.lang.change('en'); return false;">EN</a>
+              </li>
+              <li>
+                <a class="da" lang="en" href="#da" onclick="window.lang.change('da'); return false;">DA</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -94,10 +110,16 @@
         <nav class="overlay-menu">
           <ul>
             <li><a href="service">Service</a></li>
-            <li><a href="impact">Impact</a></li>
+            <li><a href="impact" lang="en" data-lang-token="impact_nav">Impact</a></li>
             <li><a href="faq">FAQ</a></li>
-            <li><a href="about">About</a></li>
+            <li><a href="about" lang="en" data-lang-token="about_nav">About</a></li>
             <li class="active"><a href="contact">Contact</a></li>
+            <ul class="language">
+              <div class="uk-breadcrumb">
+                <li><a href="#en" onclick="window.lang.change('en'); return false;">EN</a></li>
+                <li><a href="#da" onclick="window.lang.change('da'); return false;">DA</a></li>
+              </div>
+            </ul>
           </ul>
         </nav>
       </div>
@@ -108,10 +130,10 @@
       <div class="my-container">
         <ul class="nav-secondary" uk-switcher="swiping: false; animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
           <li class="uk-active">
-            <a href="#">COMPANY</a>
+            <a href="#" lang="en" data-lang-token="company">COMPANY</a>
           </li>
           <li>
-            <a href="#">EMPLOYEE</a>
+            <a href="#" lang="en" data-lang-token="employee">EMPLOYEE</a>
           </li>
           <hr class="uk-panel-divider">
         </ul>
@@ -125,42 +147,42 @@
                       <hr class="break-small uk-hidden">
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="name">My name is</label>
+                      <label class="uk-flex-auto my-form-label" for="name" lang="en" data-lang-token="name_lable">My name is</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="name" id="name" type="text" placeholder="name">
-                    </div>
-                    <span class="dot"></span>
-                    <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="behalf">I am writing on behalf of</label>
-                    </div>
-                    <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="behalf" id="behalf" type="text" placeholder="name">
+                      <input class="uk-flex-auto uk-input" name="name" id="name" type="text" placeholder="name" lang="en">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="message">I am contacting you to talk about</label>
+                      <label class="uk-flex-auto my-form-label" for="behalf" lang="en" data-lang-token="behalf_lable">I am writing on behalf of</label>
+                    </div>
+                    <div class="uk-flex-none">
+                      <input class="uk-flex-auto uk-input" name="behalf" id="behalf" type="text" placeholder="name" lang="en">
+                    </div>
+                    <span class="dot"></span>
+                    <div class="uk-flex-none">
+                      <label class="uk-flex-auto my-form-label" for="message" lang="en" data-lang-token="message_lable">I am contacting you to talk about</label>
                     </div>
                     <div class="uk-width-1-2 uk-flex-none">
-                      <input class="uk-flex-auto uk-input" name="message" id="message" type="text" placeholder="message...">
+                      <input class="uk-flex-auto uk-input" name="message" id="message" type="text" placeholder="message..." lang="en">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="phone">My phone number is</label>
+                      <label class="uk-flex-auto my-form-label" for="phone" lang="en" data-lang-token="phone_lable">My phone number is</label>
                     </div>
                     <div class="uk-flex-none">
                       <input class="uk-flex-auto uk-input" name="phone" id="phone" type="text" placeholder="+45">
                     </div>
                     <span class="comma"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="email">and my email is</label>
+                      <label class="uk-flex-auto my-form-label" for="email" lang="en" data-lang-token="email_lable">and my email is</label>
                     </div>
                     <div class="uk-flex-none">
                       <input class="uk-flex-auto uk-input" name="email" id="email" type="email" placeholder="name@domain">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="datetimeFrom">Please contact me between</label>
+                      <label class="uk-flex-auto my-form-label" for="datetimeFrom" lang="en" data-lang-token="datetimeFrom_lable">Please contact me between</label>
                     </div>
                     <div class="uk-width-1-4 uk-flex-none">
                       <input class="uk-flex-auto uk-input" name="datetimeFrom" id="datetimeFrom" type="datetime" placeholder="mm/dd/yyyy, --.--">
@@ -172,13 +194,13 @@
                       <input class="uk-flex-auto uk-input" name="datetimeTo" id="datetimeTo" type="datetime" placeholder="mm/dd/yyyy, --.--">
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label">to get the conversation started! </label>
+                      <label class="uk-flex-auto my-form-label" lang="en" data-lang-token="datetimeFrom_after_lable">to get the conversation started!</label>
                     </div>
                   </div>
                   <input type="image" class="submit" id="submit" src="assets/img/icon/submit.svg" name="submit">
                 </form>
                 <div class="error-container" id="error-container">
-                   <p>Please correct the following errors and try again:</p>
+                   <p lang="en" data-lang-token="error_title">Please correct the following errors and try again:</p>
                    <ul></ul>
                 </div>
               </div>
@@ -193,51 +215,51 @@
                       <hr class="break-small uk-hidden">
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="name">My name is</label>
+                      <label class="uk-flex-auto my-form-label" for="name" lang="en" data-lang-token="name_lable">My name is</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="name" type="text" name="name" placeholder="name">
+                      <input class="uk-flex-auto uk-input" id="name" type="text" name="name" placeholder="name" lang="en">
                     </div>
                     <span class="comma"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="age">and I am</label>
+                      <label class="uk-flex-auto my-form-label" for="age" lang="en" data-lang-token="age_lable">and I am</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="age" type="text" name="age" placeholder="age">
+                      <input class="uk-flex-auto uk-input" id="age" type="text" name="age" placeholder="age" lang="en">
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="age">years old.</label>
+                      <label class="uk-flex-auto my-form-label" for="age" lang="en" data-lang-token="age_after_lable">years old.</label>
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="hours">I am interested in working</label>
+                      <label class="uk-flex-auto my-form-label" for="hours" lang="en" data-lang-token="hours_lable">I am interested in working</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="hours" type="text" name="hours" placeholder="hours">
+                      <input class="uk-flex-auto uk-input" id="hours" type="text" name="hours" placeholder="hours_lable" lang="en" data-lang-token="hours_lable">
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="hours">hours per month, and I have previous</label>
+                      <label class="uk-flex-auto my-form-label" for="hours" lang="en" data-lang-token="hours_after_lable">hours per month, and I have previous</label>
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="experience">experience with</label>
+                      <label class="uk-flex-auto my-form-label" for="experience" lang="en" data-lang-token="experience_lable">experience with</label>
                     </div>
                     <div class="uk-flex-none">
-                      <input class="uk-flex-auto uk-input" id="experience" type="text" name="experience" placeholder="experiences...">
+                      <input class="uk-flex-auto uk-input" id="experience" type="text" name="experience" placeholder="experiences..." lang="en">
                     </div>
                     <span class="dot"></span>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label" for="contact-1">You can contact me on</label>
+                      <label class="uk-flex-auto my-form-label" for="contact-1" lang="en" data-lang-token="contact_1">You can contact me on</label>
                     </div>
                     <div class="uk-flex-none">
                       <input class="uk-flex-auto uk-input" id="email" type="email" name="email" placeholder="name@domain">
                     </div>
                     <div class="uk-flex-none">
-                      <label class="uk-flex-auto my-form-label">so that we can talk about my desire to work at YES CPH. </label>
+                      <label class="uk-flex-auto my-form-label" lang="en" data-lang-token="contact_after">so that we can talk about my desire to work at YES CPH.</label>
                     </div>
                   </div>
                   <input type="image" class="uk-float-right submit" id="submit" src="assets/img/icon/submit.svg" name="submit">
                 </form>
                 <div class="error-container" id="error-container">
-                   <p>Please correct the following errors and try again:</p>
+                   <p lang="en" data-lang-token="error_title">Please correct the following errors and try again:</p>
                    <ul></ul>
                 </div>
               </div>

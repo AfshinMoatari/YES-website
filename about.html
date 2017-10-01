@@ -28,6 +28,12 @@
   <script src="js/uikit.min.js"></script>
   <!-- SLICK SLIDER JS -->
   <script src="js/slick.min.js"></script>
+  <!-- js-cookie plugin  -->
+  <script src="js/js.cookie.js"></script>
+  <!-- jquery-lang plugin  -->
+  <script src="js/jquery-lang.js"></script>
+  <!-- mylanguage -->
+  <script src="js/mylanguage.js"></script>
   <!-- My JS -->
   <script src="js/my.js"></script>
 </head>
@@ -45,7 +51,7 @@
                 <a href="service">Service</a>
               </li>
               <li>
-                <a href="impact">Impact</a>
+                <a href="impact" lang="en" data-lang-token="impact_nav">Impact</a>
               </li>
             </ul>
           </div>
@@ -60,7 +66,7 @@
                 <a href="faq">FAQ</a>
               </li>
               <li class="active">
-                <a href="about">About</a>
+                <a href="about" lang="en" data-lang-token="about_nav">About</a>
               </li>
             </ul>
             <div class="open-menu uk-hidden@s uk-margin-right">
@@ -68,7 +74,17 @@
             </div>
           </div>
           <div class="uk-hidden contact">
-            <a href="contact"><img src="assets/img/icon/lets-talk.svg" alt="Lets talk"></a>
+            <a href="contact"><img src="assets/img/icon/lets-talk.svg" alt="Lets talk" lang="en"></a>
+          </div>
+          <div class="uk-hidden language">
+            <ul class="uk-breadcrumb">
+              <li>
+                <a class="en" lang="en" href="#en" onclick="window.lang.change('en'); return false;">EN</a>
+              </li>
+              <li>
+                <a class="da" lang="en" href="#en" onclick="window.lang.change('da'); return false;">DA</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -85,10 +101,16 @@
         <nav class="overlay-menu">
           <ul>
             <li><a href="service">Service</a></li>
-            <li><a href="impact">Impact</a></li>
+            <li><a href="impact" lang="en" data-lang-token="impact_nav">Impact</a></li>
             <li><a href="faq">FAQ</a></li>
-            <li class="active"><a href="about">About</a></li>
+            <li class="active"><a href="about" lang="en" data-lang-token="about_nav">About</a></li>
             <li><a href="contact">Contact</a></li>
+            <ul class="language">
+              <div class="uk-breadcrumb">
+                <li><a href="#en" onclick="window.lang.change('en'); return false;">EN</a></li>
+                <li><a href="#da" onclick="window.lang.change('da'); return false;">DA</a></li>
+              </div>
+            </ul>
           </ul>
         </nav>
       </div>
@@ -99,20 +121,15 @@
       <div class="story" id="story">
         <div class="my-container">
           <div class="uk-section uk-section-small">
-            <h2>OUR STORY</h2>
+            <h2 lang="en" data-lang-token="title_story">OUR STORY</h2>
             <div class="box">
               <hr class="break-small uk-hidden">
-              <p>“When I moved from Bangladesh to Denmark, life was tough. I found myself in an unfamiliar country with a different culture. I was excited about going to a new university, but even making friends was not so straightforward as I had assumed.
-                To keep afloat, I was working late nights as a dishwasher and cleaning personnel. I was paid far below the minimum and my pay check was, on all occasions, late. I worked in substandard working environments, without a work contract to grant
-                me stability. Most of the money used to hire me went to the service company that I worked through. It was neither helpful for the workers nor the business hiring them: it was clear that the service company was reaping all the benefits.
-                I went on forward to study a Master’s Degree in Global Refuges Studies at Aalborg University. Through researching this field in depth, I got to know refugees, asylum seekers and newcomers like myself. Many of them were trapped in a similar
-                unacceptable relationship with service companies. The intolerable circumstances migrants are put through energised me to provide a rewarding solution.</br>
-                </br>
-                The answer is YES: A socially responsible non-profit service company. We offer more affordable prices for business’ while simultaneously ensuring adequate working environments and fair living wages for newcomers in Denmark. All of this with the added bonus
-                of being socially responsible through charity donations used in educating children in third world countries.”</br>
-                </br>
-                <strong>Riad Arefin</strong></br>
-                On behalf of YES
+              <p class="uk-margin-remove-bottom pre" lang="en" data-lang-token="text_story">“When I moved from Bangladesh to Denmark, life was tough. I found myself in an unfamiliar country with a different culture. I was excited about going to a new university, but even making friends was not so straightforward as I had assumed. To keep afloat, I was working late nights as a dishwasher and cleaning personnel. I was paid far below the minimum and my pay check was, on all occasions, late. I worked in substandard working environments, without a work contract to grant me stability. Most of the money used to hire me went to the service company that I worked through. It was neither helpful for the workers nor the business hiring them: it was clear that the service company was reaping all the benefits. I went on forward to study a Master’s Degree in Global Refuges Studies at Aalborg University. Through researching this field in depth, I got to know refugees, asylum seekers and newcomers like myself. Many of them were trapped in a similar unacceptable relationship with service companies. The intolerable circumstances migrants are put through energised me to provide a rewarding solution.
+
+              The answer is YES: A socially responsible non-profit service company. We offer more affordable prices for business’ while simultaneously ensuring adequate working environments and fair living wages for newcomers in Denmark. All of this with the added bonus of being socially responsible through charity donations used in educating children in third world countries.”</p>
+              <p class="uk-margin-remove-top pre">
+              <strong>Riad Arefin</strong>
+              <span lang="en" data-lang-token="story_signature">On behalf of YES</span>
               </p>
             </div>
           </div>
@@ -123,10 +140,10 @@
         <div class="my-container large">
           <div class="uk-section uk-section-media uk-background-cover cover blend">
             <div class="my-container">
-              <h2>BTW YES means</h2>
+              <h2 lang="en" data-lang-token="title_entrepreneurs">BTW YES means</h2>
               <div class="box">
                 <hr class="break-large">
-                <p>Young Entrepreneurs for Society</p>
+                <p lang="en" data-lang-token="text_entrepreneurs">Young Entrepreneurs for Society</p>
               </div>
             </div>
           </div>
@@ -136,7 +153,7 @@
       <div class="members" id="members">
         <div class="my-container">
           <div class="uk-section uk-section-medium uk-padding-remove-bottom team">
-            <h2>THE TEAM</h2>
+            <h2 lang="en" data-lang-token="title_members">THE TEAM</h2>
             <div class="uk-grid-medium uk-child-width-auto member" uk-grid>
               <div class="uk-inline">
                 <div class="uk-cover-container portrait">
@@ -147,8 +164,8 @@
               <div class="uk-width-1-2@s uk-flex uk-flex-bottom info">
                 <div>
                   <h3>Riad Arefin</h3>
-                  <em>Founder</em>
-                  <p>Supporting the team to achieve its goal while organizing the daily operation and future of YES CPH.</p>
+                  <em lang="en" data-lang-token="riad_position">Founder</em>
+                  <p lang="en" data-lang-token="riad_bio">Supporting the team to achieve its goal while organizing the daily operation and future of YES CPH.</p>
                   <a class="my-button-text" href="mailto:riad@yescph.co">riad@yescph.co</a>
                 </div>
               </div>
@@ -163,8 +180,8 @@
               <div class="uk-width-1-2@s uk-flex uk-flex-bottom info">
                 <div>
                   <h3>Martin Gry Pedersen</h3>
-                  <em>Project Coordinator</em>
-                  <p>Streamlines the organizational part of YES and strengthens our efforts in employees integration process.</p>
+                  <em lang="en" data-lang-token="martin_position">Project Coordinator</em>
+                  <p lang="en" data-lang-token="martin_bio">Streamlines the organizational part of YES and strengthens our efforts in employees integration process.</p>
                   <a class="my-button-text" href="mailto:martin@yescph.co">martin@yescph.co</a>
                 </div>
               </div>
@@ -179,8 +196,8 @@
               <div class="uk-width-1-2@s uk-flex uk-flex-bottom info">
                 <div>
                   <h3>Anna Fay Hermanson</h3>
-                  <em>Community Coordinator</em>
-                  <p>Building partnerships and community relations with a focus on strategic development.</p>
+                  <em lang="en" data-lang-token="anna_position">Community Coordinator</em>
+                  <p lang="en" data-lang-token="anna_bio">Building partnerships and community relations with a focus on strategic development.</p>
                   <a class="my-button-text" href="mailto:anna@yescph.co">anna@yescph.co</a>
                 </div>
               </div>
@@ -228,7 +245,7 @@
     <div class="footer" id="footer">
       <a class="footer-link" href="service"></a>
       <div class="footer-content">
-        <h2>LEARN ABOUT OUR <span><img src="assets/img/icon/service.svg" alt="service"></span></h2>
+        <h2 class="uk-display-inline" lang="en" data-lang-token="learn_about_our">LEARN ABOUT OUR </h2><span><img class="uk-display-inline" src="assets/img/icon/service.svg" alt="service"></span>
       </div>
       <div class="footer-secondary">
         <div class="uk-grid uk-grid-collapse uk-child-width-1-1@s uk-child-width-auto@m my-container">

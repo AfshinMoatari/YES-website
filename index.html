@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <title>Welcome to YES</title>
@@ -28,6 +28,12 @@
   <script src="js/uikit.min.js"></script>
   <!-- SLICK SLIDER JS -->
   <script src="js/slick.min.js"></script>
+  <!-- js-cookie plugin  -->
+  <script src="js/js.cookie.js"></script>
+  <!-- jquery-lang plugin  -->
+  <script src="js/jquery-lang.js"></script>
+  <!-- mylanguage -->
+  <script src="js/mylanguage.js"></script>
   <!-- My JS -->
   <script src="js/my.js"></script>
 </head>
@@ -46,7 +52,7 @@
                   <a href="service">Service</a>
                 </li>
                 <li>
-                  <a href="impact">Impact</a>
+                  <a href="impact" lang="en" data-lang-token="impact_nav">Impact</a>
                 </li>
               </ul>
             </div>
@@ -66,15 +72,25 @@
                   <a href="faq">FAQ</a>
                 </li>
                 <li>
-                  <a href="about">About</a>
+                  <a href="about" lang="en" data-lang-token="about_nav">About</a>
                 </li>
               </ul>
               <div class="open-menu uk-hidden@s uk-margin-right">
-                <img src="assets/img/icon/open-light.svg" alt="open menu" />
+                <img src="assets/img/icon/open-light.svg" alt="open menu"/>
               </div>
             </div>
             <div class="uk-hidden contact">
-              <a href="contact"><img src="assets/img/icon/lets-talk-light.svg" alt="Lets talk"></a>
+              <a href="contact"><img src="assets/img/icon/lets-talk-light.svg" alt="Lets talk" lang="en"></a>
+            </div>
+            <div class="uk-hidden language">
+              <ul class="uk-breadcrumb">
+                <li>
+                  <a class="en" lang="da" href="#en" onclick="window.lang.change('en'); return false;">EN</a>
+                </li>
+                <li>
+                  <a class="da" lang="en" href="#da" onclick="window.lang.change('da'); return false;">DA</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
@@ -91,10 +107,16 @@
           <nav class="overlay-menu">
             <ul>
               <li><a href="service">Service</a></li>
-              <li><a href="impact">Impact</a></li>
+              <li><a href="impact" lang="en" data-lang-token="impact_nav">Impact</a></li>
               <li><a href="faq">FAQ</a></li>
-              <li><a href="about">About</a></li>
+              <li><a href="about" lang="en" data-lang-token="about_nav">About</a></li>
               <li><a href="contact">Contact</a></li>
+              <ul class="language">
+                <div class="uk-breadcrumb">
+                  <li><a href="#en" onclick="window.lang.change('en'); return false;">EN</a></li>
+                  <li><a href="#da" onclick="window.lang.change('da'); return false;">DA</a></li>
+                </div>
+              </ul>
             </ul>
           </nav>
         </div>
@@ -108,18 +130,27 @@
                 <source src="assets/videos/yescph.ogv" type="video/ogg">
               </video>
               <div class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-center content">
-                <h1>Services you need,</br>causes you care about</h1>
+                <h1><span lang="en" data-lang-token="cover_text_top">Services you need,</span></br><span lang="en" data-lang-token="cover_text_bottom">causes you care about</span></h1>
               </div>
               <div class="uk-position-bottom-right uk-position-small uk-hidden contact">
                 <a href="contact"><img src="assets/img/icon/lets-talk-light.svg" alt="Lets talk"></a>
+              </div>
+              <div class="uk-position-bottom-left uk-position-small uk-hidden language">
+                <ul class="uk-breadcrumb">
+                  <li>
+                    <a class="en" lang="en" href="#en" onclick="window.lang.change('en'); return false;">EN</a>
+                  </li>
+                  <li>
+                    <a class="da" lang="en" href="#da" onclick="window.lang.change('da'); return false;">DA</a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="uk-flex uk-flex-middle text">
               <div class="my-container large">
                 <div class="my-container">
                   <div class="uk-section uk-section-default uk-section-medium uk-margin-large-top">
-                    <p class="important">We believe giving back to society shouldn’t come with an extra cost for your business.</br>
-                      </br>At YES, not only will we make this happen for you, but we can also help reduce part of your daily operation cost by as much as 40% without compromising quality.</p>
+                    <p class="important" lang="en" data-lang-token="hero_text_top">We believe giving back to society shouldn’t come with an extra cost for your business.</p></br><p class="important" lang="en" data-lang-token="hero_text_bottom">At YES, not only will we make this happen for you, but we can also help reduce part of your daily operation cost by as much as 40% without compromising quality.</p>
                   </div>
                 </div>
               </div>
@@ -135,61 +166,63 @@
           <div class="uk-section uk-section-default uk-section-medium">
             <div class="my-container heading">
               <div class="uk-width-1-2@m">
-                <img src="assets/img/icon/how.svg" alt="how" width="103">
-                <h2 class="uk-margin-small-top">It’s Simple!</br>Let us take care of your</br>DAILY OPERATION such as:</h2>
+                <img src="assets/img/icon/how.svg" alt="how" width="103" lang="en">
+                <h2 class="uk-margin-small-top pre" lang="en" data-lang-token="title_operations">It’s Simple!
+                  Let us take care of your
+                  DAILY OPERATION such as:</h2>
               </div>
             </div>
             <div class="uk-grid uk-grid-collapse uk-text-center uk-margin-large-bottom">
               <div class="uk-width-3-5@m uk-section uk-section-media uk-background-cover cover blend">
-                <h3 class="uk-text-right@m">We <span class="uk-hidden@m">take</span> care <span class="uk-hidden@m">of</span></h3>
+                <h3 class="uk-text-right@m"><span lang="en" data-lang-token="we">We </span><span class="uk-hidden@m" lang="en" data-lang-token="take">take </span><span lang="en" data-lang-token="care">care </span><span class="uk-hidden@m" lang="en" data-lang-token="of">of</span></h3>
                 <div class="uk-grid uk-child-width-1-3 uk-margin-medium-top category">
                   <div class="uk-flex uk-flex-middle uk-flex-center uk-height-xsmall item">
                     <div>
                       <img src="assets/img/icon/office-assistance.svg" alt="Office assistant">
-                      <span class="uk-margin-small-top uk-display-block">Office assistant</span>
+                      <span class="uk-margin-small-top uk-display-block" lang="en" data-lang-token="office_assistant">Office assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-middle uk-flex-center uk-height-xsmall item">
                     <div>
                       <img src="assets/img/icon/event-assistance.svg" alt="Event assistant">
-                      <span class="uk-margin-small-top uk-display-block">Event assistant</span>
+                      <span class="uk-margin-small-top uk-display-block" lang="en" data-lang-token="event_assistant">Event assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-middle uk-flex-center uk-height-xsmall item">
                     <div>
                       <img src="assets/img/icon/warehouse-assistance.svg" alt="Warehouse assistant">
-                      <span class="uk-margin-small-top uk-display-block">Warehouse assistant</span>
+                      <span class="uk-margin-small-top uk-display-block" lang="en" data-lang-token="warehouse_assistant">Warehouse assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-middle uk-flex-center uk-height-xsmall item">
                     <div>
                       <img src="assets/img/icon/kitchen-assistance.svg" alt="Kitchen assistant">
-                      <span class="uk-margin-small-top uk-display-block">Kitchen assistant</span>
+                      <span class="uk-margin-small-top uk-display-block" lang="en" data-lang-token="kitchen_assistant">Kitchen assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-middle uk-flex-center uk-height-xsmall item">
                     <div>
                       <img src="assets/img/icon/dishwashing-assistance.svg" alt="Dishwashing assistant">
-                      <span class="uk-margin-small-top uk-display-block">Dishwashing assistant</span>
+                      <span class="uk-margin-small-top uk-display-block" lang="en" data-lang-token="dishwashing_assistant">Dishwashing assistant</span>
                     </div>
                   </div>
                   <div class="uk-flex uk-flex-middle uk-flex-center uk-height-xsmall item">
                     <div>
                       <img src="assets/img/icon/cleaning-assistance.svg" alt="Cleaning assistant">
-                      <span class="uk-margin-small-top uk-display-block">Cleaning assistant</span>
+                      <span class="uk-margin-small-top uk-display-block" lang="en" data-lang-token="cleaning_assistant">Cleaning assistant</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="uk-width-2-5@m uk-section uk-section-default">
                 <div class="my-container uk-text-left@m">
-                  <h3>How the job gets done!</h3>
+                  <h3 lang="en" data-lang-token="title_how_done">How the job gets done!</h3>
                   <div class="uk-margin-medium-top uk-margin-large-right uk-text-left box">
                     <hr class="break-small uk-hidden">
-                    <p>We employ well trained migrants to ensure quality while providing sustainable integration opportunities through the employment.</p>
-                    <p>Furthermore...</p>
-                    <p>We only use environmentally-friendly materials to reduce your company's environmental footprint. </p>
-                    <a href="service" class="my-button my-button-text dark vertical">LEAN MORE</a>
+                    <p lang="en" data-lang-token="operations_text_top">We employ well trained migrants to ensure quality while providing sustainable integration opportunities through the employment.</p>
+                    <p lang="en" data-lang-token="operations_text_middle">Furthermore...</p>
+                    <p lang="en" data-lang-token="operations_text_bottom">We only use environmentally-friendly materials to reduce your company's environmental footprint. </p>
+                    <a href="service" class="my-button my-button-text dark vertical" lang="en" data-lang-token="learn_more">LEAN MORE</a>
                   </div>
                 </div>
               </div>
@@ -202,7 +235,8 @@
         <div class="my-container large">
           <div class="uk-section uk-section-default uk-section-medium">
             <div class="my-container heading">
-              <h2>SO TOGETHER WE CAN</br>SUPPORT SOCIAL CAUSES LIKE</h2>
+              <h2 class="pre" lang="en" data-lang-token="title_steps">SO TOGETHER WE CAN
+                SUPPORT SOCIAL CAUSES LIKE</h2>
             </div>
             <div class="uk-grid uk-grid-collapse uk-child-width-1-2@s">
               <div class="uk-flex-first@s item">
@@ -216,16 +250,19 @@
                     <img class="full" src="assets/img/icon/step-1-full.svg" alt="first steps">
                   </div>
                   <div class="uk-width-4-5@m">
-                    <h3>Child Education</h3>
-                    <p>Every 60 hours of contractual service pays for one month of education for a marginalized child.</p>
+                    <h3 lang="en" data-lang-token="child_education">Child Education</h3>
+                    <p lang="en" data-lang-token="child_education_text">Every 60 hours of contractual service pays for one month of education for a marginalized child.</p>
                   </div>
                 </div>
               </div>
               <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-small-top item">
                 <div class="uk-grid-small uk-text-right@s item-container" uk-grid>
                   <div class="uk-width-4-5@m">
-                    <h3>SOCIAL EVOLUTION</h3>
-                    <p>Every six months we find causes that your business can identify with.<br><b>You </b>decide where a 100% of the profit from our collaboration goes</p>
+                    <h3 lang="en" data-lang-token="social_evolution">SOCIAL EVOLUTION</h3>
+                    <p lang="en" data-lang-token="social_evolution_text_top">Every six months we find causes that your business can identify with.</p>
+                    <p class="uk-display-inline"><b lang="en" data-lang-token="social_evolution_text_bottom_you">You </b></p><p class="uk-display-inline" lang="en" data-lang-token="social_evolution_text_bottom_after">
+                      decide where a 100% of the profit from our collaboration goes
+                    </p>
                   </div>
                   <div class="uk-width-1-5@m uk-flex-first uk-flex-last@m legend">
                     <img class="half" src="assets/img/icon/step-2-reverse-half.svg" alt="second steps">
@@ -247,18 +284,20 @@
           <div class="uk-section uk-section-default uk-section-medium">
             <div class="uk-grid-large" uk-grid>
               <div class="uk-width-1-1@s uk-width-1-2@m">
-                <h2>IT WOULD BE SMART</br>TO PAY LESS AND GIVE MORE</br>TO SOCIETY, RIGHT?</h2>
-                <h3 class="uk-margin-remove-top">Consciously priced</h3>
+                <h2 class="pre" lang="en" data-lang-token="title_data">IT WOULD BE SMART
+                  TO PAY LESS AND GIVE MORE
+                  TO SOCIETY, RIGHT?</h2>
+                <h3 class="uk-margin-remove-top" lang="en" data-lang-token="consciously_priced">Consciously priced</h3>
                 <div class="box">
                   <hr class="uk-hidden break-small">
-                  <p>With us you only pay for your use, there are no hidden fees and we use all of our profits to expand your CSR profile.</p>
+                  <p lang="en" data-lang-token="consciously_priced_text">With us you only pay for your use, there are no hidden fees and we use all of our profits to expand your CSR profile.</p>
                 </div>
               </div>
               <div class="uk-width-1-1@s uk-width-1-2@m uk-flex uk-flex-left uk-flex-center@s uk-flex-right@m">
                 <div class="uk-grid uk-grid-collapse chart bar">
                   <div class="uk-flex uk-flex-left uk-flex-middle">
                     <ul class="uk-padding-remove-left uk-inline blocks">
-                      <p class="uk-position-bottom-left uk-margin-remove">Total cost for you</p>
+                      <p class="uk-position-bottom-left uk-margin-remove" lang="en" data-lang-token="total_cost">Total cost for you</p>
                       <li>
                         <div class="block" data-percentage="50"></div>
                         <div class="uk-position-z-index block cover " data-percentage="68"></div>
@@ -267,15 +306,15 @@
                       <li>
                         <div class="uk-position-z-index block light" data-percentage="70"></div>
                         <div class="block dark" data-percentage="100"></div>
-                        <span>Conventional Companies</span>
+                        <span lang="en" data-lang-token="conventional_companies">Conventional Companies</span>
                       </li>
                     </ul>
                   </div>
                   <div class="uk-flex uk-flex-right uk-flex-middle legend">
                     <ul class="uk-list items">
                       <li><img src="assets/img/icon/legend-profit.svg" alt="Profit Symbol">Profit</li>
-                      <li><img src="assets/img/icon/legend-giving-back-to-society.svg" alt="Giving back to society Symbol">Giving back to society</li>
-                      <li><img src="assets/img/icon/Legend-operation-cost.svg" alt="Operation cost Symbol">Operation cost</li>
+                      <li><img src="assets/img/icon/legend-giving-back-to-society.svg"><span lang="en" data-lang-token="giving_back">Giving back to society</span></li>
+                      <li><img src="assets/img/icon/Legend-operation-cost.svg" alt="Operation cost Symbol" lang="en" data-lang-token="operation_cost"><span lang="en" data-lang-token="operation_cost">Operation cost</span></li>
                     </ul>
                   </div>
                 </div>
@@ -288,7 +327,9 @@
       <div class="quotation" id="quotation">
         <div class="my-container">
           <div class="uk-section uk-section-default uk-section-medium uk-padding-remove-bottom">
-            <h2 class="uk-margin-medium">Here are the smart</br>BUSINESSES AND ORGANIZATIONS</br>THAT HAVE ALREADY SAID YES</h2>
+            <h2 class="uk-margin-medium pre" lang="en" data-lang-token="title_quotation">Here are the smart
+              BUSINESSES AND ORGANIZATIONS
+              THAT HAVE ALREADY SAID YES</h2>
             <!-- <div class="my-slider">
               <div class="item">
                 <blockquote>
@@ -371,11 +412,13 @@
             <div class="my-container uk-height-1-1">
               <div class="uk-grid uk-grid-collapse uk-height-1-1 uk-flex uk-flex-middle">
                 <div class="uk-width-2-3@s uk-width-1-2@m item">
-                  <h2>We recognize your</br>contribution and we will</br>make sure others can too</h2>
+                  <h2 class="pre" lang="en" data-lang-token="title_sticker">We recognize your
+                    contribution and we will
+                    make sure others can too</h2>
                   <div class="box">
                     <hr class="uk-hidden break-small">
-                    <p>Our YES-sticker will make it easily identifiable to others that you are a socially responsible business</p>
-                    <a href="service" class="my-button my-button-text light vertical">LEAN MORE</a>
+                    <p lang="en" data-lang-token="text_sticker">Our YES-sticker will make it easily identifiable to others that you are a socially responsible business</p>
+                    <a href="service" class="my-button my-button-text light vertical" lang="en" data-lang-token="learn_more">LEAN MORE</a>
                   </div>
                 </div>
               </div>
@@ -389,7 +432,7 @@
     <div class="footer" id="footer">
       <a class="footer-link" href="contact"></a>
       <div class="footer-content">
-        <h2>WE ARE READY! <span><img src="assets/img/icon/lets-talk.svg" alt="Lets talk"></span></h2>
+        <h2 class="uk-display-inline" lang="en" data-lang-token="we_are_ready">WE ARE READY! </h2><span><img class="uk-display-inline" lang="en" src="assets/img/icon/lets-talk.svg" alt="Lets talk"></span>
       </div>
       <div class="footer-secondary">
         <div class="uk-grid uk-grid-collapse uk-child-width-1-1@s uk-child-width-auto@m my-container">

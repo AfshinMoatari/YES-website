@@ -1,5 +1,6 @@
 @media (max-width:360px){body{font-size:.65em;}
 body .important{font-size:2.6em;}
+.overlay ul li{margin-bottom:5px;}
 }
 @media (min-width:640px){body{font-size:.9em;}
 .uk-hidden{display:inherit !important;}
@@ -11,7 +12,10 @@ body .important{font-size:3em;}
 .logo{padding:inherit;}
 .logo img{width:115px;}
 .my-navbar .contact{position:absolute;top:5%;right:-5%;}
+.my-navbar .language{position:absolute;top:5%;left:-5%;}
+.home .my-navbar .language{display:none!important}
 .home .my-navbar .contact{display:none!important}
+.home .hero .cover .language{display:inherit!important}
 .home .hero .cover .contact{width:120px;}
 .my-navbar .contact img{width:80px;}
 .my-navbar .uk-navbar-center:only-child{position:relative;margin-left:auto;}
@@ -44,10 +48,14 @@ body .hero{font-size:1em;}
 @media (min-width:960px){body{font-size:1em;}
 .nav-secondary li a{font-size:3.563em;}
 .nav-secondary li:not(.uk-active) a::after{border-width:5px;}
-.my-navbar .contact{position:absolute;top:38%;right:-25%;}
+.my-navbar .language{position:absolute;top:37%;left:-23%;}
+.home .my-navbar .language{position:absolute;top:20%;left:-23%;}
+.my-navbar .contact{position:absolute;top:38%;right:-23%;}
+.home .hero .cover .language{display:none!important}
 .home .hero .cover .contact{display:none!important}
+.home .my-navbar .language{display:inherit!important}
 .home .my-navbar .contact{display:inherit!important}
-.home .my-navbar .contact{position:absolute;top:25%;right:-25%;}
+.home .my-navbar .contact{position:absolute;top:25%;right:-23%;}
 .my-navbar .contact img{width:120px;}
 .my-navbar-nav>li{padding:0 22px;}
 .my-container{padding:0 24px;}
@@ -89,6 +97,8 @@ body .hero{font-size:1em;}
 .steps .item .legend .half{display:unset;}
 }
 @media (min-width:1200px){.my-navbar .contact{position:absolute;top:35%;right:-40%;}
+.my-navbar .language{position:absolute;top:37%;left:-40%;}
+.home .my-navbar .language{position:absolute;top:20%;left:-35%;}
 .home .my-navbar .contact{position:absolute;top:20%;right:-40%;}
 .my-navbar .contact img{width:150px;}
 .my-container.left{padding-left:190px;}
