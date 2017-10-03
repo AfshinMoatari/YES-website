@@ -28,6 +28,12 @@
   <script src="js/uikit.min.js"></script>
   <!-- SLICK SLIDER JS -->
   <script src="js/slick.min.js"></script>
+  <!-- js-cookie plugin  -->
+  <script src="js/js.cookie.js"></script>
+  <!-- jquery-lang plugin  -->
+  <script src="js/jquery-lang.js"></script>
+  <!-- mylanguage -->
+  <script src="js/mylanguage.js"></script>
   <!-- My JS -->
   <script src="js/my.js"></script>
 </head>
@@ -45,7 +51,7 @@
                 <a href="service">Service</a>
               </li>
               <li>
-                <a href="impact">Impact</a>
+                <a href="impact" lang="en" data-lang-token="impact_nav">Impact</a>
               </li>
             </ul>
           </div>
@@ -60,7 +66,7 @@
                 <a href="faq">FAQ</a>
               </li>
               <li>
-                <a href="about">About</a>
+                <a href="about" lang="en" data-lang-token="about_nav" lang="en" data-lang-token="about_nav">About</a>
               </li>
             </ul>
             <div class="open-menu uk-hidden@s uk-margin-right">
@@ -73,10 +79,10 @@
           <div class="uk-hidden language">
             <ul class="uk-breadcrumb">
               <li>
-                <a href="service">EN</a>
+                <a class="en" lang="en" href="#en" onclick="window.lang.change('en'); return false;">EN</a>
               </li>
               <li>
-                <a href="impact">DA</a>
+                <a class="da" lang="en" href="#da" onclick="window.lang.change('da'); return false;">DA</a>
               </li>
             </ul>
           </div>
@@ -95,14 +101,14 @@
         <nav class="overlay-menu">
           <ul>
             <li><a href="service">Service</a></li>
-            <li><a href="impact">Impact</a></li>
+            <li><a href="impact" lang="en" data-lang-token="impact_nav">Impact</a></li>
             <li class="active"><a href="faq">FAQ</a></li>
-            <li><a href="about">About</a></li>
+            <li><a href="about" lang="en" data-lang-token="about_nav">About</a></li>
             <li><a href="contact">Contact</a></li>
             <ul class="language">
               <div class="uk-breadcrumb">
-                <li><a href="">EN</a></li>
-                <li><a href="">DA</a></li>
+                <li><a href="#en" onclick="window.lang.change('en'); return false;">EN</a></li>
+                <li><a href="#da" onclick="window.lang.change('da'); return false;">DA</a></li>
               </div>
             </ul>
           </ul>
@@ -115,22 +121,22 @@
       <div class="my-container">
         <ul class="nav-secondary" uk-switcher="swiping: false; animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
           <li class="uk-active">
-            <a href="#">SERVICE</a>
+            <a href="#" lang="en" data-lang-token="service">SERVICE</a>
           </li>
           <li>
-            <a href="#">LEGAL</a>
+            <a href="#" lang="en" data-lang-token="legal">LEGAL</a>
           </li>
           <li>
-            <a href="#">FINANCE</a>
+            <a href="#" lang="en" data-lang-token="finance">FINANCE</a>
           </li>
           <li>
-            <a href="#">SOCIAL IMPACT</a>
+            <a href="#" lang="en" data-lang-token="social_impact">SOCIAL IMPACT</a>
           </li>
           <li>
-            <a href="#">GENERAL</a>
+            <a href="#" lang="en" data-lang-token="general">GENERAL</a>
           </li>
           <li>
-            <a href="#">ALL</a>
+            <a href="#" lang="en" data-lang-token="all">ALL</a>
           </li>
           <hr class="uk-panel-divider">
         </ul>
@@ -140,74 +146,74 @@
               <div class="uk-section uk-section-medium uk-margin-xlarge questions">
                 <ul uk-accordion="multiple: true">
                   <li class="uk-open">
-                    <h2 class="uk-accordion-title">How is YES CPH different from conventional service companies?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_YES_diffrent">How is YES CPH different from conventional service companies?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>We are different in many ways. The main difference is that our vision with the company is not making profits for ourselves. It’s about making a social difference in Denmark but also around the world through various projects.</p>
+                      <p lang="en" data-lang-token="a_how_YES_diffrent">We are different in many ways. The main difference is that our vision with the company is not making profits for ourselves. It’s about making a social difference in Denmark but also around the world through various projects.</p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="uk-accordion-title">Which areas can YES CPH assist in fulfilling my labor requirements?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_which_areass_can_yes">Which areas can YES CPH assist in fulfilling my labor requirements?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>Restaurants, bars, warehouses and event management are just a few of the areas where we have successfully facilitated labor market integration.</p>
+                      <p lang="en" data-lang-token="a_which_areass_can_yes">Restaurants, bars, warehouses and event management are just a few of the areas where we have successfully facilitated labor market integration.</p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="uk-accordion-title">How do I hire a teammate through YES CPH?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_do_i_hire">How do I hire a teammate through YES CPH?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>The first step for any organisation or company wishing to hire through YES CPH is to write an email /call us with the details of the specific needs at yes@yescph.co/42444540.</p>
+                      <p lang="en" data-lang-token="a_how_do_i_hire">The first step for any organisation or company wishing to hire through YES CPH is to write an email /call us with the details of the specific needs at yes@yescph.co/42444540.</p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="uk-accordion-title">What types of teammates can I hire through YES CPH?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_types_of_teammates">What types of teammates can I hire through YES CPH?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>Our vision is to facilitate the integration of refugees, asylum seekers and migrants through active participation in the Danish labor market. Therefore, the teammates you can hire come from one of the groups mentioned above.</p>
+                      <p lang="en" data-lang-token="a_what_types_of_teammates">Our vision is to facilitate the integration of refugees, asylum seekers and migrants through active participation in the Danish labor market. Therefore, the teammates you can hire come from one of the groups mentioned above.</p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="uk-accordion-title">How can YES CPH guarantee that all their teammates are qualified?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_yes_guarantee">How can YES CPH guarantee that the teammates are qualified?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>We guarantee the qualifications of our teammates by conducting several interviews with candidates in our database. Because we understand that some newcomers to Denmark might not have the industry experience, we will provide any training
+                      <p lang="en" data-lang-token="a_how_can_yes_guarantee">We guarantee the qualifications of our teammates by conducting several interviews with candidates in our database. Because we understand that some newcomers to Denmark might not have the industry experience, we will provide any training
                         sessions needed prior to them filling a job position.</p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="uk-accordion-title">What is the minimum monthly number of hours I should offer to hire a teammate?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_the_minimum">What is the minimum monthly number of hours I should offer to hire a teammate?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>As a rule of thumb, we require at least 60 hours per month for our teammates to ensure a part-time position. We do understand that some positions equate to less than 60 hours a month and in these cases we occasionally make exceptions. In addition service fee from the 60 hours gives us the ability to sponsor a single child for a month and pay off all required costs.</p>
+                      <p lang="en" data-lang-token="a_what_is_the_minimum">As a rule of thumb, we require at least 60 hours per month for our teammates to ensure a part-time position. We do understand that some positions equate to less than 60 hours a month and in these cases we occasionally make exceptions. In addition service fee from the 60 hours gives us the ability to sponsor a single child for a month and pay off all required costs.</p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="uk-accordion-title">How long can I have a teammate hired through YES CPH?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_long_can_i_have">How long can I have a teammate hired through YES CPH?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>There is no time limit as to how long you can have a teammate at your company. However, the minimum duration for a contract is six months, where the first month is a trial period to ensure we are a perfect partnership.</p>
+                      <p lang="en" data-lang-token="a_how_long_can_i_have">There is no time limit as to how long you can have a teammate at your company. However, the minimum duration for a contract is six months, where the first month is a trial period to ensure we are a perfect partnership.</p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="uk-accordion-title">What is the YES CPHs ”service guarantee”?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_the_yes_service">What is the YES CPHs ”service guarantee”?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>The service guarantee is our promise that the position you need will always be filled by a qualified teammate, even if your appointed teammate is sick. We therefore promise to find a temporary replacement that is equally qualified. The service guarantee also ensures that if you need an extra teammate with short notice we can fulfill this requirement.</p>
+                      <p lang="en" data-lang-token="a_what_is_the_yes_service">The service guarantee is our promise that the position you need will always be filled by a qualified teammate, even if your appointed teammate is sick. We therefore promise to find a temporary replacement that is equally qualified. The service guarantee also ensures that if you need an extra teammate with short notice we can fulfill this requirement.</p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="uk-accordion-title">Does YES CPH provide last minute service?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_doess_yes_provide">Does YES CPH provide last minute service?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>Yes. We maintain a group of select teammates that can step in with three hours’ notice depending on the location of your workplace. If you use this part of our service, keep in mind that the wages are subject to a 20% increase because it requires employees to be “on call”. A service is considered last minute if you inform us of your need less than 24 hours before the need. If the need is an extension of the scheduled service, it is not considered last minute.</p>
+                      <p lang="en" data-lang-token="a_doess_yes_provide" lang="en" data-lang-token="q_doess_yes_provide">Yes. We maintain a group of select teammates that can step in with three hours’ notice depending on the location of your workplace. If you use this part of our service, keep in mind that the wages are subject to a 20% increase because it requires employees to be “on call”. A service is considered last minute if you inform us of your need less than 24 hours before the need. If the need is an extension of the scheduled service, it is not considered last minute.</p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="uk-accordion-title">What would happen if I do not like the teammate allocated to me?</h2>
+                    <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_would_happen_if">What would happen if I do not like the teammate allocated to me?</h2>
                     <div class="uk-accordion-content box">
                       <hr class="uk-hidden break-large">
-                      <p>If you have hired a teammate through us and things don’t work out, we will make sure to find you an alternative as soon as the problem is brought to our attention.</p>
+                      <p lang="en" data-lang-token="a_what_would_happen_if">If you have hired a teammate through us and things don’t work out, we will make sure to find you an alternative as soon as the problem is brought to our attention.</p>
                     </div>
                   </li>
                 </ul>
@@ -220,32 +226,32 @@
                 <div class="uk-section uk-section-medium uk-margin-xlarge questions">
                   <ul uk-accordion="multiple: true">
                     <li>
-                      <h2 class="uk-accordion-title">What is YES CPHs legal status?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_yes_legal">What is YES CPHs legal status?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We are an Iværksætterselskab (IVS) also called Entrepreneurial limited company. Under the IVS legislation our company category is a Social Economic Business.</p>
+                        <p lang="en" data-lang-token="a_what_is_yes_legal">We are an Iværksætterselskab (IVS) also called Entrepreneurial limited company. Under the IVS legislation our company category is a Social Economic Business.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How does YES CPH maintain its legal responsibility with business partners and its own employees?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_does_yes_maintain">How does YES CPH maintain its legal responsibility with business partners and its own employees?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>YES CPH uses a service and employment contract that is based on Danish law, that ensures all the legal requirements are fulfilled.</p>
+                        <p lang="en" data-lang-token="a_how_does_yes_maintain">YES CPH uses a service and employment contract that is based on Danish law, that ensures all the legal requirements are fulfilled.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Are YES CPH's employees covered by work insurance?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_are_yes_employees">Are YES CPH's employees covered by work insurance?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>Under Danish law the responsibility of work insurance falls to the company that reaps the benefits of the labor. As such it is the companies where the teammate works that must insure the worker. We will make sure that each teammate
+                        <p lang="en" data-lang-token="a_are_yes_employees">Under Danish law the responsibility of work insurance falls to the company that reaps the benefits of the labor. As such it is the companies where the teammate works that must insure the worker. We will make sure that each teammate
                           has adequate insurance wherever they work. YES CPH does have a liability insurance in case of damages to property where the teammate is working. if you have any other questions concerning insurance for your teammate feel free to Email us at yes@yescph.co</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How can YES CPH guarantee all teammates hold a legal work permit?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_yes_guarantee_all">How can YES CPH guarantee all teammates hold a legal work permit?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We work together with the relevant government agencies to cross check our candidate’s passport, residence card, civil registration card and police certificate and upon request we can provide your company with copies.</p>
+                        <p lang="en" data-lang-token="a_how_can_yes_guarantee_all">We work together with the relevant government agencies to cross check our candidate’s passport, residence card, civil registration card and police certificate and upon request we can provide your company with copies.</p>
                       </div>
                     </li>
                   </ul>
@@ -259,31 +265,31 @@
                 <div class="uk-section uk-section-medium uk-margin-xlarge questions">
                   <ul uk-accordion="multiple: true">
                     <li>
-                      <h2 class="uk-accordion-title">How is YES CPH funded?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_is_yes_funded">How is YES CPH funded?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>The founding of YES CPH was provided by Riad Arefin, the founder. Our plan is to support our daily operations through the service fee.</p>
+                        <p lang="en" data-lang-token="a_how_is_yes_funded">The founding of YES CPH was provided by Riad Arefin, the founder. Our plan is to support our daily operations through the service fee.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Why does YES CPH charge a service fee for its service?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_why_does_yes_charge">Why does YES CPH charge a service fee for its service?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>The service fee that we charge goes into maintaining and building the company as well as contributing to local and global development initiatives. As much as 30% of the service is spent on various socially developing projects nationally and internationally.</p>
+                        <p lang="en" data-lang-token="a_why_does_yes_charge">The service fee that we charge goes into maintaining and building the company as well as contributing to local and global development initiatives. As much as 30% of the service is spent on various socially developing projects nationally and internationally.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How does YES CPH spend the service fee that they receive from their customers?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_doess_yes_spend">How does YES CPH spend the service fee that they receive from their customers?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We spend an estimated 30% on social development. This covers child sponsorship and supporting social projects. We spend 10% on legal expenses, an accountant, insurance etc. We spend 55% on maintaining teammates as well as
+                        <p lang="en" data-lang-token="a_how_doess_yes_spend">We spend an estimated 30% on social development. This covers child sponsorship and supporting social projects. We spend 10% on legal expenses, an accountant, insurance etc. We spend 55% on maintaining teammates as well as
                           building upon the existing organizational structure. This leaves 5 % for unexpected costs and can be added to the “giveback” that we provide companies that use our service.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How does YES CPH ensure transparency in their transactions and therefore maintain the non-profit vision?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_does_ensure">How does YES CPH ensure transparency in their transactions and therefore maintain the non-profit vision?</h2>
                       <div class="uk-accordion-content box">
-                        <hr class="uk-hidden break-large">
+                        <hr class="uk-hidden break-large" lang="en" data-lang-token="a_how_does_ensure">
                         <p>We maintain what is called an “Open Book Accounting” policy. This means that other people have the option, upon requesting it, to view our account, including transactions. Through this transparency our hope is to eliminate any doubt concerning our non-profit vision.</p>
                       </div>
                     </li>
@@ -298,73 +304,73 @@
                 <div class="uk-section uk-section-medium uk-margin-xlarge questions">
                   <ul uk-accordion="multiple: true">
                     <li>
-                      <h2 class="uk-accordion-title">How does using YES CPHs services make my business socially responsible?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_doess_using">How does using YES CPHs services make my business socially responsible?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>This is because you contribute to ensuring fair and safe employment for asylum seekers, refugees and newcomers to Denmark. You also make a financial contribution to social development projects.</p>
+                        <p lang="en" data-lang-token="a_how_doess_using">This is because you contribute to ensuring fair and safe employment for asylum seekers, refugees and newcomers to Denmark. You also make a financial contribution to social development projects.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How do YES CPH recognize my social contribution?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_doess_recognize">How do YES CPH recognize my social contribution?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>To recognize the companies and organisations we work with, we provide you with materials related to your contribution. We promote your contribution through online/offline marketing campaigns.</p>
+                        <p lang="en" data-lang-token="a_how_doess_recognize">To recognize the companies and organisations we work with, we provide you with materials related to your contribution. We promote your contribution through online/offline marketing campaigns.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Who are the children that YES CPH provide financial support for?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_who_are_the_children">Who are the children that YES CPH provide financial support for?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>All the children are currently financed through Jaago, a nonprofit organisation, based in Bangladesh. Jaago ensures that the children are from marginalized families that cannot support the education of their children. To find out more visit: jaago.com.bd</p>
+                        <p lang="en" data-lang-token="a_who_are_the_children">All the children are currently financed through Jaago, a nonprofit organisation, based in Bangladesh. Jaago ensures that the children are from marginalized families that cannot support the education of their children. To find out more visit: jaago.com.bd</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Can I choose a specific child who I want to sponsor?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_can_i_choose">Can I choose a specific child who I want to sponsor?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>No, we allow our partner organisation Jaago to choose which child has the most need..</p>
+                        <p lang="en" data-lang-token="a_can_i_choose">No, we allow our partner organisation Jaago to choose which child has the most need..</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">What kind of other social development project are available to support through the giveback?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_kind_off_social">What kind of other social development project are available to support through the giveback?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We support development project that supports child education, healthcare, women empowerment, social entrepreneurship and technological advances. Basically, businesses that improve local conditions and healthy living for the most vulnerable.</p>
+                        <p lang="en" data-lang-token="a_what_kind_off_social">We support development project that supports child education, healthcare, women empowerment, social entrepreneurship and technological advances. Basically, businesses that improve local conditions and healthy living for the most vulnerable.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How can YES CPH guarantee that social contributions are spent on children’s needs?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_yes_guarantee_the_social">How can YES CPH guarantee that social contributions are spent on children’s needs?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We can provide any contributor with the documentation we receive. Furthermore, we can provide any contributor with a quarterly update on the child/children being sponsored. The documentation from the giveback depends on the project and as such the documentation will vary.</p>
+                        <p lang="en" data-lang-token="a_how_can_yes_guarantee_the_social">We can provide any contributor with the documentation we receive. Furthermore, we can provide any contributor with a quarterly update on the child/children being sponsored. The documentation from the giveback depends on the project and as such the documentation will vary.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">What is the giveback that YES CPH provides to companies?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_the_giveback">What is the giveback that YES CPH provides to companies?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>The giveback is YES CPH donating its profits together with the company that provided said profit.</p>
+                        <p lang="en" data-lang-token="a_what_is_the_giveback">The giveback is YES CPH donating its profits together with the company that provided said profit.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">What is the timeline for the giveback?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_the_timeline">What is the timeline for the giveback?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>Every six months we calculate the profits and provide the company, through which the profits were made, with options for what to donate the money to.</p>
+                        <p lang="en" data-lang-token="a_what_is_the_timeline">Every six months we calculate the profits and provide the company, through which the profits were made, with options for what to donate the money to.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Can I choose my own projects to donate the money to?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_can_i_choose" lang="en" data-lang-token="a_can_i_choose">Can I choose my own projects to donate the money to?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>As a rule of thumb, no. However, you can always suggest projects if you feel that they are exceptionally impactful.</p>
+                        <p lang="en" data-lang-token="a_can_i_choose">As a rule of thumb, no. However, you can always suggest projects if you feel that they are exceptionally impactful.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How much is the giveback in DKK?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_much_is_the_giveback">How much is the giveback in DKK?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>This varies. Since the giveback is based on the extent of hours that we work with a company the amount is not fixed. If you are currently working with us and wish to know what the expected amount is, please contact us and we will calculate it for you.</p>
+                        <p lang="en" data-lang-token="a_how_much_is_the_giveback">This varies. Since the giveback is based on the extent of hours that we work with a company the amount is not fixed. If you are currently working with us and wish to know what the expected amount is, please contact us and we will calculate it for you.</p>
                       </div>
                     </li>
                   </ul>
@@ -378,24 +384,24 @@
                 <div class="uk-section uk-section-medium uk-margin-xlarge questions">
                   <ul uk-accordion="multiple: true">
                     <li>
-                      <h2 class="uk-accordion-title">Who is YES CPH?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_who_is_yes">Who is YES CPH?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>YES CPH is a social enterprise that aims to help immigrants integrate into Danish society through employment. This is done by respectfully building bridges between immigrants and businesses in need of labor. We guarantee reliable, flexible, high quality staff members to perform low skilled entry level jobs. We are not profit driven. All profits go directly into fighting social issues in Denmark and all over the world.</p>
+                        <p lang="en" data-lang-token="a_who_is_yes">YES CPH is a social enterprise that aims to help immigrants integrate into Danish society through employment. This is done by respectfully building bridges between immigrants and businesses in need of labor. We guarantee reliable, flexible, high quality staff members to perform low skilled entry level jobs. We are not profit driven. All profits go directly into fighting social issues in Denmark and all over the world.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How can I spread the word about YES CPH?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_i_spread">How can I spread the word about YES CPH?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>If you want to support YES CPH by spreading the word of what we are doing, you can like our pages on social media. It can also be as easy as simply telling friends and family about us. We always appreciate people assisting us in making a difference.</p>
+                        <p lang="en" data-lang-token="a_how_can_i_spread">If you want to support YES CPH by spreading the word of what we are doing, you can like our pages on social media. It can also be as easy as simply telling friends and family about us. We always appreciate people assisting us in making a difference.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How can I get involved with YES CPH?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_i_get_involved">How can I get involved with YES CPH?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>People partner up with YES CPH for various reasons. If you wish to inquire as to how we can assist each other please don’t hesitate to contact us at yes@yescph.co.</p>
+                        <p lang="en" data-lang-token="a_how_can_i_get_involved">People partner up with YES CPH for various reasons. If you wish to inquire as to how we can assist each other please don’t hesitate to contact us at yes@yescph.co.</p>
                       </div>
                     </li>
                   </ul>
@@ -409,195 +415,223 @@
                 <div class="uk-section uk-section-medium uk-margin-xlarge questions">
                   <ul uk-accordion="multiple: true">
                     <li>
-                      <h2 class="uk-accordion-title">How is YES CPH different from conventional service companies?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_YES_diffrent">How is YES CPH different from conventional service companies?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We are different in many ways. The main difference is that our vision with the company is not making profits for ourselves. It’s about making a social difference in Denmark but also around the world through various projects.</p>
+                        <p lang="en" data-lang-token="a_how_YES_diffrent">We are different in many ways. The main difference is that our vision with the company is not making profits for ourselves. It’s about making a social difference in Denmark but also around the world through various projects.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Which areas can YES CPH assist in fulfilling my labor requirements?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_which_areass_can_yes">Which areas can YES CPH assist in fulfilling my labor requirements?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>Restaurants, bars, warehouses and event management are just a few of the areas where we have successfully facilitated labor market integration.</p>
+                        <p lang="en" data-lang-token="a_which_areass_can_yes">Restaurants, bars, warehouses and event management are just a few of the areas where we have successfully facilitated labor market integration.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How do I hire a teammate through YES CPH?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_do_i_hire">How do I hire a teammate through YES CPH?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>The first step for any organisation or company wishing to hire through YES CPH is to write an email /call us with the details of the specific needs at yes@yescph.co/42444540.</p>
+                        <p lang="en" data-lang-token="a_how_do_i_hire">The first step for any organisation or company wishing to hire through YES CPH is to write an email /call us with the details of the specific needs at yes@yescph.co/42444540.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">What types of teammates can I hire through YES CPH?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_types_of_teammates">What types of teammates can I hire through YES CPH?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>Our vision is to facilitate the integration of refugees, asylum seekers and migrants through active participation in the Danish labor market. Therefore, the teammates you can hire come from one of the groups mentioned above.</p>
+                        <p lang="en" data-lang-token="a_what_types_of_teammates">Our vision is to facilitate the integration of refugees, asylum seekers and migrants through active participation in the Danish labor market. Therefore, the teammates you can hire come from one of the groups mentioned above.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How can YES CPH guarantee that the teammates are qualified?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_yes_guarantee">How can YES CPH guarantee that the teammates are qualified?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We guarantee the qualifications of our teammates by conducting several interviews with candidates in our database. Because we understand that some newcomers to Denmark might not have the industry experience, we will provide any
+                        <p lang="en" data-lang-token="a_how_can_yes_guarantee">We guarantee the qualifications of our teammates by conducting several interviews with candidates in our database. Because we understand that some newcomers to Denmark might not have the industry experience, we will provide any
                           training sessions needed prior to them filling a job position.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">What is the minimum monthly number of hours I should offer to hire a teammate?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_the_minimum">What is the minimum monthly number of hours I should offer to hire a teammate?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>As a rule of thumb, we require at least 60 hours per month for our teammates to ensure a part-time position. We do understand that some positions equate to less than 60 hours a month and in these cases we occasionally make exceptions. In addition service fee from the 60 hours gives us the ability to sponsor a single child for a month and pay off all required costs.</p>
+                        <p lang="en" data-lang-token="a_what_is_the_minimum">As a rule of thumb, we require at least 60 hours per month for our teammates to ensure a part-time position. We do understand that some positions equate to less than 60 hours a month and in these cases we occasionally make exceptions. In addition service fee from the 60 hours gives us the ability to sponsor a single child for a month and pay off all required costs.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How long can I have a teammate hired through YES CPH?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_long_can_i_have">How long can I have a teammate hired through YES CPH?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>There is no time limit as to how long you can have a teammate at your company. However, the minimum duration for a contract is six months, where the first month is a trial period to ensure we are a perfect partnership.</p>
+                        <p lang="en" data-lang-token="a_how_long_can_i_have">There is no time limit as to how long you can have a teammate at your company. However, the minimum duration for a contract is six months, where the first month is a trial period to ensure we are a perfect partnership.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">What is the YES CPHs ”service guarantee”?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_the_yes_service">What is the YES CPHs ”service guarantee”?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>The service guarantee is our promise that the position you need will always be filled by a qualified teammate, even if your appointed teammate is sick. We therefore promise to find a temporary replacement that is equally qualified. The service guarantee also ensures that if you need an extra teammate with short notice we can fulfill this requirement.</p>
+                        <p lang="en" data-lang-token="a_what_is_the_yes_service">The service guarantee is our promise that the position you need will always be filled by a qualified teammate, even if your appointed teammate is sick. We therefore promise to find a temporary replacement that is equally qualified. The service guarantee also ensures that if you need an extra teammate with short notice we can fulfill this requirement.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Does YES CPH provide last minute service?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_doess_yes_provide">Does YES CPH provide last minute service?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>Yes. We maintain a group of select teammates that can step in with three hours’ notice depending on the location of your workplace. If you use this part of our service, keep in mind that the wages are subject to a 20% increase because it requires employees to be “on call”. A service is considered last minute if you inform us of your need less than 24 hours before the need. If the need is an extension of the scheduled service, it is not considered last minute.</p>
+                        <p lang="en" data-lang-token="a_doess_yes_provide">Yes. We maintain a group of select teammates that can step in with three hours’ notice depending on the location of your workplace. If you use this part of our service, keep in mind that the wages are subject to a 20% increase because it requires employees to be “on call”. A service is considered last minute if you inform us of your need less than 24 hours before the need. If the need is an extension of the scheduled service, it is not considered last minute.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">What would happen if I do not like the teammate allocated to me?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_would_happen_if">What would happen if I do not like the teammate allocated to me?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>If you have hired a teammate through us and things don’t work out, we will make sure to find you an alternative as soon as the problem is brought to our attention.</p>
+                        <p lang="en" data-lang-token="a_what_would_happen_if">If you have hired a teammate through us and things don’t work out, we will make sure to find you an alternative as soon as the problem is brought to our attention.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">What is YES CPHs legal status?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_yes_legal">What is YES CPHs legal status?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We are an Iværksætterselskab (IVS) also called Entrepreneurial limited company. Under the IVS legislation our company category is a Social Economic Business.</p>
+                        <p lang="en" data-lang-token="a_what_is_yes_legal">We are an Iværksætterselskab (IVS) also called Entrepreneurial limited company. Under the IVS legislation our company category is a Social Economic Business.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How does YES CPH maintain its legal responsibility with business partners and its own employees?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_does_yes_maintain">How does YES CPH maintain its legal responsibility with business partners and its own employees?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>YES CPH uses a service and employment contract that is based on Danish law, this ensures that all the legal requirements are fulfilled.</p>
+                        <p lang="en" data-lang-token="a_how_does_yes_maintain">YES CPH uses a service and employment contract that is based on Danish law, this ensures that all the legal requirements are fulfilled.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Are YES CPH's employees covered by work insurance?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_are_yes_employees">Are YES CPH's employees covered by work insurance?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>Under Danish law the responsibility of work insurance falls to the company that reaps the benefits of the labor. As such it is the companies where the teammate works that must insure the worker. We will make sure that each teammate
+                        <p lang="en" data-lang-token="a_are_yes_employees">Under Danish law the responsibility of work insurance falls to the company that reaps the benefits of the labor. As such it is the companies where the teammate works that must insure the worker. We will make sure that each teammate
                           has adequate insurance wherever they work. YES CPH does have a liability insurance in case of damages to property where the teammate is working. If you have any other questions concerning insurance for your teammate feel free to Email us at yes@yescph.co</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How can YES CPH guarantee all teammates hold a legal work permit?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_yes_guarantee_all">How can YES CPH guarantee all teammates hold a legal work permit?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We work together with the relevant government agencies to cross check our candidate’s passport, residence card, civil registration card and police certificate and upon request we can provide your company with copies.</p>
+                        <p lang="en" data-lang-token="a_how_can_yes_guarantee_all">We work together with the relevant government agencies to cross check our candidate’s passport, residence card, civil registration card and police certificate and upon request we can provide your company with copies.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How is YES CPH funded?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_is_yes_funded">How is YES CPH funded?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>The initial funding of YES CPH was provided by Riad Arefin, the founder. Our plan is to support our daily operations through the service fee.</p>
+                        <p lang="en" data-lang-token="a_how_is_yes_funded">The initial funding of YES CPH was provided by Riad Arefin, the founder. Our plan is to support our daily operations through the service fee.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Why does YES CPH charge a service fee for its service?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_why_does_yes_charge">Why does YES CPH charge a service fee for its service?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>The service fee that we charge goes into maintaining and building the company as well as contributing to local and global development initiatives. As much as 30% of the service is spent on various socially developing projects nationally and internationally.</p>
+                        <p lang="en" data-lang-token="a_why_does_yes_charge" lang="en" data-lang-token="a_how_is_yes_funded">The service fee that we charge goes into maintaining and building the company as well as contributing to local and global development initiatives. As much as 30% of the service is spent on various socially developing projects nationally and internationally.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How does YES CPH spend the service fee that they receive from their customers?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_doess_yes_spend">How does YES CPH spend the service fee that they receive from their customers?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We spend an estimated 30% on social development. This covers child sponsorship and supporting social projects. We spend 10% on legal expenses, an accountant, insurance etc. We spend 55% on maintaining teammates as well as
+                        <p lang="en" data-lang-token="a_how_doess_yes_spend">We spend an estimated 30% on social development. This covers child sponsorship and supporting social projects. We spend 10% on legal expenses, an accountant, insurance etc. We spend 55% on maintaining teammates as well as
                           building upon the existing organizational structure. This leaves 5 % for unexpected costs and can be added to the “giveback” that we provide companies that use our service.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How does YES CPH ensure transparency in their transactions and therefore maintain the non-profit vision?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_does_ensure">How does YES CPH ensure transparency in their transactions and therefore maintain the non-profit vision?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We maintain what is called an “Open Book Accounting” policy. This means that other people have the option, upon requesting it, to view our account, including transactions. Through this transparency our hope is to eliminate any doubt concerning our non-profit vision.</p>
+                        <p lang="en" data-lang-token="a_how_does_ensure">We maintain what is called an “Open Book Accounting” policy. This means that other people have the option, upon requesting it, to view our account, including transactions. Through this transparency our hope is to eliminate any doubt concerning our non-profit vision.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How does using YES CPHs services make my business socially responsible?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_doess_using">How does using YES CPHs services make my business socially responsible?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>This is because you contribute to ensuring fair and safe employment for asylum seekers, refugees and newcomers to Denmark. You also make a financial contribution to social development projects.</p>
+                        <p lang="en" data-lang-token="a_how_doess_using">This is because you contribute to ensuring fair and safe employment for asylum seekers, refugees and newcomers to Denmark. You also make a financial contribution to social development projects.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How do YES CPH recognize my social contribution?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_doess_recognize">How do YES CPH recognize my social contribution?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>To recognize the companies and organisations we work with, we provide you with materials related to your contribution. We promote your contribution through online/offline marketing campaigns.</p>
+                        <p lang="en" data-lang-token="a_how_doess_recognize">To recognize the companies and organisations we work with, we provide you with materials related to your contribution. We promote your contribution through online/offline marketing campaigns.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Who are the children that YES CPH provide financial support for?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_who_are_the_children">Who are the children that YES CPH provide financial support for?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>All the children are currently financed through Jaago, a nonprofit organisation, based in Bangladesh. Jaago ensures that the children are from marginalized families that cannot support the education of their children. To find out more visit: jaago.com.bd</p>
+                        <p lang="en" data-lang-token="a_who_are_the_children">All the children are currently financed through Jaago, a nonprofit organisation, based in Bangladesh. Jaago ensures that the children are from marginalized families that cannot support the education of their children. To find out more visit: jaago.com.bd</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Can I choose a specific child who I want to sponsor?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_can_i_choose">Can I choose a specific child who I want to sponsor?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>No, we allow our partner organization Jaago to choose which child has the most need.</p>
+                        <p lang="en" data-lang-token="a_can_i_choose">No, we allow our partner organization Jaago to choose which child has the most need.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">What kind of other social development project are available to support through the giveback?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_kind_off_social">What kind of other social development project are available to support through the giveback?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We support development project that supports child education, healthcare, women empowerment, social entrepreneurship and technological advances. Basically, businesses that improve local conditions and healthy living for the most vulnerable.</p>
+                        <p lang="en" data-lang-token="a_what_kind_off_social">We support development project that supports child education, healthcare, women empowerment, social entrepreneurship and technological advances. Basically, businesses that improve local conditions and healthy living for the most vulnerable.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How can YES CPH guarantee that social contributions are spent on children’s needs?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_yes_guarantee_the_social">How can YES CPH guarantee that social contributions are spent on children’s needs?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>We can provide any contributor with the documentation we receive. Furthermore, we can provide any contributor with a quarterly update on the child/children being sponsored. The documentation from the giveback depends on the project and as such the documentation will vary.</p>
+                        <p lang="en" data-lang-token="q_how_can_yes_guarantee_the_social">We can provide any contributor with the documentation we receive. Furthermore, we can provide any contributor with a quarterly update on the child/children being sponsored. The documentation from the giveback depends on the project and as such the documentation will vary.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">Who is YES CPH?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_who_is_yes">Who is YES CPH?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>YES CPH is a social enterprise that aims to help immigrants integrate into Danish society through employment. This is done by respectfully building bridges between immigrants and businesses in need of labor. We guarantee reliable, flexible, high quality staff members to perform low skilled entry level jobs. We are not profit driven. All profits go directly into fighting social issues in Denmark and all over the world.</p>
+                        <p lang="en" data-lang-token="a_who_is_yes">YES CPH is a social enterprise that aims to help immigrants integrate into Danish society through employment. This is done by respectfully building bridges between immigrants and businesses in need of labor. We guarantee reliable, flexible, high quality staff members to perform low skilled entry level jobs. We are not profit driven. All profits go directly into fighting social issues in Denmark and all over the world.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How can I spread the word about YES CPH?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_i_spread">How can I spread the word about YES CPH?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>If you want to support YES CPH by spreading the word of what we are doing, you can like our pages on social media. It can also be as easy as simply telling friends and family about us. We always appreciate people assisting us in making a difference.</p>
+                        <p lang="en" data-lang-token="a_how_can_i_spread">If you want to support YES CPH by spreading the word of what we are doing, you can like our pages on social media. It can also be as easy as simply telling friends and family about us. We always appreciate people assisting us in making a difference.</p>
                       </div>
                     </li>
                     <li>
-                      <h2 class="uk-accordion-title">How can I get involved with YES CPH?</h2>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_can_i_get_involved">How can I get involved with YES CPH?</h2>
                       <div class="uk-accordion-content box">
                         <hr class="uk-hidden break-large">
-                        <p>People partner up with YES CPH for various reasons. If you wish to inquire as to how we can assist each other please don’t hesitate to contact us at yes@yescph.co.</p>
+                        <p lang="en" data-lang-token="a_how_can_i_get_involved">People partner up with YES CPH for various reasons. If you wish to inquire as to how we can assist each other please don’t hesitate to contact us at yes@yescph.co.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_the_giveback">What is the giveback that YES CPH provides to companies?</h2>
+                      <div class="uk-accordion-content box">
+                        <hr class="uk-hidden break-large">
+                        <p lang="en" data-lang-token="a_what_is_the_giveback">The giveback is YES CPH donating its profits together with the company that provided said profit.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_what_is_the_timeline">What is the timeline for the giveback?</h2>
+                      <div class="uk-accordion-content box">
+                        <hr class="uk-hidden break-large">
+                        <p lang="en" data-lang-token="a_what_is_the_timeline">Every six months we calculate the profits and provide the company, through which the profits were made, with options for what to donate the money to.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_can_i_choose">Can I choose my own projects to donate the money to?</h2>
+                      <div class="uk-accordion-content box">
+                        <hr class="uk-hidden break-large">
+                        <p lang="en" data-lang-token="a_can_i_choose">As a rule of thumb, no. However, you can always suggest projects if you feel that they are exceptionally impactful.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <h2 class="uk-accordion-title" lang="en" data-lang-token="q_how_much_is_the_giveback">How much is the giveback in DKK?</h2>
+                      <div class="uk-accordion-content box">
+                        <hr class="uk-hidden break-large">
+                        <p lang="en" data-lang-token="a_how_much_is_the_giveback">This varies. Since the giveback is based on the extent of hours that we work with a company the amount is not fixed. If you are currently working with us and wish to know what the expected amount is, please contact us and we will calculate it for you.</p>
                       </div>
                     </li>
                   </ul>
