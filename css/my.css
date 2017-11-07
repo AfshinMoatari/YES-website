@@ -102,14 +102,8 @@ a:hover, a:focus{text-decoration:none}
 .hero .cover .content img{width:150px;}
 .hero .cover .content h1{line-height:1.6;color:#fff;}
 .hero .text{height:calc(100vh);}
-.operations .cover{background-image:url(../assets/img/how.jpg);}
-.operations .blend{background-color:#A9A9A9;}
-.operations .cover h3{padding-right:5px;}
-.operations h3{margin-left:-4.5%;}
-.operations .cover h3{color:#fff;}
-.operations .my-button{bottom:0;float:none;}
-.operations .category{padding:0 10px;color:#fff}
-.operations .category .item{padding:0 35px 35px 35px;}
+.operations .category .item{padding: 60px 0}
+.operations .category span{font-size:18px;font-weight:bold}
 .chart.bar p{font-weight:normal;font-size:1.063em;left:0;bottom:0;transform-origin:left;transform:rotate(-90deg);-ms-transform-origin:left;-webkit-transform-origin:left;-ms-transform:rotate(-90deg);-webkit-transform:rotate(-90deg);}
 .chart.bar .legend{font-weight:normal;font-size:1.063em;margin-top:80px;}
 .chart.bar .legend li img{padding:4px;}
@@ -133,12 +127,17 @@ a:hover, a:focus{text-decoration:none}
 .entrepreneurs .box{margin-left:70px;}
 .entrepreneurs .cover .my-container{height:100%;}
 .entrepreneurs p{font-style:italic;font-weight:bold;font-size:2.625em;}
-.steps .cover-1, .steps .cover-2{height:355px;}
-.steps .cover-1{background-image:url(../assets/img/step-1.png);}
-.steps .cover-2{background-image:url(../assets/img/step-2.png);}
+.steps .blend{background-color:#A6B2C5;background-blend-mode:multiply;mix-blend-mode:multiply}
+.steps .cover-1, .steps .cover-2, .steps .cover-3{height:355px;}
+.steps .cover-1{background-image:url(../assets/img/decent-work.png);}
+.steps .cover-2{background-image:url(../assets/img/quality-education.png);}
+.steps .cover-3{background-image:url(../assets/img/profile-to-purpose.png);}
 .steps .item-container{padding:20px;}
 .steps .item .legend .full{display:unset;}
 .steps .item .legend .half{display:none;}
+.steps .item:nth-child(1) .icon-item{position: relative;top: 125px}
+.steps .item:nth-child(4) .icon-item{position: relative;top: 155px}
+.steps .item:nth-child(5) .icon-item img{width:500px;padding:5px 15px}
 .footer{font-size:.87em;font-style:normal;font-weight:normal;text-align:center;position:fixed;z-index:0;height:480px;left:0;bottom:0;width:100%;background:#fff;padding:15px;padding-top:0;border:0 solid #fff;border-top:0;transition:border .4s ease, padding .4s ease;}
 .footer-spacer{position:relative;z-index:-11;height:480px;pointer-events:none;}
 .footer .footer-link{display:block;position:absolute;z-index:2;top:0;left:0;width:100%;height:100%;}
