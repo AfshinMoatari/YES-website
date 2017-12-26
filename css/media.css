@@ -25,8 +25,7 @@ body .important{font-size:3em;}
 .my-navbar.uk-active .logo img{width:95px;}
 body .hero{font-size:1em;}
 .hero .cover{height:calc(100vh);background-color:transparent;}
-.hero .cover .content img{width:200px;}
-.hero .cover .content h1{line-height:1.2;}
+.hero .cover .content img{width:500px;}
 .hero .text{height:auto;}
 .box{margin-left:70px;}
 .chart.bar p{left:-15px;}
@@ -58,7 +57,8 @@ body .hero{font-size:1em;}
 .my-navbar .contact img{width:120px;}
 .my-navbar-nav>li{padding:0 22px;}
 .my-container{padding:0 24px;}
-.hero .cover .content img{width:250px;}
+.hero .cover .content img{width: 400px;}
+.hero .cover{height:calc(70vh);}
 .slick-next{right:-25px;}
 .slick-prev{left:-30px;}
 .footer ul.social{margin:0;display:block;}
