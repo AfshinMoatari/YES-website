@@ -100,9 +100,18 @@ a:hover, a:focus{text-decoration:none}
 .open-menu, .close-menu{cursor:pointer;}
 .hero .cover{height:calc(100vh);background-color:#202020;}
 .hero .cover .content img{width:500px;}
-.hero .text{height:calc(100vh);}
-.operations .category .item{padding: 60px 0}
-.operations .category span{font-size:18px;font-weight:bold}
+.hero .label {height:100%;position:relative;margin:15px;display:inline-block;padding:15px 1em;}
+.hero .label h3{text-align:center;}
+.hero .label:before, .hero .label:after {content:'';display:block;position:absolute;border-color:#454545;box-sizing:border-box;border-style:solid;width:25px;height:25px;}
+.hero .label:before {bottom:-6px;left:-6px;border-width:0 0 3px 3px;z-index:5;}
+.hero .label:after {top:-6px;right:-6px;border-width:3px 3px 0 0;}
+/* .operations .category .item{padding: 60px 0}
+.operations .category span{font-size:18px;font-weight:bold} */
+
+.operations .panel{border-radius:3px;display:flex;align-items:center;min-height:300px;background:red;margin:0 auto;}
+.operations .panel .assistance {margin:-30px 0 -30px 0;background:green;min-height:360px;padding:100px 0;}
+.operations .panel .assistance .item img {width:90px;}
+
 .chart.bar p{font-weight:normal;font-size:1.063em;left:0;bottom:0;transform-origin:left;transform:rotate(-90deg);-ms-transform-origin:left;-webkit-transform-origin:left;-ms-transform:rotate(-90deg);-webkit-transform:rotate(-90deg);}
 .chart.bar .legend{font-weight:normal;font-size:1.063em;margin-top:80px;}
 .chart.bar .legend li img{padding:4px;}

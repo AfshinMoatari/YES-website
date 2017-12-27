@@ -26,7 +26,6 @@ body .important{font-size:3em;}
 body .hero{font-size:1em;}
 .hero .cover{height:calc(100vh);background-color:transparent;}
 .hero .cover .content img{width:500px;}
-.hero .text{height:auto;}
 .box{margin-left:70px;}
 .chart.bar p{left:-15px;}
 .slick-next{right:0;}
