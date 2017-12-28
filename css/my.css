@@ -118,6 +118,9 @@ a:hover, a:focus{text-decoration:none}
 .operations .panel .assistance:before, .operations .panel .assistance:after {content:'';display:block;position:absolute;border-color:#454545;box-sizing:border-box;border-style:solid;width:25px;height:25px;}
 .operations .panel .assistance:before {bottom:-7px;left:-7px;border-width:0 0 3px 3px;z-index:5;}
 .operations .panel .assistance:after {top:-7px;right:-7px;border-width:3px 3px 0 0;}
+.operations .info {padding-top:60px;padding-bottom:60px;}
+.operations .info h3 {text-align:center;}
+.operations .info .label {background-color:#fff;padding:20px;}
 
 
 
@@ -135,8 +138,8 @@ a:hover, a:focus{text-decoration:none}
 .my-slider .item{padding:0 25px;}
 .slick-dots li button {display: none}
 .slick-dots{position:absolute;width:100%;left:0px;padding:0px;margin:0px;list-style-type:none;text-align:center;}
-.slick-dots li{display:inline-block;width:15px;height:15px;background:Transparent;-webkit-transition:all 0.5s;transition:all 0.5s;-webkit-border-radius:50%;border-radius:50%;border:1px solid #000;margin:0 2.5px;cursor:pointer;position:relative;}
-.slick-dots li.slick-active{background:#666;-webkit-box-shadow:inset 0 0 0 1px rgb(255,255,255);box-shadow:inset 0 0 0 1px rgb(255,255,255);}
+.slick-dots li{display:inline-block;width:15px;height:15px;background:Transparent;-webkit-transition:all 0.5s;transition:all 0.5s;-webkit-border-radius:50%;border-radius:50%;border:1.5px solid #666;margin:0 2.5px;cursor:pointer;position:relative;}
+.slick-dots li.slick-active{background:#666;-webkit-box-shadow:inset 0 0 0 1.5px rgb(255,255,255);box-shadow:inset 0 0 0 1.5px rgb(255,255,255);}
 .slick-prev, .slick-next{font-size:0;line-height:0;position:absolute;top:50%;display:block;width:20px;height:20px;padding:0;-webkit-transform:translate(0, -50%);-ms-transform:translate(0, -50%);transform:translate(0, -50%);cursor:pointer;color:transparent;border:none;outline:none;background:transparent;}
 .slick-next::before{content:url(../assets/img/icon/next.png);}
 .slick-prev::before{content:url(../assets/img/icon/previous.png);}
