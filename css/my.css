@@ -120,7 +120,7 @@ a:hover, a:focus{text-decoration:none}
 .operations .panel .assistance:after {top:-7px;right:-7px;border-width:3px 3px 0 0;}
 .operations .info {padding-top:60px;padding-bottom:60px;}
 .operations .info h3 {text-align:center;}
-.operations .info .label {background-color:#fff;padding:20px;}
+.operations .info .label {background-color:#fff;padding:20px 30px;height:100%}
 
 
 
