@@ -66,4 +66,29 @@ $(document).ready(function() {
       showAnim: 'slide'
     });
   }
+
+
+
+  var label = $(".panel .item");
+  label.each(function(){
+    $(this).on("click", function(e){
+      e.preventDefault()
+      if($(this).hasClass("close")){
+         $(this).siblings(".open").toggleClass("open").addClass("close");
+         $(this).removeClass("close");
+         $(this).addClass("open");
+       }else if($(this).hasClass("open")){
+         $(this).parents(".panel-container.open").toggleClass("open normal");
+         $(this).siblings(".close").removeClass("close");
+         $(this).removeClass("open");
+       }else{
+         $(this).parents(".panel-container.normal").toggleClass("normal open");
+         $(this).addClass("open");
+         $(this).siblings().addClass("close");
+       }
+    })
+  });
+
+
+
 });
