@@ -123,39 +123,57 @@
       </div>
       <!-- HERO SECTION -->
       <div class="hero" id="hero" uk-scrollspy="cls: uk-animation-slide-right-medium; target: .cover .contact; delay: 300; hidden:true; repeat: true">
-          <div class="uk-section uk-section-media uk-padding-remove-vertical">
-            <div class="uk-cover-container cover">
-              <video class="uk-hidden autoplay loop muted" uk-cover autoplay loop muted>
-                <source src="assets/videos/yescph.mp4" type="video/mp4">
-                <source src="assets/videos/yescph.ogv" type="video/ogg">
-              </video>
-              <div class="right-panel">
-                <div class="uk-position-medium uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-center content">
-                  <img src="assets/img/yes-hero-text.gif" alt="service" lang="en">
+        <div class="uk-section uk-section-media uk-padding-remove-vertical">
+          <div class="uk-cover-container cover">
+            <video class="uk-hidden autoplay loop muted" uk-cover autoplay loop muted>
+              <source src="assets/videos/yescph.mp4" type="video/mp4">
+              <source src="assets/videos/yescph.ogv" type="video/ogg">
+            </video>
+            <div class="uk-flex uk-flex-column uk-flex-between right-panel">
+              <div class="uk-position-medium uk-flex uk-flex-center uk-flex-middle media">
+                <img src="assets/img/yes-hero-text.gif" alt="service" lang="en">
+              </div>
+              <div class="uk-flex uk-flex-center social">
+                <div class="item">
+                  <a href="https://www.facebook.com/yescphco/" target="_blank">
+                    <img src="assets/img/icon/facebook.svg" alt="facebook link">
+                  </a>
                 </div>
-              </div>
-              <div class="uk-position-bottom-right uk-position-small uk-hidden contact">
-                <a href="contact"><img src="assets/img/icon/lets-talk.svg" alt="Lets talk" height="142" width="142"></a>
-              </div>
-              <div class="uk-position-bottom-left uk-position-small uk-hidden language">
-                <ul class="uk-breadcrumb">
-                  <li>
-                    <a class="en" lang="en" href="#en" onclick="window.lang.change('en'); return false;">EN</a>
-                  </li>
-                  <li>
-                    <a class="da" lang="en" href="#da" onclick="window.lang.change('da'); return false;">DA</a>
-                  </li>
-                </ul>
+                <div class="item">
+                  <a href="https://www.instagram.com/yescphco/" target="_blank">
+                    <img src="assets/img/icon/instagram.svg" alt="instagram link">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.linkedin.com/company-beta/18214522" target="_blank">
+                    <img src="assets/img/icon/linkedin.svg" alt="linkedin link">
+                  </a>
+                </div>
+                <!-- <div class="item">
+                  <a href="#">
+                    <img src="assets/img/icon/twitter.svg" alt="twitter link">
+                  </a>
+                </div> -->
               </div>
             </div>
-            <div class="text">
-              <div class="my-container large">
-                <div class="my-container">
-                  <div class="uk-section uk-section-default uk-section-medium">
-                    <h2 class="uk-margin-medium pre" lang="en" data-lang-token="hero_text_top">We turn
-                      Businesses challenge
-                      into Social opportunity</h2>
-                  </div>
+            <div class="uk-position-bottom-right uk-position-small uk-hidden contact">
+              <a href="contact"><img src="assets/img/icon/lets-talk.svg" alt="Lets talk" height="142" width="142"></a>
+            </div>
+            <div class="uk-position-bottom-left uk-position-small uk-hidden language">
+              <ul class="uk-breadcrumb">
+                <li>
+                  <a class="en" lang="en" href="#en" onclick="window.lang.change('en'); return false;">EN</a>
+                </li>
+                <li>
+                  <a class="da" lang="en" href="#da" onclick="window.lang.change('da'); return false;">DA</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text">
+            <div class="my-container large">
+              <div class="my-container">
+                <div class="uk-section uk-section-default uk-section-medium">
                   <div class="uk-block uk-block-secondary uk-contrast uk-block-large">
                     <div class="uk-grid uk-grid-large uk-child-width-1-2" data-uk-grid-match>
                         <div>
@@ -177,6 +195,7 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
     <!-- MAIN CONTENT-->
     <div class="main" uk-scrollspy="cls: uk-animation-slide-left-medium; target: #operations .category>.item, #data .chart .legend .items>li, #steps .legend, #partners .items>li; delay: 300; hidden:true">
@@ -222,9 +241,13 @@
                       <blockquote>
                         <p>YES CPH has provided Villa Kultur with the perfect teammates that help keep the Villa in great shape. Having a neat environment helps the flow of creativity that is key to helping our own entrepreneurs continue to grow and succeed</p>
                         <footer>
-                          <div>
-                            Anna Karólína Gestsdóttir <br>
-                            Villa Kultur
+                          <div class="uk-flex-inline uk-flex-column">
+                            <div class="person">
+                              Anna Karólína Gestsdóttir
+                            </div>
+                            <div class="place">
+                              <a class="my-button-text" href="https://www.villakultur.dk/" target="_blank">Villa Kultur</a>
+                            </div>
                           </div>
                         </footer>
                       </blockquote>
@@ -233,9 +256,13 @@
                       <blockquote>
                         <p>Working with YES CPH has been a great experience all around. They are committed to good service with high quality, and their smart process even reduced the hours of work needed, which in turn, has saved our facility service cost.</p>
                         <footer>
-                          <div>
-                            Nikolaj Hansen <br>
-                            Sidecar
+                          <div class="uk-flex-inline uk-flex-column">
+                            <div class="person">
+                              Nikolaj Hansen
+                            </div>
+                            <div class="place">
+                              <a class="my-button-text" href="https://www.sidecarnoerrebro.dk/" target="_blank">Sidecar</a>
+                            </div>
                           </div>
                         </footer>
                       </blockquote>
@@ -244,9 +271,13 @@
                       <blockquote>
                         <p>Working with YES CPH has been a great experience all around. They are committed to good service with high quality, and their smart process even reduced the hours of work needed, which in turn, has saved our facility service cost.</p>
                         <footer>
-                          <div>
-                            Peter Altenburg <br>
-                            Gilt & Bar Uno
+                          <div class="uk-flex-inline uk-flex-column">
+                            <div class="person">
+                              Peter Altenburg
+                            </div>
+                            <div class="place">
+                              <a class="my-button-text" href="http://baruno.dk/" target="_blank">Gilt & Bar Uno</a>
+                            </div>
                           </div>
                         </footer>
                       </blockquote>
@@ -305,12 +336,12 @@
                    </div>
                   <div class="action">
                      <?xml version="1.0" encoding="UTF-8"?>
-                    <svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <path d="M30,8 L30,52" id="Line" stroke="#000000" stroke-width="6" stroke-linecap="square"></path>
-                            <path d="M52,29 L8,29" id="Line" stroke="#000000" stroke-width="6" stroke-linecap="square"></path>
-                            <rect id="Rectangle" stroke="#000000" stroke-width="2" x="1" y="1" width="58" height="58"></rect>
+                        <g id="Page-1" stroke="none" fill="none" fill-rule="evenodd">
+                            <path d="M30,8 L30,52" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                            <path d="M52,29 L8,29" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                            <rect id="Rectangle" stroke="#000000" stroke-width="1" x="1" y="1" width="58" height="58"></rect>
                         </g>
                     </svg>
                   </div>
@@ -330,17 +361,17 @@
                   <div class="label">
                       Click!
                    </div>
-                  <div class="action">
-                     <?xml version="1.0" encoding="UTF-8"?>
-                    <svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <path d="M30,8 L30,52" id="Line" stroke="#000000" stroke-width="6" stroke-linecap="square"></path>
-                            <path d="M52,29 L8,29" id="Line" stroke="#000000" stroke-width="6" stroke-linecap="square"></path>
-                            <rect id="Rectangle" stroke="#000000" stroke-width="2" x="1" y="1" width="58" height="58"></rect>
-                        </g>
-                    </svg>
-                  </div>
+                 <div class="action">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                   <svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                       <defs></defs>
+                       <g id="Page-1" stroke="none" fill="none" fill-rule="evenodd">
+                           <path d="M30,8 L30,52" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                           <path d="M52,29 L8,29" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                           <rect id="Rectangle" stroke="#000000" stroke-width="1" x="1" y="1" width="58" height="58"></rect>
+                       </g>
+                   </svg>
+                 </div>
                 </div>
                 <div class="item normal">
                   <div class="content"><p>Here is the item!</p></div>
@@ -359,12 +390,12 @@
                   </div>
                   <div class="action">
                      <?xml version="1.0" encoding="UTF-8"?>
-                    <svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <path d="M30,8 L30,52" id="Line" stroke="#000000" stroke-width="6" stroke-linecap="square"></path>
-                            <path d="M52,29 L8,29" id="Line" stroke="#000000" stroke-width="6" stroke-linecap="square"></path>
-                            <rect id="Rectangle" stroke="#000000" stroke-width="2" x="1" y="1" width="58" height="58"></rect>
+                        <g id="Page-1" stroke="none" fill="none" fill-rule="evenodd">
+                            <path d="M30,8 L30,52" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                            <path d="M52,29 L8,29" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                            <rect id="Rectangle" stroke="#000000" stroke-width="1" x="1" y="1" width="58" height="58"></rect>
                         </g>
                     </svg>
                   </div>
@@ -374,168 +405,11 @@
           </div>
         </div>
       </div>
-      <!-- STEPS SECTION -->
-      <div class="steps" id="steps">
-        <div class="my-container large">
-          <div class="uk-section uk-section-default uk-section-medium">
-            <div class="my-container heading">
-              <h2 class="pre" lang="en" data-lang-token="title_steps">SO TOGETHER WE CAN
-               support UN Global Goals like</h2>
-            </div>
-            <div class="uk-grid uk-grid-collapse uk-child-width-1-2@s">
-              <div class="uk-flex-first@s item">
-                <div class="uk-section uk-section-media uk-background-cover cover blend cover-1">
-                  <div class="uk-padding-small uk-float-right uk-background-cover uk-width-small icon-item">
-                    <img src="assets/img/icon/decent-work-icon.svg" alt="Quality Education">
-                  </div>
-                </div>
-              </div>
-              <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-small-top uk-flex-first item">
-                <div class="uk-grid-small uk-text-left item-container" uk-grid>
-                  <div class="uk-width-1-5@m legend">
-                    <img class="half" src="assets/img/icon/step-1-half.svg" alt="first steps">
-                    <img class="full" src="assets/img/icon/step-1-full.svg" alt="first steps">
-                  </div>
-                  <div class="uk-width-4-5@m">
-                    <h3 lang="en" data-lang-token="decent_work">decent work and economic growth</h3>
-                    <p lang="en" data-lang-token="decent_work_text">We employ newcomers, including refugee and asylum seekers, because they are viable to exploitation or exclusion from the labour marked. We set standards such as ensuring fair living wages and healthy working conditions to guaranty what we call “sustainable integration opportunities”.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-small-top item">
-                <div class="uk-grid-small uk-text-right@s item-container" uk-grid>
-                  <div class="uk-width-4-5@m">
-                    <h3 lang="en" data-lang-token="quality_evolution">quality education</h3>
-                    <p lang="en" data-lang-token="quality_evolution_text">Every 60 hours of contractual service fee pays all educational cost to send a marginalized child to school thus guarantying quality education and securing the future for the next generation.</p>
-                  </div>
-                  <div class="uk-width-1-5@m uk-flex-first uk-flex-last@m legend">
-                    <img class="half" src="assets/img/icon/step-2-reverse-half.svg" alt="second steps">
-                    <img class="full" src="assets/img/icon/step-2-reverse-full.svg" alt="second steps">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="uk-section uk-section-media uk-background-cover cover cover-2 blend">
-                  <div class="uk-padding-small uk-float-right uk-background-cover uk-width-small icon-item">
-                    <img src="assets/img/icon/quality-education-icon.svg" alt="Quality Education">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="uk-section uk-section-media uk-background-cover cover blend cover-3">
-                  <div class="uk-background-cover icon-item uk-flex uk-flex-center">
-                    <img src="assets/img/icon/profit-to-purpose-icon.svg" alt="Profit to Purpose">
-                  </div>
-                </div>
-              </div>
-              <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-small-top item ">
-                <div class="uk-grid-small uk-text-left item-container" uk-grid>
-                  <div class="uk-width-1-5@m legend">
-                    <img class="half" src="assets/img/icon/step-3-half.svg" alt="first steps">
-                    <img class="full" src="assets/img/icon/step-3-full.svg" alt="first steps">
-                  </div>
-                  <div class="uk-width-4-5@m">
-                    <h3 lang="en" data-lang-token="profit_to_purpose">profit to purpose</h3>
-                    <p lang="en" data-lang-token="profit_to_purpose_text">Every six months we find causes that your business can identify with. You decide where a 100% of the profit from our collaboration goes to support the rest of the UN Global Goals for a sustainable future.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- DATA SECTION -->
-      <div class="data" id="data">
-        <div class="my-container">
-          <div class="uk-section uk-section-default uk-section-medium">
-            <div class="uk-grid-large" uk-grid>
-              <div class="uk-width-1-1@s uk-width-1-2@m">
-                <h2 class="pre" lang="en" data-lang-token="title_data">IT WOULD BE SMART
-                  TO PAY LESS AND GIVE MORE
-                  TO SOCIETY, RIGHT?</h2>
-                <h3 class="uk-margin-remove-top" lang="en" data-lang-token="consciously_priced">Consciously priced</h3>
-                <div class="box">
-                  <hr class="uk-hidden break-small">
-                  <p lang="en" data-lang-token="consciously_priced_text">With us you only pay for your use, there are no hidden fees and we use all of our profits to expand your CSR profile.</p>
-                </div>
-              </div>
-              <div class="uk-width-1-1@s uk-width-1-2@m uk-flex uk-flex-left uk-flex-center@s uk-flex-right@m">
-                <div class="uk-grid uk-grid-collapse chart bar">
-                  <div class="uk-flex uk-flex-left uk-flex-middle">
-                    <ul class="uk-padding-remove-left uk-inline blocks">
-                      <p class="uk-position-bottom-left uk-margin-remove" lang="en" data-lang-token="total_cost">Total cost for you</p>
-                      <li>
-                        <div class="block" data-percentage="50"></div>
-                        <div class="uk-position-z-index block cover " data-percentage="68"></div>
-                        <span><b>YES CPH</b></span>
-                      </li>
-                      <li>
-                        <div class="uk-position-z-index block light" data-percentage="70"></div>
-                        <div class="block dark" data-percentage="100"></div>
-                        <span lang="en" data-lang-token="conventional_companies">Conventional Companies</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="uk-flex uk-flex-right uk-flex-middle legend">
-                    <ul class="uk-list items">
-                      <li><img src="assets/img/icon/legend-profit.svg" alt="Profit Symbol">Profit</li>
-                      <li><img src="assets/img/icon/legend-giving-back-to-society.svg"><span lang="en" data-lang-token="giving_back">Giving back to society</span></li>
-                      <li><img src="assets/img/icon/Legend-operation-cost.svg" alt="Operation cost Symbol" lang="en" data-lang-token="operation_cost"><span lang="en" data-lang-token="operation_cost">Operation cost</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- QUOTATION SECTION -->
-      <div class="quotation" id="quotation">
-        <div class="my-container">
-          <div class="uk-section uk-section-default uk-section-medium uk-padding-remove-bottom">
-            <h2 class="uk-margin-medium pre" lang="en" data-lang-token="title_quotation">Here are the smart
-              BUSINESSES AND ORGANIZATIONS
-              THAT HAVE ALREADY SAID YES</h2>
-            <!-- <div class="my-slider">
-              <div class="item">
-                <blockquote>
-                  <p>The blockquote element represents content that is quoted from another source.</p>
-                  <footer>Someone famous</footer>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote>
-                  <p>The blockquote element represents content that is quoted from another source.</p>
-                  <footer>Someone famous</footer>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote>
-                  <p>The blockquote element represents content that is quoted from another source.</p>
-                  <footer>Someone famous</footer>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote>
-                  <p>The blockquote element represents content that is quoted from another source.</p>
-                  <footer>Someone famous</footer>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote>
-                  <p>The blockquote element represents content that is quoted from another source.</p>
-                  <footer>Someone famous</footer>
-                </blockquote>
-              </div>
-            </div> -->
-            <hr class="uk-panel-divider">
-          </div>
-        </div>
-      </div>
       <!-- PARTNERS SECTION -->
       <div class="partners" id="partners">
+        <span id="sticky-stop"></span>
         <div class="my-container">
-          <div class="uk-section uk-section-default uk-section-medium">
+          <div class="uk-section uk-section-medium">
             <ul class="uk-grid-large uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l uk-flex uk-flex-middle items" uk-grid>
               <li><a href="http://www.aau-cph.dk" target="_blank"><img src="assets/img/partners/Aalbotg-Universitet.png" alt="Aalborg University Denmark"></a></li>
               <li><a href="http://arcrelief.org/" target="_blank"><img src="assets/img/partners/arcrelief.png" alt="American Refugee Committee"></a></li>
@@ -570,28 +444,6 @@
           </div>
         </div>
       </div>
-      <!-- STICKER SECTION -->
-      <div class="sticker" id="sticker">
-        <div class="my-container large">
-          <div class="uk-section uk-section-media uk-background-cover cover blend">
-            <span id="sticky-stop"></span>
-            <div class="my-container uk-height-1-1">
-              <div class="uk-grid uk-grid-collapse uk-height-1-1 uk-flex uk-flex-middle">
-                <div class="uk-width-2-3@s uk-width-1-2@m item">
-                  <h2 class="pre" lang="en" data-lang-token="title_sticker">We recognize your
-                    contribution and we will
-                    make sure others can too</h2>
-                  <div class="box">
-                    <hr class="uk-hidden break-small">
-                    <p lang="en" data-lang-token="text_sticker">Our YES-sticker will make it easily identifiable to others that you are a socially responsible business</p>
-                    <a href="service" class="my-button my-button-text light vertical" lang="en" data-lang-token="learn_more">LEARN MORE</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- FOOTER SECTION -->
     <div class="footer-spacer"></div>
@@ -610,22 +462,22 @@
             <li>©2016 YES</li>
           </ul>
           <ul class="uk-flex uk-flex-center uk-flex-bottom uk-list social">
-            <li class="first">
+            <li class="item">
               <a href="https://www.facebook.com/yescphco/" target="_blank">
                 <img src="assets/img/icon/facebook.svg" alt="facebook link">
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="https://www.instagram.com/yescphco/" target="_blank">
                 <img src="assets/img/icon/instagram.svg" alt="instagram link">
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="https://www.linkedin.com/company-beta/18214522" target="_blank">
                 <img src="assets/img/icon/linkedin.svg" alt="linkedin link">
               </a>
             </li>
-            <!-- <li>
+            <!-- <li class="item">
               <a href="#">
                 <img src="assets/img/icon/twitter.svg" alt="twitter link">
               </a>
