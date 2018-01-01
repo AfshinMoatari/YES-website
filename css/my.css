@@ -4,7 +4,7 @@
 @font-face{font-family:'Gotham';src:url('../assets/fonts/GothamBold Italic.otf');font-style:italic;font-weight:bold}
 @font-face{font-family:'Gotham';src:url('../assets/fonts/Gotham-Medium.otf');font-style:normal;font-weight:500}
 @font-face{font-family:'Gotham';src:url('../assets/fonts/Gotham Medium Italic.ttf');font-style:italic;font-weight:500}
-*,::after,::before{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+*,::after,::before{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
 body{font-size:.75em;margin:0;font-family:"Gotham", Georgia, serif;color:#1D1D1B}
 h1, h2, h3{font-family:'Gotham';text-transform:uppercase}
 h1{font-style:normal;font-weight:bold;font-size:3.563em;line-height:1.2}
@@ -16,8 +16,8 @@ a{font-family:'Gotham' !important;font-size:1.063em;font-style:normal;font-weigh
 b{font-size:1.250em;font-style:italic;font-weight:bold;color:inherit}
 em{font-size:1.188em;font-style:normal;font-weight:500;color:inherit}
 strong{font-style:normal;font-weight:500}
-span{font-size:0.969em;font-style:normal;font-weight:bold;color:#fff}
-span[lang="da"], span[lang="en"]{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}
+span{font-size:1rem;font-style:normal;font-weight:500;font-weight:bold;}
+/* span[lang="da"], span[lang="en"]{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;} */
 div{display:block;}
 hr{border-top:3px solid #1d1d1b;}
 blockquote p{font-size:1.375rem;font-style:italic;font-weight:400;color:#000100}
@@ -120,6 +120,9 @@ a:hover, a:focus{text-decoration:none}
   background: -webkit-linear-gradient(135deg,rgba(255, 255, 255,.93),rgba(229, 229, 229,.93));
   background-image: linear-gradient(135deg,rgba(255, 255, 255,.93),rgba(229, 229, 229,.93));
 }
+.hero .right-panel .media{
+  margin-top: 50%;
+}
 .hero .right-panel .media img{
   width:500px;
 }
@@ -134,7 +137,6 @@ a:hover, a:focus{text-decoration:none}
 .operations .uk-section{background-color: inherit;}
 .operations .panel>div{padding-left:40px;padding-right:40px}
 .operations .panel .assistance {margin:-30px 0 -30px 0;background:#fff;min-height:360px;padding:100px 0;border-width:2px;border-style: solid;border-color: #454545;position:relative;display:inline-block;}
-.operations .panel .assistance .item img {width:90px;}
 .operations .panel .assistance:before, .operations .panel .assistance:after {content:'';display:block;position:absolute;border-color:#454545;box-sizing:border-box;border-style:solid;width:15px;height:15px;}
 .operations .panel .assistance:before {bottom:-7px;left:-7px;border-width:0 0 2px 2px;z-index:5;}
 .operations .panel .assistance:after {top:-7px;right:-7px;border-width:2px 2px 0 0;}
@@ -437,8 +439,7 @@ to{transform:rotate(-10deg);}
 .comma::after{content:", ";position:relative;left:1px;font-size:1.4em;color:#000;font-weight:normal;}
 .questions .uk-accordion-title{text-transform:inherit;font-weight:500;font-size:1.188em;color:#1d1d1b;}
 .questions .uk-accordion-content{margin-top:10px;margin-bottom:40px;padding-right:40px;}
-.child-sponsorship .category .item{margin:30px 0;}
-.child-sponsorship .category .item p{font-size:0.969em;font-weight:bold;}
+.category .item{margin:10px 0;}
 .children .child .portrait, .adult .entity .portrait{height:335px;}
 .children .child .info, .adult .entity .info{position:relative;margin:-30px 2%;}
 .global .area .box p, .local .area .box p{font-weight:500;}
