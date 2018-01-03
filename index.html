@@ -312,84 +312,195 @@
             <div class="panel-container normal scrolled">
               <div class="panel">
                 <div class="item normal">
-                  <div class="content"><p>Here is the item!</p></div>
+                  <div class="content">
+                    <ul class="nav-secondary" uk-switcher="swiping: false; animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+                      <li class="uk-active">
+                        <a lang="en" data-lang-token="employee-wage" target="_blank" id="a">EMPLOYEE WAGE</a>
+                      </li>
+                      <li>
+                        <a lang="en" data-lang-token="service-fee" target="_blank">SERVICE FEE</a>
+                      </li>
+                    </ul>
+                    <ul class="uk-switcher">
+                      <li id="employee-wage active" class="uk-overflow-auto employee-wage close">
+                        <table class="uk-table uk-table-divider">
+                          <thead>
+                            <tr>
+                              <th class="uk-width-small" lang="en" data-lang-token="days"></th>
+                              <th class="uk-width-small" lang="en" data-lang-token="hours">HOURS</th>
+                              <th class="uk-width-small" lang="en" data-lang-token="wage_in_dkk">Employee Wage</th>
+                              <th class="uk-width-small" lang="en" data-lang-token="wage_with_holidays">Total cost with Standard Service fee</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th rowspan="3" scope="rowgroup" lang="en" data-lang-token="monday_to_friday">Monday to Friday</th>
+                              <td>00.00 - 05.59</td>
+                              <td>168.75</td>
+                              <td>208.75</td>
+                            </tr>
+                            <tr>
+                              <td>06.00 - 17.59</td>
+                              <td>141</td>
+                              <td>181</td>
+                            </tr>
+                            <tr>
+                              <td>18.00 - 23.59</td>
+                              <td>157.50</td>
+                              <td>197.50</td>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <th rowspan="3" scope="rowgroup" lang="en" data-lang-token="saturday">Saturday</th>
+                              <td>00.00 - 05.59</td>
+                              <td>168.75</td>
+                              <td>208.75</td>
+                            </tr>
+                            <tr>
+                              <td>06.00 - 13.59</td>
+                              <td>146.25</td>
+                              <td>188.25</td>
+                            </tr>
+                            <tr>
+                              <td>14.00 - 23.59</td>
+                              <td>168.75</td>
+                              <td>208.75</td>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <th rowspan="3" scope="rowgroup" lang="en" data-lang-token="sunday">Sunday</th>
+                              <td>All day</td>
+                              <td>168.75</td>
+                              <td>208.75</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="info">
+                          <p>*For last minute service employee receive 20% extra and no extra for service fee</p>
+                          <p>*For cleaning service you pay 20DKK extra for equipment and chemical.</p>
+                        </div>
+                        <a class=""></a>
+                      </li>
+                      <li id="service-fee" class="service-fee">bbb</li>
+                    </ul>
+                  </div>
                   <div class="cover">
                     <div class="blurb">
-                      <div class="title">
-                        Hello There!
-                      </div>
-                      <div class="subtitle">
-                        Hi!
-                      </div>
+                      <h3 class="title">
+                        The cost
+                      </h3>
+                      <p class="subtitle">
+                        The cost of working with us falls into two categories: employee wage, service fee. We follow standardized processes to ensure full transparency that equally all parties involved.
+                      </p>
                     </div>
                   </div>
-                  <div class="label">
-                      Click!
-                   </div>
+                  <h3 class="label">
+                      The cost
+                  </h3>
                   <div class="action">
-                     <?xml version="1.0" encoding="UTF-8"?>
-                    <svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" fill="none" fill-rule="evenodd">
-                            <path d="M30,8 L30,52" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                            <path d="M52,29 L8,29" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                            <rect id="Rectangle" stroke="#000000" stroke-width="1" x="1" y="1" width="58" height="58"></rect>
-                        </g>
-                    </svg>
+                    <img src="assets/img/icon/slider-action.svg" alt="sldier action">
                   </div>
                 </div>
                 <div class="item normal">
-                  <div class="content"><p>Here is the item!</p></div>
-                  <div class="cover">
-                    <div class="blurb">
-                      <div class="title">
-                        Hello There!
+                  <div class="content close">
+                    <div class="uk-section uk-section-small insurance">
+                      <div class="box">
+                        <hr class="uk-hidden break-small">
+                        <em lang="en" data-lang-token="injury_insurance_title">Work injury insurance</em>
+                        <p lang="en" data-lang-token="injury_insurance_text">This insurance covers injuries to the employee in the workplace. This is the part of the insurance that we ask the companies that we work with to handle. The nature of the work we do involves sustainable integration. As such, we encourage
+                          companies to interact with their teammates, which involves taking responsibility for their wellbeing and making sure that the areas where they work are safe. Furthermore, according to the Danish Business Authority the recipient company
+                          is responsible for providing the work injury insurance for the teammate working with them.</p>
                       </div>
-                      <div class="subtitle">
-                        Hi!
+                      <div class="box">
+                        <hr class="uk-hidden break-small">
+                        <em lang="en" data-lang-token="liability_insurance_title">Liability Insurance</em>
+                        <p lang="en" data-lang-token="liability_insurance_text">This insurance covers damage done by the teammate at the recipient company. It covers damages up to 10 million DKK. While we have not been forced to utilize this insurance, and hope that we never will, we understand that mistakes can
+                          be made. Therefore, this is our way of easing the minds of companies we work with in terms of potential mistakes made by teammates in their process of learning their way around the new place of work.</p>
                       </div>
                     </div>
                   </div>
-                  <div class="label">
-                      Click!
-                   </div>
+                  <div class="cover">
+                    <div class="blurb">
+                      <h3 class="title">
+                        INSURANCE
+                      </h3>
+                      <p class="subtitle">
+                        While YES always does our utmost to make sure that everything is done in a safe way, so that both the employees and the areas they work in are safe, things can go wrong. Therefore, there are two types of insurance that we work with.
+                      </p>
+                    </div>
+                  </div>
+                  <h3 class="label">
+                      INSURANCE
+                   </h3>
                  <div class="action">
-                    <?xml version="1.0" encoding="UTF-8"?>
-                   <svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                       <defs></defs>
-                       <g id="Page-1" stroke="none" fill="none" fill-rule="evenodd">
-                           <path d="M30,8 L30,52" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                           <path d="M52,29 L8,29" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                           <rect id="Rectangle" stroke="#000000" stroke-width="1" x="1" y="1" width="58" height="58"></rect>
-                       </g>
-                   </svg>
+                   <img src="assets/img/icon/slider-action.svg" alt="sldier action">
                  </div>
                 </div>
                 <div class="item normal">
-                  <div class="content"><p>Here is the item!</p></div>
-                  <div class="cover">
-                    <div class="blurb">
-                      <div class="title">
-                        Hello There!
-                      </div>
-                      <div class="subtitle">
-                        Hi!
+                  <div class="content">
+                    <div class="data" id="data">
+                      <div class="uk-grid-large" uk-grid>
+                        <div class="uk-width-2-3">
+                          <div class="box close">
+                            <hr class="uk-hidden break-small">
+                            <p lang="en" data-lang-token="consciously_priced_text">With us you only pay for your use, there are no hidden fees and we use all of our profits to expand your CSR profile.</p>
+                          </div>
+                          <hr class="uk-panel-divider">
+
+                          <ul class="uk-grid-large uk-child-width-1-3 uk-flex uk-flex-middle items" uk-grid>
+                            <li><a href="http://jaago.com.bd" target="_blank"><img src="assets/img/partners/Jaago.png" alt="Jaago foundation"></a></li>
+                            <li><a href="http://www.hackyourfuture.net" target="_blank"><img src="assets/img/partners/Hack-your-future.png" alt="Hack your future"></a></li>
+                            
+                          </ul>
+
+
+                        </div>
+                        <div class="uk-width-1-3 uk-flex uk-flex-left uk-flex-center@s uk-flex-right@m">
+                          <div class="uk-grid uk-grid-collapse chart bar">
+                            <div class="uk-flex uk-flex-left uk-flex-middle">
+                              <ul class="uk-padding-remove-left uk-inline blocks">
+                                <p class="uk-position-bottom-left uk-margin-remove" lang="en" data-lang-token="total_cost">Total cost for you</p>
+                                <li>
+                                  <div class="block" data-percentage="50"></div>
+                                  <div class="uk-position-z-index block cover " data-percentage="68"></div>
+                                  <span><b>YES CPH</b></span>
+                                </li>
+                                <li>
+                                  <div class="uk-position-z-index block light" data-percentage="70"></div>
+                                  <div class="block dark" data-percentage="100"></div>
+                                  <span lang="en" data-lang-token="conventional_companies">Conventional Companies</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="uk-flex uk-flex-right uk-flex-middle legend">
+                              <ul class="uk-list items">
+                                <li><img src="assets/img/icon/legend-profit.svg" alt="Profit Symbol">Profit</li>
+                                <li><img src="assets/img/icon/legend-giving-back-to-society.svg"><span lang="en" data-lang-token="giving_back">Giving back to society</span></li>
+                                <li><img src="assets/img/icon/Legend-operation-cost.svg" alt="Operation cost Symbol" lang="en" data-lang-token="operation_cost"><span lang="en" data-lang-token="operation_cost">Operation cost</span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="label">
-                      Click!
+                  <div class="cover">
+                    <div class="blurb">
+                      <h3 class="title">
+                        social support
+                      </h3>
+                      <p class="subtitle">
+                        As a social business one of the fundamental rules that we follow is that we are not profit driven. Therefore, all our profit goes to support social causes.
+                      </p>
+                    </div>
                   </div>
+                  <h3 class="label">
+                      social support
+                  </h3>
                   <div class="action">
-                     <?xml version="1.0" encoding="UTF-8"?>
-                    <svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" fill="none" fill-rule="evenodd">
-                            <path d="M30,8 L30,52" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                            <path d="M52,29 L8,29" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                            <rect id="Rectangle" stroke="#000000" stroke-width="1" x="1" y="1" width="58" height="58"></rect>
-                        </g>
-                    </svg>
+                    <img src="assets/img/icon/slider-action.svg" alt="sldier action">
                   </div>
                 </div>
               </div>
