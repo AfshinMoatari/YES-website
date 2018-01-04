@@ -13,23 +13,32 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 8000
   });
-  if ($('#data').length > 0) {
-    $(window).scroll(function() {
-      let hT = $('#data').offset().top,
-        hH = $('#data').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-      if (wS > (hT + hH - wH)) {
-        $('.blocks li .block').each(function(key, block) {
-          let percentage = $(this).data('percentage');
-          $(this).animate({
-            'height': percentage + '%'
-          }, 1000);
-        });
-      }
+
+  $('#data').on('click', function() {
+    $('.blocks li .block').each(function(key, block) {
+            var percentage = $(this).data('percentage');
+            $(this).animate({
+              'height': percentage + '%'
+            }, 1000);
     });
-  }
+  });
+
   $('.nav-secondary .why-us').on('click', function() {
+    if (!$(this).hasClass("uk-active")) {
+      $('.value').each(function() {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 5000,
+          easing: 'swing',
+          step: function(now) {
+            $(this).text(Math.ceil(now) + '%');
+          }
+        });
+      });
+    }
+  });
+  if ($('.nav-secondary .why-us').hasClass("uk-active")) {
     $('.value').each(function() {
       $(this).prop('Counter', 0).animate({
         Counter: $(this).text()
@@ -41,7 +50,7 @@ $(document).ready(function() {
         }
       });
     });
-  });
+  }
   $('.open-menu').on('click', function() {
     $('.overlay').addClass('open');
   });

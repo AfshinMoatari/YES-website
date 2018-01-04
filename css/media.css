@@ -1,11 +1,11 @@
 @media (max-width:360px){body{font-size:.65em;}
-body .important{font-size:2.6em;}
+body .important{font-size:2em;}
 .overlay ul li{margin-bottom:5px;}
 }
 @media (min-width:640px){body{font-size:.9em;}
 .uk-hidden{display:inherit !important;}
 body .heading{font-size:1em;}
-body .important{font-size:3em;}
+body .important{font-size:2.4em;font-weight:500}
 .my-container{padding:0 19px;}
 .nav-secondary li a{font-size:3.1em;}
 .nav-secondary li:not(.uk-active) a::after{border-width:4px;}
@@ -92,8 +92,6 @@ body .hero{font-size:1em;}
 .process-line .item:nth-child(2n+1) .item-container hr{float:right;margin-right:-67px;width:60px;}
 .process-line .item:nth-last-child(-n+2){display:inherit;}
 .process-line .item:nth-last-child(-n+2) .item-container, .process-line .item:nth-last-child(-n+2) .item-container hr{margin-top:0;margin-bottom:0;}
-.process-line .item:nth-last-child(2) .item-container{height:300px;}
-.process-line .item:nth-last-child(2) .item-container hr{position:relative;top:100%;}
 .steps .item:nth-child(3n+1){margin-bottom:-40px;}
 .steps .item:nth-child(1){-webkit-align-items:flex-start;align-items:flex-start;}
 .steps .item:nth-child(2n+2) .item-container{margin-left:-10%;margin-right:12%;}

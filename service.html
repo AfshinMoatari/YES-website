@@ -51,7 +51,7 @@
                 <a href="service">Service</a>
               </li>
               <li>
-                <a href="impact" lang="en" data-lang-token="impact_nav">Impact</a>
+                <a href="*_impact" lang="en" data-lang-token="impact_nav">Impact</a>
               </li>
             </ul>
           </div>
@@ -63,7 +63,7 @@
           <div class="uk-navbar-right">
             <ul class="uk-navbar-nav my-navbar-nav uk-hidden">
               <li>
-                <a href="faq">FAQ</a>
+                <a href="*_faq">FAQ</a>
               </li>
               <li>
                 <a href="about" lang="en" data-lang-token="about_nav">About</a>
@@ -101,8 +101,8 @@
         <nav class="overlay-menu">
           <ul>
             <li class="active"><a href="service">Service</a></li>
-            <li><a href="impact" lang="en" data-lang-token="impact_nav">Impact</a></li>
-            <li><a href="faq">FAQ</a></li>
+            <li><a href="*_impact" lang="en" data-lang-token="impact_nav">Impact</a></li>
+            <li><a href="*_faq">FAQ</a></li>
             <li><a href="about" lang="en" data-lang-token="about_nav">About</a></li>
             <li><a href="contact">Contact</a></li>
             <ul class="language">
@@ -120,17 +120,11 @@
       <!-- Secondary Nav -->
       <div class="my-container">
         <ul class="nav-secondary" uk-switcher="swiping: false;animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
-          <li class="uk-active">
+          <li>
             <a href="#" lang="en" data-lang-token="process">PROCESS</a>
           </li>
-          <li class="why-us">
+          <li class="why-us uk-active">
             <a href="#" lang="en" data-lang-token="why_us">WHY US</a>
-          </li>
-          <li>
-            <a href="#" lang="en" data-lang-token="cost">COST</a>
-          </li>
-          <li>
-            <a href="#" lang="en" data-lang-token="practicalities">PRACTICALITIES</a>
           </li>
           <hr class="uk-panel-divider">
         </ul>
@@ -198,6 +192,16 @@
                     <div class="item-container">
                       <hr>
                       <div class="content">
+                        <h2 lang="en" data-lang-token="impact_title">PAYMENT PROCESS</h2>
+                        <p lang="en" data-lang-token="impact_text">Because our wish is to secure transparency there are two options for payment:
+                          You pay your teammates’ salary directly to that person and our service fee separately to us or you have an option to pay the salary and the service fee to us and we handle the salaries. if you choose us we calculate working months from the first day of every month to the last. This means that you will receive an invoice the 1st of every month. You will have 14 days to pay the invoice, meaning that we should receive your payment on the 15th at the latest. This enables us to pay salaries on the 20th of every month. Should you choose to pay via option 1, you will be required to pay the salaries on the same day.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-container">
+                      <hr>
+                      <div class="content">
                         <h2 lang="en" data-lang-token="impact_title">impact</h2>
                         <p lang="en" data-lang-token="impact_text">Now that the work process has been established we encourage you to interact with your teammate(s) and make them feel welcome. Furthermore, this is the stage where we will provide you with material regarding your child sponsorship
                           and after 6 months we will engage you with options for the giveback.</p>
@@ -221,42 +225,11 @@
           </li>
           <li class="why-us" id="why-us" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .need-to-know .box:nth-child(2n+1); delay: 300; hidden:true; repeat: true">
             <div class="my-container left">
-              <div class="uk-section uk-section-small nice-to-know">
-                <h2 lang="en" data-lang-token="nice_to_know">NICE TO KNOW</h2>
-                <p lang="en" data-lang-token="why_us_text">We conducted a survey amongst 18-45 year olds living in Copenhagen. Of all the respondents:</p>
-                <div class="uk-grid-collapse uk-child-width-1-2@s uk-margin-medium-top uk-margin-large-bottom pies" uk-grid>
-                  <div class="uk-grid uk-grid-collapse">
-                    <div class="uk-width-2-3@m uk-width-auto@s pie-vertical">
-                      <div class="uk-flex uk-flex-center uk-flex-top">
-                        <div class="contain-pie">
-                          <div class="contain-piece piece"></div>
-                        </div>
-                        <h3 class="value">78</h3>
-                      </div>
-                    </div>
-                    <div class="uk-width-1-3@m uk-width-auto@s info">
-                      <p lang="en" data-lang-token="pie_vertical_text">Believe that businesses should engage in social responsibilities</p>
-                    </div>
-                  </div>
-                  <div class="uk-grid uk-grid-collapse">
-                    <div class="uk-width-2-3@m uk-width-auto@s pie-horizontal">
-                      <div class="uk-flex uk-flex-center uk-flex-top">
-                        <div class="contain-pie">
-                          <div class="contain-piece piece"></div>
-                          <div class="contain-piece piece2"></div>
-                        </div>
-                        <h3 class="value">46</h3>
-                      </div>
-                    </div>
-                    <div class="uk-width-1-3@m uk-width-auto@s info">
-                      <p lang="en" data-lang-token="pie_horizontal_text">Would be willing to pay higher prices to businesses that are socially responsible</p>
-                    </div>
-                  </div>
-                </div>
+              <div class="uk-section uk-section-small why-hero">
                 <p class="important" lang="en" data-lang-token="nice_to_know_text">We offer an affordable high-quality service for businesses. while simultaneously ensuring good working conditions and fair living wages for migrants in Denmark and developing your company’s CSR profile.</p>
               </div>
               <div class="uk-section uk-section-small need-to-know">
-                <h2 lang="en" data-lang-token="need_to_know">Need TO KNOW</h2>
+                <h2 lang="en" data-lang-token="need_to_know">NICE TO KNOW</h2>
                 <div class="uk-grid-medium uk-child-width-1-2@s" uk-grid>
                   <div>
                     <div class="box">
@@ -289,170 +262,37 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="cost" id="cost" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .material-cost .items> div, .fee>.box>ol>li; delay: 300; hidden:true; repeat: true">
-            <div class="my-container left">
-              <div class="uk-section uk-section-small">
-                <p lang="en" data-lang-token="cost_text">The cost of working with us falls into three di erent categories: employee wage, service fee and material cost. We follow standardized processes to ensure full transparency that equally all parties involved.</p>
-                <div class="uk-section uk-section-small material-cost">
-                  <h2 lang="en" data-lang-token="material_cost">MATERIAL COST</h2>
-                  <p lang="en" data-lang-token="material_cost_text">There are two options for supplying materials when you work with us:</p>
-                  <div class="uk-grid uk-grid-small items">
-                    <div class="uk-width-1-2@s">
-                      <img class="bubble" src="assets/img/icon/step-1-service.svg" alt="step first">
-                      <p class="uk-float-right info" lang="en" data-lang-token="material_cost_item_1">You order the materials we use to maintain your facility. We will establish a process in which we inform you when we are running out of materials. If choosing this option, bear in mind that we insist on working with “green” materials that leave the smallest footprint on the environment.</p>
+              <div class="uk-section uk-section-small nice-to-know">
+                <h2 lang="en" data-lang-token="nice_to_know">NICE TO KNOW</h2>
+                <p lang="en" data-lang-token="why_us_text">We conducted a survey amongst 18-45 year olds living in Copenhagen. Of all the respondents:</p>
+                <div class="uk-grid-collapse uk-child-width-1-2@s uk-margin-medium-top uk-margin-large-bottom pies" uk-grid>
+                  <div class="uk-grid uk-grid-collapse">
+                    <div class="uk-width-2-3@m uk-width-auto@s pie-vertical">
+                      <div class="uk-flex uk-flex-center uk-flex-top">
+                        <div class="contain-pie">
+                          <div class="contain-piece piece"></div>
+                        </div>
+                        <h3 class="value">78</h3>
+                      </div>
                     </div>
-                    <div class="uk-width-1-2@s">
-                      <img class="bubble" src="assets/img/icon/step-2-service.svg" alt="step second">
-                      <p class="uk-float-right info" lang="en" data-lang-token="material_cost_item_2">We handle the process of ordering materials. Using responsible suppliers, we will set up an account in your name and make a list of materials that we need to handle your facility. We will make sure to use green materials that are good to the environment. After the initial setup, we will continuously maintain the supply and all you do is sign off on the bills that you receive directly from the suppliers.</p>
+                    <div class="uk-width-1-3@m uk-width-auto@s info">
+                      <p lang="en" data-lang-token="pie_vertical_text">Believe that businesses should engage in social responsibilities</p>
                     </div>
                   </div>
-                </div>
-                <h2 lang="en" data-lang-token="wage_title">EMPLOYEE WAGE</h2>
-                <p lang="en" data-lang-token="wage_text">The wages are derived from various factors that all take into account the cost of living in Denmark. Furthermore, the wages are on par with danish labor unionized wages for the type of work the we focus on, to further ensure that our teammates receive fair wages.</p>
-                <div class="uk-width-4-5@l uk-overflow-auto wage">
-                  <table class="uk-table uk-table-divider">
-                    <thead>
-                      <tr>
-                        <th class="uk-width-small" lang="en" data-lang-token="days">DAYS</th>
-                        <th class="uk-width-small" lang="en" data-lang-token="hours">HOURS</th>
-                        <th class="uk-width-small" lang="en" data-lang-token="wage_in_dkk">Wage in dkk</th>
-                        <th class="uk-width-small" lang="en" data-lang-token="wage_with_holidays">Wage With holidays pay</th>
-                        <th class="uk-width-small" lang="en" data-lang-token="last_minute">Last minute wage</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th rowspan="3" scope="rowgroup" lang="en" data-lang-token="monday_to_friday">Monday to Friday</th>
-                        <td>00.00 - 05.59</td>
-                        <td>150</td>
-                        <td>168.75</td>
-                        <td>202.50</td>
-                      </tr>
-                      <tr>
-                        <td>06.00 - 17.59</td>
-                        <td>125</td>
-                        <td>141</td>
-                        <td>169.20</td>
-                      </tr>
-                      <tr>
-                        <td>18.00 - 23.59</td>
-                        <td>140</td>
-                        <td>157.50</td>
-                        <td>188.90</td>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr>
-                        <th rowspan="3" scope="rowgroup" lang="en" data-lang-token="saturday">Saturday</th>
-                        <td>00.00 - 05.59</td>
-                        <td>150</td>
-                        <td>168.75</td>
-                        <td>202.50</td>
-                      </tr>
-                      <tr>
-                        <td>06.00 - 13.59</td>
-                        <td>130</td>
-                        <td>146.25</td>
-                        <td>175.50</td>
-                      </tr>
-                      <tr>
-                        <td>14.00 - 23.59</td>
-                        <td>150</td>
-                        <td>168.75</td>
-                        <td>202.5</td>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr>
-                        <th rowspan="3" scope="rowgroup" lang="en" data-lang-token="sunday">Sunday</th>
-                        <td>All day</td>
-                        <td>150</td>
-                        <td>168.75</td>
-                        <td>202.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p lang="en" data-lang-token="table_text">*Service that is requested with less than 24 hours notice before the start of the working hours is considered last minute. If the
-                  extra hours needed is an extension of the scheduled hours, then the service is not subject to any wage increase.</p>
-                <em lang="en" data-lang-token="table_text_underline">To ensure that our teammates are paid on time no matter what, we require a deposit equivalent of one month’s wages to be paid.</em>
-              </div>
-              <div class="uk-section uk-section-small fee">
-                <h2 lang="en" data-lang-token="service_fee_title">SERVICE FEE</h2>
-                <p lang="en" data-lang-token="service_fee_text">The service fee represents your contribution to society; therefore, we believe the bigger the company the bigger your responsibility.</p>
-                <em lang="en" data-lang-token="service_fee_text_underline">100% of the profit from service fees goes towards social development!</em>
-                <h3>STANDARD</h3>
-                <div class="box">
-                  <hr class="uk-hidden break-small">
-                  <em lang="en" data-lang-token="standard_text">30 DKK per hour includes</em>
-                  <ol>
-                    <li lang="en" data-lang-token="standard_1">A guarantee that you will always have a teammate to get your job done</li>
-                    <li lang="en" data-lang-token="standard_2">A service coordinator to ensure continuous quality</li>
-                    <li lang="en" data-lang-token="standard_3">A CSR Sticker(s) depending on your company’s need</li>
-                    <li lang="en" data-lang-token="standard_4">Liability insurance to cover damage to 10 million DKK</li>
-                    <li lang="en" data-lang-token="standard_5">For every 60 hours, we sponsor the education and healthcare of one marginalized child</li>
-                    <li lang="en" data-lang-token="standard_6">We promote your business’ contribution through our online and offline campaigns</li>
-                    <li lang="en" data-lang-token="standard_7">100% profit from the service fee goes to sponsor your preferred social project</li>
-                  </ol>
-                </div>
-                <h3>STANDARD +</h3>
-                <div class="box">
-                  <hr class="uk-hidden break-small">
-                  <em lang="en" data-lang-token="standard+_text">40 DKK per hour includes</em>
-                  <ol>
-                    <li lang="en" data-lang-token="standard+_1">All the service benefits included in the standard package</li>
-                    <li lang="en" data-lang-token="standard+_2">We will arrange an awareness event, either globally or locally, related to a social aspect chosen by you</li>
-                    <li lang="en" data-lang-token="standard+_3">We will establish a development project in a developing country on your behalf</li>
-                  </ol>
-                </div>
-                <h3>PREMIUM</h3>
-                <div class="box">
-                  <hr class="uk-hidden break-small">
-                  <em lang="en" data-lang-token="premium_text">50 DKK per hour includes</em>
-                  <ol>
-                    <li lang="en" data-lang-token="premium_1">All the service benefits included in the standard and standard plus package</li>
-                    <li lang="en" data-lang-token="premium_2">We will arrange an awareness event, either globally or locally, related to a social aspect chosen by you</li>
-                    <li lang="en" data-lang-token="premium_3">We will establish a development project in a developing country on your behalf</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="Practicalities" id="Practicalities" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .payment-process .items> div; delay: 300; hidden:true; repeat: true">
-            <div class="my-container left">
-              <div class="uk-section uk-section-small payment-process">
-                <h2 lang="en" data-lang-token="payment_process_title">PAYMENT PROCESS</h2>
-                <p lang="en" data-lang-token="payment_process_text">Because our wish is to secure transparency there are two options for payment.</p>
-                <div class="uk-grid uk-grid-collapse items">
-                  <div class="uk-width-1-2@s">
-                    <img class="bubble" src="assets/img/icon/step-1-service.svg" alt="step first">
-                    <p class="uk-float-right info" lang="en" data-lang-token="payment_process_item_1">You pay your teammates’ salary directly to that person and our service fee separately to us. In this way, you always know exactly what the employee is being paid.</p>
+                  <div class="uk-grid uk-grid-collapse">
+                    <div class="uk-width-2-3@m uk-width-auto@s pie-horizontal">
+                      <div class="uk-flex uk-flex-center uk-flex-top">
+                        <div class="contain-pie">
+                          <div class="contain-piece piece"></div>
+                          <div class="contain-piece piece2"></div>
+                        </div>
+                        <h3 class="value">46</h3>
+                      </div>
+                    </div>
+                    <div class="uk-width-1-3@m uk-width-auto@s info">
+                      <p lang="en" data-lang-token="pie_horizontal_text">Would be willing to pay higher prices to businesses that are socially responsible</p>
+                    </div>
                   </div>
-                  <div class="uk-width-1-2@s">
-                    <img class="bubble" src="assets/img/icon/step-2-service.svg" alt="step second">
-                    <p class="uk-float-right info" lang="en" data-lang-token="payment_process_item_2">You pay the salary and the service fee to us and we handle the salaries. We can provide you with a copy of the pay slip every month on request.</p>
-                  </div>
-                </div>
-                <p class="uk-margin-large-top uk-margin-large-bottom" lang="en" data-lang-token="payment_process_text_extra">We calculate working months from the first day of every month to the last. This means that you will receive an invoice the 1st of every month. You will have 14 days to pay the invoice, meaning that we should receive your payment on the
-                  15th at the latest. This enables us to pay salaries on the 20th of every month. Should you choose to pay via option 1, you will be required to pay the salaries on the same day.</p>
-              </div>
-              <div class="uk-section uk-section-small insurance">
-                <h2 lang="en" data-lang-token="insurance_title">INSURANCE</h2>
-                <p lang="en" data-lang-token="insurance_text">While YES always does our utmost to make sure that everything is done in a safe way, so that both the employees and the areas they work in are safe, things can go wrong. Therefore, there are two types of insurance that we work with.</p>
-                <div class="box">
-                  <hr class="uk-hidden break-small">
-                  <em lang="en" data-lang-token="injury_insurance_title">Work injury insurance</em>
-                  <p lang="en" data-lang-token="injury_insurance_text">This insurance covers injuries to the employee in the workplace. This is the part of the insurance that we ask the companies that we work with to handle. The nature of the work we do involves sustainable integration. As such, we encourage
-                    companies to interact with their teammates, which involves taking responsibility for their wellbeing and making sure that the areas where they work are safe. Furthermore, according to the Danish Business Authority the recipient company
-                    is responsible for providing the work injury insurance for the teammate working with them.</p>
-                </div>
-                <div class="box">
-                  <hr class="uk-hidden break-small">
-                  <em lang="en" data-lang-token="liability_insurance_title">Liability Insurance</em>
-                  <p lang="en" data-lang-token="liability_insurance_text">This insurance covers damage done by the teammate at the recipient company. It covers damages up to 10 million DKK. While we have not been forced to utilize this insurance, and hope that we never will, we understand that mistakes can
-                    be made. Therefore, this is our way of easing the minds of companies we work with in terms of potential mistakes made by teammates in their process of learning their way around the new place of work.</p>
                 </div>
               </div>
             </div>
@@ -464,7 +304,7 @@
     <!-- FOOTER SECTION -->
     <div class="footer-spacer"></div>
     <div class="footer" id="footer">
-      <a class="footer-link" href="faq"></a>
+      <a class="footer-link" href="*_faq"></a>
       <div class="footer-content">
         <h2 class="uk-display-inline" lang="en" data-lang-token="question">WE ARE READY! </h2><span class="uk-display-inline"><img src="assets/img/icon/ask-here.svg" alt="Ask Here" lang="en"></span>
       </div>
