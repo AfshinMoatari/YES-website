@@ -118,8 +118,7 @@
     <!-- MAIN CONTENT-->
     <div class="main" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .nav-secondary>li, .questions>ul>li; delay: 300; hidden:true">
       <!-- Secondary Nav -->
-      <div class="my-container">
-        <ul class="nav-secondary" uk-switcher="swiping: false;animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+        <ul class="nav-secondary my-container" uk-switcher="swiping: false;animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
           <li>
             <a href="#" lang="en" data-lang-token="process">PROCESS</a>
           </li>
@@ -223,74 +222,80 @@
               <h1 class="uk-margin-remove-top uk-margin-large-bottom important" lang="en" data-lang-token="process_important">This is how we solve your problem and you solve social problems</h1>
             </div>
           </li>
-          <li class="why-us" id="why-us" uk-scrollspy="cls: uk-animation-slide-left-medium; target: .need-to-know .box:nth-child(2n+1); delay: 300; hidden:true; repeat: true">
-            <div class="my-container left">
-              <div class="uk-section uk-section-small why-hero">
-                <p class="important" lang="en" data-lang-token="nice_to_know_text">We offer an affordable high-quality service for businesses. while simultaneously ensuring good working conditions and fair living wages for migrants in Denmark and developing your company’s CSR profile.</p>
+          <li class="why-us" id="why-us">
+            <div class="uk-section uk-section-small why-hero">
+              <div class="my-container">
+                <div class="my-container left">
+                  <p class="important" lang="en" data-lang-token="nice_to_know_text">We offer an affordable high-quality service for businesses. while simultaneously ensuring good working conditions and fair living wages for migrants in Denmark and developing your company’s CSR profile.</p>
+                </div>
               </div>
-              <div class="uk-section uk-section-small need-to-know">
-                <h2 lang="en" data-lang-token="need_to_know">NICE TO KNOW</h2>
-                <div class="uk-grid-medium uk-child-width-1-2@s" uk-grid>
-                  <div>
-                    <div class="box">
-                      <hr class="uk-hidden break-small">
-                      <em lang="en" data-lang-token="affordable">Affordable</em>
-                      <p lang="en" data-lang-token="affordable_text">The hourly employee wage is between 125 and 150DKK and the hourly service fee is between 30-50DKK. We have also proven time and again-that our ability to process optimize has decreased the required work hours
-                        in companies by as much as 40%, meaning that we save both time and money for your business.</p>
+            </div>
+            <div class="uk-section uk-section-small need-to-know">
+              <div class="my-container">
+                <div class="my-container left">
+                  <h2 lang="en" data-lang-token="need_to_know">NEED TO KNOW</h2>
+                  <div class="uk-grid uk-grid-medium uk-child-width-1-2 label-group" data-uk-grid-match>
+                    <div>
+                      <div class="label">
+                        <h3 lang="en" data-lang-token="affordable">Affordable</h3>
+                        <p lang="en" data-lang-token="affordable_text">The hourly employee wage is between 125 and 150DKK and the hourly service fee is between 30-50DKK. We have also proven time and again-that our ability to process optimize has decreased the required work hours
+                          in companies by as much as 40%, meaning that we save both time and money for your business.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="box">
-                      <hr class="uk-hidden break-small">
-                      <em lang="en" data-lang-token="auality">Quality</em>
-                      <p lang="en" data-lang-token="auality_text">We individually select experienced and motivated candidates for your company. With our mandatory training, your future employees are informed about their obligations and are instructed in their future tasks ensuring the quality.</p>
+                    <div>
+                      <div class="label">
+                        <h3 lang="en" data-lang-token="auality">Quality</h3>
+                        <p lang="en" data-lang-token="auality_text">We individually select experienced and motivated candidates for your company. With our mandatory training, your future employees are informed about their obligations and are instructed in their future tasks ensuring the quality.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="box">
-                      <hr class="uk-hidden break-small">
-                      <em lang="en" data-lang-token="dependable">Dependable</em>
-                      <p lang="en" data-lang-token="dependable_text">Through continuous assessment of the tasks performed, we ensure a high quality of service. We are flexible and will always go out of our way to cater to your needs. Furthermore, we always have on-call staff ready in case you need an extra hand</p>
+                    <div>
+                      <div class="label">
+                        <h3 lang="en" data-lang-token="dependable">Dependable</h3>
+                        <p lang="en" data-lang-token="dependable_text">Through continuous assessment of the tasks performed, we ensure a high quality of service. We are flexible and will always go out of our way to cater to your needs. Furthermore, we always have on-call staff ready in case you need an extra hand</p>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="box">
-                      <hr class="uk-hidden break-small">
-                      <em lang="en" data-lang-token="work_environment">Work environment</em>
-                      <p lang="en" data-lang-token="work_environment_text">We work to ensure a mutually beneficial relationship between employer and employee. An integrated teammate is a happier, more productive teammate.</p>
+                    <div>
+                      <div class="label">
+                        <h3 lang="en" data-lang-token="work_environment">Work environment</h3>
+                        <p lang="en" data-lang-token="work_environment_text">We work to ensure a mutually beneficial relationship between employer and employee. An integrated teammate is a happier, more productive teammate.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="uk-section uk-section-small nice-to-know">
-                <h2 lang="en" data-lang-token="nice_to_know">NICE TO KNOW</h2>
-                <p lang="en" data-lang-token="why_us_text">We conducted a survey amongst 18-45 year olds living in Copenhagen. Of all the respondents:</p>
-                <div class="uk-grid-collapse uk-child-width-1-2@s uk-margin-medium-top uk-margin-large-bottom pies" uk-grid>
-                  <div class="uk-grid uk-grid-collapse">
-                    <div class="uk-width-2-3@m uk-width-auto@s pie-vertical">
-                      <div class="uk-flex uk-flex-center uk-flex-top">
-                        <div class="contain-pie">
-                          <div class="contain-piece piece"></div>
+            </div>
+            <div class="uk-section uk-section-small nice-to-know">
+              <div class="my-container">
+                <div class="my-container left">
+                  <h2 lang="en" data-lang-token="nice_to_know">NICE TO KNOW</h2>
+                  <p lang="en" data-lang-token="why_us_text">We conducted a survey amongst 18-45 year olds living in Copenhagen. Of all the respondents:</p>
+                  <div class="uk-grid-collapse uk-child-width-1-2@s uk-margin-medium-top uk-margin-large-bottom pies" uk-grid>
+                    <div class="uk-grid uk-grid-collapse">
+                      <div class="uk-width-2-3@m uk-width-auto@s pie-vertical">
+                        <div class="uk-flex uk-flex-center uk-flex-top">
+                          <div class="contain-pie">
+                            <div class="contain-piece piece"></div>
+                          </div>
+                          <h3 class="value">78</h3>
                         </div>
-                        <h3 class="value">78</h3>
+                      </div>
+                      <div class="uk-width-1-3@m uk-width-auto@s info">
+                        <p lang="en" data-lang-token="pie_vertical_text">Believe that businesses should engage in social responsibilities</p>
                       </div>
                     </div>
-                    <div class="uk-width-1-3@m uk-width-auto@s info">
-                      <p lang="en" data-lang-token="pie_vertical_text">Believe that businesses should engage in social responsibilities</p>
-                    </div>
-                  </div>
-                  <div class="uk-grid uk-grid-collapse">
-                    <div class="uk-width-2-3@m uk-width-auto@s pie-horizontal">
-                      <div class="uk-flex uk-flex-center uk-flex-top">
-                        <div class="contain-pie">
-                          <div class="contain-piece piece"></div>
-                          <div class="contain-piece piece2"></div>
+                    <div class="uk-grid uk-grid-collapse">
+                      <div class="uk-width-2-3@m uk-width-auto@s pie-horizontal">
+                        <div class="uk-flex uk-flex-center uk-flex-top">
+                          <div class="contain-pie">
+                            <div class="contain-piece piece"></div>
+                            <div class="contain-piece piece2"></div>
+                          </div>
+                          <h3 class="value">46</h3>
                         </div>
-                        <h3 class="value">46</h3>
                       </div>
-                    </div>
-                    <div class="uk-width-1-3@m uk-width-auto@s info">
-                      <p lang="en" data-lang-token="pie_horizontal_text">Would be willing to pay higher prices to businesses that are socially responsible</p>
+                      <div class="uk-width-1-3@m uk-width-auto@s info">
+                        <p lang="en" data-lang-token="pie_horizontal_text">Would be willing to pay higher prices to businesses that are socially responsible</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -298,15 +303,16 @@
             </div>
           </li>
         </ul>
+      <div class="my-container">
         <hr class="uk-panel-divider">
       </div>
     </div>
     <!-- FOOTER SECTION -->
     <div class="footer-spacer"></div>
     <div class="footer" id="footer">
-      <a class="footer-link" href="*_faq"></a>
+      <a class="footer-link" href="contact"></a>
       <div class="footer-content">
-        <h2 class="uk-display-inline" lang="en" data-lang-token="question">WE ARE READY! </h2><span class="uk-display-inline"><img src="assets/img/icon/ask-here.svg" alt="Ask Here" lang="en"></span>
+        <h2 class="uk-display-inline" lang="en" data-lang-token="we_are_ready">WE ARE READY! </h2><span><img class="uk-display-inline" lang="en" src="assets/img/icon/lets-talk.svg" alt="Lets talk"></span>
       </div>
       <div class="footer-secondary">
         <div class="uk-grid uk-grid-collapse uk-child-width-1-1@s uk-child-width-auto@m my-container">
@@ -318,22 +324,22 @@
             <li>©2016 YES</li>
           </ul>
           <ul class="uk-flex uk-flex-center uk-flex-bottom uk-list social">
-            <li class="first">
+            <li class="item">
               <a href="https://www.facebook.com/yescphco/" target="_blank">
                 <img src="assets/img/icon/facebook.svg" alt="facebook link">
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="https://www.instagram.com/yescphco/" target="_blank">
                 <img src="assets/img/icon/instagram.svg" alt="instagram link">
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="https://www.linkedin.com/company-beta/18214522" target="_blank">
                 <img src="assets/img/icon/linkedin.svg" alt="linkedin link">
               </a>
             </li>
-            <!-- <li>
+            <!-- <li class="item">
               <a href="#">
                 <img src="assets/img/icon/twitter.svg" alt="twitter link">
               </a>

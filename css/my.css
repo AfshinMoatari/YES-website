@@ -132,6 +132,8 @@ a:hover, a:focus{text-decoration:none}
 .hero .right-panel .social .item:before {bottom:-3px;left:-3px;border-width:0 0 2px 2px;z-index:5;}
 .hero .right-panel .social .item:after {top:-3px;right:-3px;border-width:2px 2px 0 0;}
 
+.need-to-know{background-color:#F7F7F7;}
+
 .operations{background-color:#F7F7F7;}
 .operations .panel{border-radius:3px;display:flex;align-items:center;min-height:300px;background:#fff;margin:0 40px;}
 .operations .uk-section{background-color: inherit;}
@@ -142,8 +144,10 @@ a:hover, a:focus{text-decoration:none}
 .operations .panel .assistance:after {top:-7px;right:-7px;border-width:2px 2px 0 0;}
 .operations .panel .assistance img {width: 100px;height: 120px}
 .operations .info {padding-top:60px;padding-bottom:60px;}
-.operations .info h3 {text-align:center;}
-.operations .info .label {background-color:#fff;padding:20px 30px;height:100%}
+
+.label-group>div{margin-top:35px}
+.label-group .label {background-color:#fff;padding:20px 30px;height:100%}
+.label-group .label>h3 {text-align:center;}
 
 
 
