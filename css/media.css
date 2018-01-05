@@ -10,7 +10,6 @@ body .important{font-size:2em;font-weight:500;line-height:1.6}
 .nav-secondary li a{font-size:3.1em;}
 .nav-secondary li:not(.uk-active) a::after{border-width:4px;}
 .logo{padding:inherit;}
-.logo img{width:115px;}
 .my-navbar .contact{position:absolute;top:5%;right:-5%;}
 .my-navbar .language{position:absolute;top:5%;left:-5%;}
 .home .my-navbar .language{display:none!important}
@@ -20,9 +19,9 @@ body .important{font-size:2em;font-weight:500;line-height:1.6}
 .my-navbar .contact img{width:80px;}
 .my-navbar .uk-navbar-center:only-child{position:relative;margin-left:auto;}
 .my-navbar .uk-navbar-right{position:unset;top:0;-ms-transform:translateY(0);-webkit-transform:translateY(0);-moz-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);}
-.my-navbar{height:180px;}
+/* .my-navbar{height:180px;} */
 .my-navbar.uk-active{position:fixed !important;height:80px;background-color:#fff;border-bottom:2px solid #1d1d1b;}
-.my-navbar.uk-active .logo img{width:95px;}
+.my-navbar.uk-active .logo img{width:85px;}
 body .hero{font-size:1em;}
 .home .language ul li a{color:#000!important}
 .home .my-navbar.uk-active .language ul li a{color:#000!important}
@@ -35,7 +34,7 @@ body .hero{font-size:1em;}
 .home .my-navbar .logo.light{display:none}
 .home .my-navbar .logo.dark{display:inherit}
 .home .my-navbar{z-index:10;background-color:#fff;}
-.hero .cover{height:calc(100vh - 95px);margin-top:95px;background-color:transparent;}
+.hero .cover{height: calc(100vh - 85px);margin-top: 85px;background-color:transparent;}
 .hero .right-panel .media img{width:500px;}
 .box{margin-left:70px;}
 .chart.bar p{left:-15px;}
@@ -49,7 +48,7 @@ body .hero{font-size:1em;}
 .fee ol{padding:0;}
 .sticker .cover{background-image:url(../assets/img/sticker.jpg);background-color:inherit;}
 .entrepreneurs .cover{background-image:url(../assets/img/entrepreneurs.jpg);background-color:inherit;}
-.entrepreneurs .cover .my-container{height:360px;}
+.entrepreneurs .cover .my-container{height:380px;}
 .contact .error-container{padding:30px;}
 .contact input#submit{float:right;}
 }
@@ -101,11 +100,11 @@ body .hero{font-size:1em;}
 .steps .item .legend .half{display:unset;}
 }
 @media (min-width:1200px){
-.my-navbar .contact{position:absolute;top:35%;right:-40%;}
-.my-navbar .language{position:absolute;top:37%;left:-40%;}
-.home .my-navbar .language{position:absolute;top:25%;left:-35%;}
-.home .my-navbar .contact{position:absolute;top: 25%;right:-40%;}
-.my-navbar .contact img{width:150px;}
+.my-navbar .contact{position:absolute;top: 6%;right:-40%;}
+.my-navbar .language{position:absolute;top: 23%;left:-40%;}
+.home .my-navbar .language{position:absolute;top: 23%;left:-35%;}
+.home .my-navbar .contact{position:absolute;top: 6%;right:-40%;}
+.my-navbar .contact img{width: 145px;}
 .my-container.left{padding-left:190px;}
 .footer{font-size:1.02em;}
 .footer .footer-secondary{padding:0 30px;}
