@@ -7,7 +7,7 @@
 *,::after,::before{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
 body{font-size:.75em;margin:0;font-family:"Gotham", Georgia, serif;color:#1D1D1B;}
 h1, h2, h3{font-family:'Gotham';text-transform:uppercase}
-h1{font-style:normal;font-weight:bold;font-size:3.563em;line-height:1.2}
+h1{font-style:normal;font-weight:400;font-size:1.9rem;line-height:1.2}
 h2{font-size:1.500em;font-style:normal;font-weight:500}
 h3{font-size: 1.375rem;font-style:normal;font-weight:500;}
 p{font-size:1em;font-weight:normal;font-style:normal;line-height:1.5;}
@@ -103,7 +103,7 @@ a:hover, a:focus{text-decoration:none}
 100%{opacity:1;right:0;}
 }
 .open-menu, .close-menu{cursor:pointer;}
-.hero .cover{height:calc(100vh);background-color:#202020;}
+.hero .cover{height:calc(100vh)}
 .hero .label {height:100%;position:relative;margin:15px;display:inline-block;padding:15px 1em;}
 .hero .label h3{text-align:center;}
 
@@ -112,9 +112,10 @@ a:hover, a:focus{text-decoration:none}
   top: 0;
   bottom: 0;
   left: 0;
-  width: 65vw;
+  width: 100vw;
   min-height: 100%;
   height: auto;
+  display: none;
 }
 .hero .left-panel:before{
   position: absolute;
@@ -136,13 +137,11 @@ a:hover, a:focus{text-decoration:none}
   top: 0;
   bottom: 0;
   right: 0;
-  width: 35vw;
+  width: 100vw;
   min-height: 100%;
   height: auto;
   text-align: center;
   padding: 15px 55px;
-  /* background: -webkit-linear-gradient(135deg,rgba(255, 255, 255,1),rgba(229, 229, 229,1));
-  background-image: linear-gradient(135deg,rgba(255, 255, 255,1),rgba(229, 229, 229,1)); */
 }
 
 .hero .right-panel .media{
@@ -356,16 +355,12 @@ a:hover, a:focus{text-decoration:none}
 .slick-prev::before{content:url(../assets/img/icon/previous.png);}
 .slick-prev::before, .slick-next::before{font-size:2rem;color:#1d1d1b;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 .partners{background-color:#F7F7F7;}
-.partners img{width:120px;}
+.partners img{width:90px;}
 .partners img,.social-support .logo img{-webkit-transition: all .3s ease-in-out;filter: gray;-webkit-filter: grayscale(1);}
 .partners img:hover,.social-support .logo img:hover{filter: none;-webkit-filter: grayscale(0);}
 .sticker p, .sticker h2, .sticker .my-button, .sticker hr, .entrepreneurs hr, .entrepreneurs h2, .entrepreneurs p, .entrepreneurs a.my-button{color:#fff;border-color:#fff;}
 .sticker .cover{background-color:#202020;height:505px;}
 .sticker .my-button{bottom:0;float:none;}
-.entrepreneurs .cover{background-color:#202020;}
-.entrepreneurs .box{margin-left:70px;}
-.entrepreneurs .cover .my-container{height:100%;}
-.entrepreneurs p{font-style:italic;font-weight:bold;font-size:2.625em;}
 .steps
 .steps .cover-1, .steps .cover-2, .steps .cover-3{height:355px;}
 .steps .cover-1{background-image:url(../assets/img/decent-work.png);}
@@ -488,6 +483,9 @@ to{transform:rotate(-10deg);}
   transform: translate(0, 35px);
   opacity: 0;
 }
+.members .board .member {
+  width: 300px;
+}
 .members .board .member figure .portrait img{
   width: 100%;
   height: 300px;
@@ -542,4 +540,25 @@ to{transform:rotate(-10deg);}
     border: 2px solid #1d1d1b;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+
+.text-change{
+  text-align: left;
+  margin: 300px auto;
+  width: 328px;
+}
+.text-change h1{
+  margin: 0;
+}
+.text-change h1.dynamic{
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  width: 182px;
+  font-weight: 500;
+  line-height: 1;
+}
+.text-change h1.static::before{
+  content: "__________ ";
 }

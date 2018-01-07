@@ -76,7 +76,7 @@ $(document).ready(function() {
     });
   }
 
-  // 
+  //
   // var label = $("#panel .item");
   // label.each(function(){
   //   $(this).on("click", function(){
@@ -117,6 +117,19 @@ $(document).ready(function() {
        }
     })
   });
+
+
+      var texts = ["Event", "Kitchen", "Cleaning", "Food"];
+      var count = 0, interval = 3000;
+      addText();
+
+      function addText() {
+          var usrtxt = $("#text");
+          usrtxt.text(texts[count]).fadeOut(interval/2,
+            function(){usrtxt.text(texts[count]).fadeIn(interval/2);});
+          count += count < 3 ? 1 : -3;
+          setTimeout(addText, interval);
+      }
 
 
 });
