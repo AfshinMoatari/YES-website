@@ -554,6 +554,7 @@ to{transform:rotate(-10deg);}
 .text-change h1{
   margin: 0;
 }
+
 .text-change h1.dynamic{
   position: absolute;
   margin: 0;
@@ -564,4 +565,9 @@ to{transform:rotate(-10deg);}
 }
 .text-change h1.static::before{
   content: "__________ ";
+}
+.text-change h1.static::after{
+  content: ".";
+  font-size: 4rem;
+  line-height: 0;
 }
