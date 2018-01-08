@@ -139,7 +139,7 @@ $(document).ready(function() {
       var operations = $(".operations .panel .assistance");
 
       $(window).scroll(function() {
-          var scroll = $(window).scrollTop();
+          var scroll = $("body").scrollTop();
             cost.toggleClass("scrolled", scroll >= $("#cost").offset().top - 400);
             hr.toggleClass("scrolled", scroll >= $("#partners").offset().top - 600);
             operations.toggleClass("scrolled", scroll >= $("#operations").offset().top - 400);
