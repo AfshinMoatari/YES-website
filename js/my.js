@@ -139,7 +139,14 @@ $(document).ready(function() {
       var operations = $(".operations .panel .assistance");
 
       $(window).scroll(function() {
-          var scroll = $("body").scrollTop();
+        // if($.browser.safari){
+        //   var scroll = $("body").scrollTop();
+        //   console.log("a");
+        // }else{
+        //   var scroll = $(window).scrollTop();
+        //   console.log("b");
+        // }
+        var scroll = document.body.scrollTop || document.documentElement.scrollTop;
             cost.toggleClass("scrolled", scroll >= $("#cost").offset().top - 400);
             hr.toggleClass("scrolled", scroll >= $("#partners").offset().top - 600);
             operations.toggleClass("scrolled", scroll >= $("#operations").offset().top - 400);
