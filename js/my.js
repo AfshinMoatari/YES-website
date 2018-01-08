@@ -118,7 +118,8 @@ $(document).ready(function() {
     })
   });
 
-
+      var textChange = $(".text-change");
+      var leftPanel = $(".left-panel");
       var texts = ["Event", "Kitchen", "Cleaning", "Food"];
       var count = 0, interval = 3000;
       addText();
@@ -129,7 +130,19 @@ $(document).ready(function() {
             function(){usrtxt.text(texts[count]).fadeIn(interval/2);});
           count += count < 3 ? 1 : -3;
           setTimeout(addText, interval);
+          textChange.addClass("scrolled");
+          leftPanel.addClass("scrolled");
       }
 
+      var cost = $(".panel-container");
+      var hr = $("hr");
+      var operations = $(".operations .panel .assistance");
+
+      $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+            cost.toggleClass("scrolled", scroll >= $("#cost").offset().top - 400);
+            hr.toggleClass("scrolled", scroll >= $("#partners").offset().top - 600);
+            operations.toggleClass("scrolled", scroll >= $("#operations").offset().top - 400);
+      });
 
 });

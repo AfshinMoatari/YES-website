@@ -1,6 +1,15 @@
 @media (max-width:360px){body{font-size:.65em;}
 body .important{font-size:1.8em;}
 .overlay ul li{margin-bottom:5px;}
+.text-change{
+  width: 276px;
+}
+.text-change h1{
+  font-size: 1.6rem
+}
+.text-change h1.dynamic{
+  width: 154px;
+}
 }
 @media (min-width:640px){body{font-size:.9em;}
 .uk-hidden{display:inherit !important;}
@@ -46,7 +55,17 @@ body .hero{font-size:1em;}
 .entrepreneurs .cover .my-container{height:380px;}
 .contact .error-container{padding:30px;}
 .contact input#submit{float:right;}
+.text-change{
+  width: 414px;
 }
+.text-change h1{
+  font-size: 2.4rem
+}
+.text-change h1.dynamic{
+  width: 230px;
+}
+}
+
 @media (min-width:830px){body{font-size:1em;}
 .my-navbar .contact.uk-hidden{display:inherit !important;}
 .my-navbar .contact img{width:120px;}
@@ -69,6 +88,18 @@ body .hero{font-size:1em;}
 .hero .left-panel{
   width: 50vw;
   display:inherit;
+}
+.text-change{
+  width: 428px;
+}
+.text-change h1{
+  font-size: 1.9rem
+}
+.text-change h1.dynamic{
+  width: 182px;
+}
+.text-change{
+  width: 428px;
 }
 .slick-next{right:-25px;}
 .slick-prev{left:-30px;}
@@ -108,6 +139,9 @@ body .hero{font-size:1em;}
   }
   .hero .left-panel{
     width: 65vw;
+  }
+  .text-change{
+    width: 328px;
   }
 .my-navbar .contact{position:absolute;top:8%;right: -40%;}
 .my-navbar .language{position:absolute;top:25%;left:-35%;}
