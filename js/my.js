@@ -135,7 +135,7 @@ $(document).ready(function() {
       }
 
       var cost = $(".panel-container");
-      var hr = $("hr");
+      var hr = $("hr.animate");
       var operations = $(".operations .panel .assistance");
       $(window).scroll(function() {
         var scroll = document.body.scrollTop || document.documentElement.scrollTop;

@@ -35,8 +35,9 @@ span{font-size:1rem;font-style:normal;font-weight:500;font-weight:bold;}
     background: url(../assets/img/icon/loader.svg) center no-repeat #fff;
 }
 div{display:block;}
-hr{border-top: 2px solid #1d1d1b;width:0;transition: all 600ms ease-out 100ms;}
-hr.scrolled{width:100%}
+hr{border-top: 2px solid #1d1d1b;width:100%}
+hr.animate{border-top: 2px solid #1d1d1b;width:0;transition: all 600ms ease-out 100ms;}
+hr.animate.scrolled{width:100%}
 blockquote p{font-size:1rem;font-style:italic;font-weight:400;color:#000100}
 blockquote footer{font-size:.8rem;font-style:normal;font-weight:500;color:#000100}
 blockquote p::before{content:open-quote;font-weight:500;font-size: 1.3rem}
@@ -117,8 +118,11 @@ a:hover, a:focus{text-decoration:none}
 }
 .open-menu, .close-menu{cursor:pointer;}
 .hero .cover{height:calc(100vh)}
-.hero .label {height:100%;position:relative;margin:15px;display:inline-block;padding:15px 1em;}
-.hero .label h3{text-align:center;}
+.hero .why-hero{
+  margin: 0 40px;
+}
+.why-hero .label {height:100%;position:relative;margin:15px;display:inline-block;padding:15px 1em;}
+.why-hero .label h3{text-align:center;}
 
 .hero .left-panel{
   position: absolute;
@@ -183,7 +187,7 @@ a:hover, a:focus{text-decoration:none}
 .operations .panel .assistance.scrolled:before {bottom:-7px;left:-7px;border-width:0 0 2px 2px;opacity:1}
 .operations .panel .assistance.scrolled:after {top:-7px;right:-7px;border-width:2px 2px 0 0;opacity:1}
 .operations .panel .assistance img {width: 100px;height: 120px}
-.operations .info {padding-top:60px;padding-bottom:60px;}
+.challenges{background-color:#F7F7F7;}
 
 .label-group>div{margin-top:35px}
 .label-group .label {background-color:#fff;padding:20px 30px;height:100%}
@@ -566,7 +570,7 @@ to{transform:rotate(-10deg);}
 .text-change{
   text-align: left;
   margin: 0 auto;
-  width: 328px;
+  width: 335px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
