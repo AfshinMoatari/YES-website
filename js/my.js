@@ -98,8 +98,9 @@ $(document).ready(function() {
   //   })
   // });
 
-  var label = $(".panel .item");
-  label.each(function(){
+  var dynamicLabel = $(".panel .item:not(.static)");
+  var staticLabel = $(".panel .item.static");
+  dynamicLabel.each(function(){
     $(this).on("click", function(e){
       e.preventDefault()
       if($(this).hasClass("close")){
@@ -110,10 +111,12 @@ $(document).ready(function() {
          $(this).parents(".panel-container.open").toggleClass("open normal");
          $(this).siblings(".close").removeClass("close");
          $(this).removeClass("open");
+         staticLabel.removeClass("hide");
        }else{
          $(this).parents(".panel-container.normal").toggleClass("normal open");
          $(this).addClass("open");
          $(this).siblings().addClass("close");
+         staticLabel.addClass("hide");
        }
     })
   });

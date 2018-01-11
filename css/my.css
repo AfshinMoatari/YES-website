@@ -17,6 +17,11 @@ b{font-size:1.250em;font-style:italic;font-weight:bold;color:inherit}
 em{font-size:1.188em;font-style:normal;font-weight:500;color:inherit}
 strong{font-style:normal;font-weight:500}
 span{font-size:1rem;font-style:normal;font-weight:500;font-weight:bold;}
+.uk-list-bullet>li::before {
+    content: "■";
+    font-size: 1.4em;
+    background:none;
+}
 .img-fit
 {
     object-fit: cover;
@@ -222,6 +227,10 @@ a:hover, a:focus{text-decoration:none}
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+.cost .item.static.hide{
+  display: none;
+  opacity: 0
+}
 .cost .item+.item::after {
   background-color: #000;
   content: "";
@@ -286,27 +295,42 @@ a:hover, a:focus{text-decoration:none}
   opacity: 1;
   transform: translate(-50%, 30px);
 }
-.cost .item .cover .blurb{
+.cost .item:not(.static) .cover .blurb{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   bottom: 75px;
   text-align: center;
   left: 50%;
-  opacity: 0;
+  opacity: 1;
   top: auto;
   transform: translate(-50%, 50px);
   position: absolute;
   transition: all 300ms ease;
   width: 265px;
 }
-.cost .item .cover:hover .blurb {
+.cost .item.static .cover .blurb{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 75px;
+  text-align: center;
+  left: 50%;
+  bottom: 32%;
+  opacity: 1;
+  top: auto;
+  position: absolute;
+  width: 335px;
+}
+
+.cost .item.static:hover .my-button-text::before{right:0}
+.cost .item:not(.static) .cover:hover .blurb {
   transform: translate(-50%, -20px);
 }
 .cost .item .cover .title {
   margin-bottom: 10px;
 }
-.cost .item .cover .subtitle {
+.cost .item:not(.static) .cover .subtitle {
   height: 130px;
   display: none;
   opacity: 0;
@@ -314,7 +338,10 @@ a:hover, a:focus{text-decoration:none}
   transition: opacity 300ms ease;
   display: block;
 }
-.cost .item .cover:hover .subtitle {
+.cost .item.static .cover .subtitle {
+  opacity: 1;
+}
+.cost .item:not(.static) .cover:hover .subtitle {
    opacity: 1;
 }
 .cost .scrolled .item:not(.open) .action {
@@ -602,4 +629,4 @@ to{transform:rotate(-10deg);}
 .text-change h1.static::after{
   content: ".";
   font-size: 2.5rem;
-  line-height: 0;
+  line-heigh
