@@ -12,15 +12,25 @@ h2{font-size:1.500em;font-style:normal;font-weight:500}
 h3{font-size: 1.375rem;font-style:normal;font-weight:500;}
 p{font-size:1em;font-weight:normal;font-style:normal;line-height:1.5;}
 label{font-size:1.188em;font-weight:normal;font-style:normal;line-height:1.2}
-a{font-family:'Gotham' !important;font-size:1.063em;font-style:normal;font-weight:500;color:#1d1d1b;cursor:pointer;}
+a{font-family:'Gotham' !important;font-size:1em;font-style:normal;font-weight:500;color:#1d1d1b;cursor:pointer;}
 b{font-size:1.250em;font-style:italic;font-weight:bold;color:inherit}
 em{font-size:1.188em;font-style:normal;font-weight:500;color:inherit}
 strong{font-style:normal;font-weight:500}
 span{font-size:1rem;font-style:normal;font-weight:500;font-weight:bold;}
 .uk-list-bullet>li::before {
     content: "■";
-    font-size: 1.4em;
+    font-size: 1.5em;
+    color: #4e4e4e;
     background:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:flex-start;
 }
 .img-fit
 {
@@ -65,7 +75,7 @@ body .hero{font-size:.8em}
 a:hover, a:focus{text-decoration:none}
 .my-button:focus .my-button.vertical{float:left;bottom:0;right:0;padding:10px 0;transform-origin:unset;transform:unset;-ms-transform-origin:unset;-webkit-transform-origin:unset;-ms-transform:unset;-webkit-transform:unset}
 .my-button-text{padding:0;line-height:1.5;background:0 0;color:#000;position:relative;}
-.my-button-text::before{content:"";position:absolute;bottom:0;left:0;right:100%;border-bottom:2px solid #333;-webkit-transition:right .5s ease-out;transition:right .5s ease-out;}
+.my-button-text::before{content:"";position:absolute;bottom:-1px;left:0;right:100%;border-bottom:2px solid #333;-webkit-transition:right .5s ease-out;transition:right .5s ease-out;}
 .my-button-text.light::before{border-color:#fff}
 .my-button-text.dark::before{border-color:#333}
 .my-button-text:focus, .my-button-text:hover{color:#333}
@@ -313,14 +323,16 @@ a:hover, a:focus{text-decoration:none}
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  bottom: 75px;
   text-align: center;
   left: 50%;
   bottom: 32%;
   opacity: 1;
   top: auto;
   position: absolute;
-  width: 335px;
+  width: 325px;
+}
+.cost .item.static .cover .blurb ul li{
+  font-size: .95em;
 }
 
 .cost .item.static:hover .my-button-text::before{right:0}
